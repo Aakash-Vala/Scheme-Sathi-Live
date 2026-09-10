@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Smart Scheme Recommender • Scheme Sathi (SIH 26092)</title>
+  <link rel="stylesheet" href="/static/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220%22%200%22%20100%22%20100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%23047857%22/><text y=%2268%22 x=%2220%22 font-family=%22sans-serif%22 font-weight=%22900%22 font-size=%2250%22 fill=%22%23ffffff%22>SS</text></svg>">
+</head>
+<body>
+
+  <!-- Top Gov Ribbon -->
+  <div class="gov-ribbon">
+    <div class="gov-ribbon-left">
+      <span class="flag-strip"><span></span><span></span><span></span></span>
+      <span data-i18n="gov_ribbon_text">Ministry of Social Justice and Empowerment (MoSJE) • National Scheduled Castes Finance & Development Corp</span>
+    </div>
+    <div class="gov-ribbon-right">
+      <span class="gov-status-pill">
+        <span class="gov-status-dot"></span>
+        <span>UIDAI & MoSJE Live</span>
+      </span>
+      <a href="tel:1800110505" class="gov-ribbon-link" title="National Concessional Scheme Helpline">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+        <span>Helpline: <strong>1800 11 0505</strong></span>
+      </a>
+      <div class="gov-accessibility-tools" title="Portal Font Size Accessibility">
+        <button type="button" class="font-size-btn" onclick="changeFontSize(-1)" title="Smaller Text">A-</button>
+        <button type="button" class="font-size-btn" onclick="changeFontSize(0)" title="Default Text">A</button>
+        <button type="button" class="font-size-btn" onclick="changeFontSize(1)" title="Larger Text">A+</button>
+      </div>
+      <span><span data-i18n="sih_tag">SIH PS: </span><strong style="color:var(--green-neon);">26092</strong></span>
+    </div>
+  </div>
+
+  <!-- Header Navigation -->
+  <header>
+    <div class="nav-container">
+      <a href="/" class="brand-wrapper" title="Scheme Sathi • MoSJE Concessional Lending Portal">
+        <div class="brand-emblem-badge">
+          <svg width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10" stroke="#f59e0b" stroke-width="1.8"/>
+            <path d="M12 2a10 10 0 0 1 10 10M12 22a10 10 0 0 1-10-10" stroke="#10b981" stroke-width="2"/>
+            <circle cx="12" cy="12" r="4" fill="#ffffff" fill-opacity="0.15"/>
+            <path d="M12 6v12M6 12h12M7.76 7.76l8.48 8.48M7.76 16.24l8.48-8.48" stroke="#ffffff" stroke-width="1.4" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <h1>Scheme Sathi <span class="sih-badge">SIH 26092</span></h1>
+          <p data-i18n="portal_subtitle">AI Channel Finance Recommender & Concessional Lending Portal</p>
+        </div>
+      </a>
+
+      <!-- Mobile Hamburger Button -->
+      <button type="button" class="nav-mobile-toggle" onclick="toggleMobileNav(event)" aria-label="Toggle Navigation Menu">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+      </button>
+
+      <nav class="nav-links">
+        <a href="/" class="nav-item" data-i18n="nav_overview">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+          <span data-i18n="nav_overview">Overview</span>
+        </a>
+        <a href="/recommender" class="nav-item active" data-i18n="nav_recommender">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
+          <span data-i18n="nav_recommender">AI Recommender</span>
+        </a>
+        <a href="/calculator" class="nav-item" data-i18n="nav_calculator">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><rect x="4" y="2" width="16" height="20" rx="2"></rect><line x1="8" y1="6" x2="16" y2="6"></line><line x1="16" y1="14" x2="16" y2="18"></line><path d="M16 10h.01M12 10h.01M8 10h.01M12 14h.01M8 14h.01M12 18h.01M8 18h.01"></path></svg>
+          <span data-i18n="nav_calculator">EMI Calculator</span>
+        </a>
+        <a href="/locator" class="nav-item" data-i18n="nav_locator">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+          <span data-i18n="nav_locator">Channel Partners</span>
+        </a>
+        
+        <div class="nav-controls">
+          <div class="lang-select-box" title="Select Official Language">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--green-primary)" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+            <select id="lang-select" class="lang-dropdown" onchange="setLanguage(this.value)" aria-label="Language Selector">
+              <option value="en">English</option>
+              <option value="hi">हिन्दी (Hindi)</option>
+              <option value="mr">मराठी (Marathi)</option>
+              <option value="ta">தமிழ் (Tamil)</option>
+              <option value="te">తెలుగు (Telugu)</option>
+              <option value="bn">বাংলা (Bengali)</option>
+            </select>
+          </div>
+          <button id="theme-toggle-btn" class="theme-toggle-btn" onclick="toggleTheme()" title="Toggle Theme">
+            🌙 Dark
+          </button>
+          <div id="auth-nav-container" class="auth-nav-container"></div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="main-wrapper">
+
+    <!-- Page Header -->
+    <div style="margin-bottom: 20px;">
+      <div class="gov-badge">
+        <span data-i18n="rec_badge">Hybrid AI Engine • Deterministic Rules + NLP Semantics + Supervised ML</span>
+      </div>
+      <h2 style="font-size: 1.85rem; font-weight: 800; color: var(--text-pure); margin-bottom: 6px; letter-spacing: -0.3px;" data-i18n="rec_title">
+        Smart Scheme Recommender & Loan Evaluator
+      </h2>
+      <p style="color: var(--text-muted); font-size: 0.92rem; max-width: 820px;" data-i18n="rec_desc">
+        Evaluates statutory MoSJE/NSFDC income and category eligibility, extracts project intent from natural language descriptions via TF-IDF vectorization, and predicts loan approval odds using a trained Random Forest model.
+      </p>
+    </div>
+
+    <!-- Quick Preset Personas -->
+    <div style="margin-bottom: 22px; background: var(--bg-card); border: 1px solid var(--border-dark); border-radius: var(--radius-sm); padding: 14px 18px; box-shadow: var(--shadow-card);">
+      <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px;">
+        <span style="font-size: 0.72rem; font-weight: 700; color: var(--green-primary); text-transform: uppercase; letter-spacing: 0.05em;" data-i18n="presets_label">
+          Pre-Configured Evaluation Profiles:
+        </span>
+      </div>
+      <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+        <button class="persona-chip" onclick="loadScenario('women_boutique')" data-i18n="preset_women">SC Woman Boutique (₹1.2L • MSY)</button>
+        <button class="persona-chip" onclick="loadScenario('erickshaw')" data-i18n="preset_erickshaw">Electric E-Rickshaw (₹2.8L • GBS)</button>
+        <button class="persona-chip" onclick="loadScenario('btech')" data-i18n="preset_btech">B.Tech Engineering (₹14L • ELS)</button>
+        <button class="persona-chip" onclick="loadScenario('sanitation')" data-i18n="preset_sanitation">Sanitation Mechanized Unit (₹16L • SUY)</button>
+      </div>
+    </div>
+
+    <!-- Wizard Intake Card -->
+    <section class="gov-card">
+      <form id="wizard-form" onsubmit="event.preventDefault(); handleRecommendationSubmit(event);">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); gap: 24px;">
+          
+          <!-- Column 1: Demographics -->
+          <div>
+            <h4 style="font-size: 0.92rem; font-weight: 700; color: var(--green-primary); margin-bottom: 14px; border-bottom: 1px solid var(--border-dark); padding-bottom: 6px; letter-spacing: 0.02em;" data-i18n="sec1_heading">
+              1. Beneficiary Demographics
+            </h4>
+
+            <div style="margin-bottom: 14px;">
+              <label class="form-label" data-i18n="lbl_caste">Target Community Category</label>
+              <select name="caste_category" class="form-select" required>
+                <option value="SC" selected data-i18n="opt_sc">Scheduled Caste (SC)</option>
+                <option value="Safai Karamchari / Dependent" data-i18n="opt_safai">Safai Karamchari / Manual Scavenger Dependent</option>
+                <option value="ST" data-i18n="opt_st">Scheduled Tribe (ST)</option>
+                <option value="OBC" data-i18n="opt_obc">Other Backward Classes (OBC)</option>
+                <option value="General" data-i18n="opt_gen">General Category</option>
+              </select>
+              <p class="form-help" data-i18n="caste_help">NSFDC concessional lending prioritizes SC & sanitation worker families.</p>
+            </div>
+
+            <div style="margin-bottom: 14px;">
+              <label class="form-label" data-i18n="lbl_income">Annual Family Income (₹)</label>
+              <input type="number" name="annual_income" class="form-input" value="180000" min="10000" max="1500000" step="5000" required>
+              <p class="form-help" data-i18n="income_help">Statutory ceiling: ₹3,00,000/yr (up to ₹5,00,000 for select term loans).</p>
+            </div>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 14px;">
+              <div>
+                <label class="form-label" data-i18n="lbl_gender">Gender</label>
+                <select name="gender" class="form-select">
+                  <option value="Female" selected data-i18n="opt_female">Female (Concession Priority)</option>
+                  <option value="Male" data-i18n="opt_male">Male</option>
+                  <option value="Other" data-i18n="opt_other">Other</option>
+                </select>
+              </div>
+              <div>
+                <label class="form-label" data-i18n="lbl_age">Applicant Age</label>
+                <input type="number" name="age" class="form-input" value="32" min="18" max="65">
+              </div>
+            </div>
+
+            <div style="margin-bottom: 14px;">
+              <label class="form-label" data-i18n="lbl_edu">Education Qualification</label>
+              <select name="education_level" class="form-select">
+                <option value="No Formal Education" data-i18n="opt_no_edu">No Formal Education</option>
+                <option value="Primary (1-8)" data-i18n="opt_primary">Primary School</option>
+                <option value="Secondary (10th)" selected data-i18n="opt_secondary">Secondary (10th Pass)</option>
+                <option value="Higher Secondary (12th)" data-i18n="opt_higher_sec">Higher Secondary (12th Pass)</option>
+                <option value="Graduate" data-i18n="opt_graduate">Graduate / Diploma</option>
+                <option value="Post Graduate / Professional" data-i18n="opt_post_graduate">Post Graduate / Professional</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Column 2: Financial Specifics -->
+          <div>
+            <h4 style="font-size: 0.92rem; font-weight: 700; color: var(--green-primary); margin-bottom: 14px; border-bottom: 1px solid var(--border-dark); padding-bottom: 6px; letter-spacing: 0.02em;" data-i18n="sec2_heading">
+              2. Project & Financial Scope
+            </h4>
+
+            <div style="margin-bottom: 14px;">
+              <label class="form-label" data-i18n="lbl_sector">Primary Sector Category</label>
+              <select name="project_category" class="form-select">
+                <option value="micro_finance" selected data-i18n="opt_sector_micro">Micro Finance / Petty Trade (Up to ₹1.40 Lakh)</option>
+                <option value="term_loan" data-i18n="opt_sector_term">Small Enterprise / Term Loan (Up to ₹50 Lakh)</option>
+                <option value="education" data-i18n="opt_sector_edu">Higher Technical / Professional Education</option>
+                <option value="green_energy" data-i18n="opt_sector_green">Green Energy & EV Mobility (E-Rickshaw / Solar)</option>
+                <option value="sanitation" data-i18n="opt_sector_sanitation">Mechanized Sanitation & Cleaning Equipment</option>
+              </select>
+            </div>
+
+            <div style="margin-bottom: 14px;">
+              <label class="form-label" data-i18n="lbl_cost">Estimated Project / Course Cost (₹)</label>
+              <input type="number" name="project_cost" class="form-input" value="120000" min="10000" max="50000000" step="5000" required>
+              <p class="form-help" data-i18n="cost_help">NSFDC covers up to 90% - 95% of unit cost at concessional interest.</p>
+            </div>
+
+            <div style="margin-bottom: 14px;">
+              <label class="form-label" data-i18n="lbl_margin">Promoter Margin Money Available (₹)</label>
+              <input type="number" name="promoter_margin" class="form-input" placeholder="e.g. 10000" min="0" step="1000">
+              <p class="form-help" data-i18n="margin_help">Self-contribution (typically 0% to 10% based on project size).</p>
+            </div>
+
+            <div style="display: flex; flex-direction: column; gap: 8px; margin-top: 12px;">
+              <label style="display: flex; align-items: center; gap: 8px; font-size: 0.8rem; cursor: pointer; color: var(--text-main);">
+                <input type="checkbox" name="has_training" checked style="accent-color: var(--green-primary);"> <span data-i18n="chk_training">Holds Skill / Vocational Certificate (PMKVY / ITI)</span>
+              </label>
+              <label style="display: flex; align-items: center; gap: 8px; font-size: 0.8rem; cursor: pointer; color: var(--text-main);">
+                <input type="checkbox" name="clean_credit" checked style="accent-color: var(--green-primary);"> <span data-i18n="chk_credit">Clean Credit History / No Prior Loan Defaults</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Column 3: NLP Free Text Description -->
+          <div>
+            <h4 style="font-size: 0.92rem; font-weight: 700; color: var(--green-primary); margin-bottom: 14px; border-bottom: 1px solid var(--border-dark); padding-bottom: 6px; letter-spacing: 0.02em;" data-i18n="sec3_heading">
+              3. Project Intent (NLP Vector Matching)
+            </h4>
+
+            <div style="margin-bottom: 14px;">
+              <label class="form-label" data-i18n="lbl_desc">Describe Your Venture In Natural Language</label>
+              <textarea name="project_description" class="form-textarea" data-i18n-ph="ph_desc" placeholder="Describe in English or Hindi..." required>Starting a women designer boutique, tailoring and embroidery shop with modern industrial stitching machines.</textarea>
+              <p class="form-help" data-i18n="desc_help">Our NLP vectorizer matches semantic intent with official scheme activity mandates.</p>
+            </div>
+
+            <div style="margin-bottom: 18px;">
+              <span style="font-size: 0.7rem; color: var(--text-dim); display: block; margin-bottom: 6px; text-transform: uppercase;" data-i18n="quick_kw_label">Quick Keyword Injection:</span>
+              <div style="display: flex; flex-wrap: wrap; gap: 6px;">
+                <span class="persona-chip" onclick="document.querySelector('[name=project_description]').value = 'Battery operated e-rickshaw with high capacity charger for daily passenger commute'">+ E-Rickshaw</span>
+                <span class="persona-chip" onclick="document.querySelector('[name=project_description]').value = 'Rooftop solar panel installation and maintenance micro unit'">+ Solar Power</span>
+                <span class="persona-chip" onclick="document.querySelector('[name=project_description]').value = 'Kirana general grocery store and dairy milk booth'">+ Grocery Store</span>
+                <span class="persona-chip" onclick="document.querySelector('[name=project_description]').value = 'B.Tech computer science engineering degree tuition and hostel fees'">+ Engineering Degree</span>
+              </div>
+            </div>
+
+            <button type="button" id="btn-run-ai" class="btn-primary" style="width: 100%; padding: 12px;" onclick="handleRecommendationSubmit(event)" data-i18n="btn_run_ai">
+              Run AI Scheme Matching Engine
+            </button>
+          </div>
+
+        </div>
+      </form>
+    </section>
+
+    <!-- Results Section -->
+    <section id="results-section" style="margin-bottom: 48px;">
+      <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 16px;">
+        <div>
+          <h3 style="font-size: 1.25rem; font-weight: 700; color: var(--text-pure);" data-i18n="rec_results_title">
+            Recommended Schemes & Loan Options
+          </h3>
+          <p style="color: var(--text-muted); font-size: 0.86rem;" data-i18n="rec_results_desc">
+            Ranked by statutory eligibility, NLP semantic intent fit, and trained ML approval probability.
+          </p>
+        </div>
+        <span id="results-count-badge" class="sih-badge" style="font-size: 0.78rem; padding: 4px 10px;" data-i18n="badge_awaiting">
+          Awaiting Evaluation
+        </span>
+      </div>
+
+      <div id="results-container" class="schemes-result-grid">
+        <div style="grid-column: 1 / -1; text-align: center; padding: 40px; background: var(--bg-card); border-radius: var(--radius-md); border: 1px dashed var(--border-subtle); box-shadow: var(--shadow-card);">
+          <p style="color: var(--text-muted); font-size: 0.92rem;" data-i18n="rec_empty_prompt">
+            Fill the questionnaire above or select a preset profile, then click "Run AI Scheme Matching Engine".
+          </p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Explainable AI (XAI) Modal -->
+  <div id="xai-modal" class="gov-modal-overlay">
+    <div class="gov-modal-box">
+      <button class="modal-close-icon" onclick="closeModal()">✕</button>
+      <h3 id="modal-scheme-title" style="color: var(--green-primary); font-size: 1.15rem; font-weight: 700; margin-bottom: 14px;">
+        Scheme Explainable AI Assessment
+      </h3>
+      <div id="modal-xai-body">
+        <!-- Populated dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Application Summary Modal -->
+  <div id="app-modal" class="gov-modal-overlay">
+    <div class="gov-modal-box" style="max-width: 720px;">
+      <button class="modal-close-icon" onclick="closeModal()">✕</button>
+      <div id="modal-app-body">
+        <!-- Populated dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-inner">
+      <div>
+        <h4 style="color: #ffffff; font-size: 0.95rem; margin-bottom: 2px;" data-i18n="footer_title">Scheme Sathi • SIH 26092</h4>
+        <p data-i18n="footer_desc">AI-Driven Concessional Scheme Matching Platform for Marginalized Entrepreneurs</p>
+      </div>
+      <div>
+        <p data-i18n="footer_guidelines">Statutory guidelines under NSFDC, NSKFDC, and Ministry of Social Justice & Empowerment (MoSJE).</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/static/app.js?v=3.2"></script>
+</body>
+</html>

@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beneficiary Login & Sign Up • Scheme Sathi (SIH 26092)</title>
+  <link rel="stylesheet" href="/static/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220%22%200%22%20100%22%20100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%23047857%22/><text y=%2268%22 x=%2220%22 font-family=%22sans-serif%22 font-weight=%22900%22 font-size=%2250%22 fill=%22%23ffffff%22>SS</text></svg>">
+</head>
+<body>
+
+  <!-- Top Gov Ribbon -->
+  <div class="gov-ribbon">
+    <div class="gov-ribbon-left">
+      <span class="flag-strip"><span></span><span></span><span></span></span>
+      <span data-i18n="gov_ribbon_text">Ministry of Social Justice and Empowerment (MoSJE) • National Scheduled Castes Finance & Development Corp</span>
+    </div>
+    <div class="gov-ribbon-right">
+      <span class="gov-status-pill">
+        <span class="gov-status-dot"></span>
+        <span>UIDAI & MoSJE Live</span>
+      </span>
+      <a href="tel:1800110505" class="gov-ribbon-link" title="National Concessional Scheme Helpline">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+        <span>Helpline: <strong>1800 11 0505</strong></span>
+      </a>
+      <div class="gov-accessibility-tools" title="Portal Font Size Accessibility">
+        <button type="button" class="font-size-btn" onclick="changeFontSize(-1)" title="Smaller Text">A-</button>
+        <button type="button" class="font-size-btn" onclick="changeFontSize(0)" title="Default Text">A</button>
+        <button type="button" class="font-size-btn" onclick="changeFontSize(1)" title="Larger Text">A+</button>
+      </div>
+      <span><span data-i18n="sih_tag">SIH PS: </span><strong style="color:var(--green-neon);">26092</strong></span>
+    </div>
+  </div>
+
+  <!-- Header Navigation -->
+  <header>
+    <div class="nav-container">
+      <a href="/" class="brand-wrapper" title="Scheme Sathi • MoSJE Concessional Lending Portal">
+        <div class="brand-emblem-badge">
+          <svg width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10" stroke="#f59e0b" stroke-width="1.8"/>
+            <path d="M12 2a10 10 0 0 1 10 10M12 22a10 10 0 0 1-10-10" stroke="#10b981" stroke-width="2"/>
+            <circle cx="12" cy="12" r="4" fill="#ffffff" fill-opacity="0.15"/>
+            <path d="M12 6v12M6 12h12M7.76 7.76l8.48 8.48M7.76 16.24l8.48-8.48" stroke="#ffffff" stroke-width="1.4" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <h1>Scheme Sathi <span class="sih-badge">SIH 26092</span></h1>
+          <p data-i18n="portal_subtitle">AI Channel Finance Recommender & Concessional Lending Portal</p>
+        </div>
+      </a>
+
+      <!-- Mobile Hamburger Button -->
+      <button type="button" class="nav-mobile-toggle" onclick="toggleMobileNav(event)" aria-label="Toggle Navigation Menu">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+      </button>
+
+      <nav class="nav-links">
+        <a href="/" class="nav-item" data-i18n="nav_overview">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+          <span data-i18n="nav_overview">Overview</span>
+        </a>
+        <a href="/recommender" class="nav-item" data-i18n="nav_recommender">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
+          <span data-i18n="nav_recommender">AI Recommender</span>
+        </a>
+        <a href="/calculator" class="nav-item" data-i18n="nav_calculator">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><rect x="4" y="2" width="16" height="20" rx="2"></rect><line x1="8" y1="6" x2="16" y2="6"></line><line x1="16" y1="14" x2="16" y2="18"></line><path d="M16 10h.01M12 10h.01M8 10h.01M12 14h.01M8 14h.01M12 18h.01M8 18h.01"></path></svg>
+          <span data-i18n="nav_calculator">EMI Calculator</span>
+        </a>
+        <a href="/locator" class="nav-item" data-i18n="nav_locator">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+          <span data-i18n="nav_locator">Channel Partners</span>
+        </a>
+        <a href="/login" class="nav-item active" id="nav-auth-tab" data-i18n="nav_auth">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          <span data-i18n="nav_auth">Login / Sign Up</span>
+        </a>
+        
+        <div class="nav-controls">
+          <div class="lang-select-box" title="Select Official Language">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--green-primary)" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+            <select id="lang-select" class="lang-dropdown" onchange="setLanguage(this.value)" aria-label="Language Selector">
+              <option value="en">English</option>
+              <option value="hi">हिन्दी (Hindi)</option>
+              <option value="mr">मराठी (Marathi)</option>
+              <option value="ta">தமிழ் (Tamil)</option>
+              <option value="te">తెలుగు (Telugu)</option>
+              <option value="bn">বাংলা (Bengali)</option>
+            </select>
+          </div>
+          <button id="theme-toggle-btn" class="theme-toggle-btn" onclick="toggleTheme()" title="Toggle Theme">
+            🌙 Dark
+          </button>
+          <div id="auth-nav-container" class="auth-nav-container"></div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="main-wrapper">
+    <!-- Page Header -->
+    <div style="margin-bottom: 24px; text-align: center;">
+      <div class="gov-badge" style="margin: 0 auto 12px auto; display: inline-flex;">
+        <span>Official Beneficiary Access Portal • MoSJE & NSFDC</span>
+      </div>
+      <h2 style="font-size: 1.85rem; font-weight: 800; color: var(--text-pure); margin-bottom: 6px; letter-spacing: -0.3px;">
+        Beneficiary Authentication & Portal Access
+      </h2>
+      <p style="color: var(--text-muted); font-size: 0.92rem; max-width: 680px; margin: 0 auto;">
+        Sign in to access your registered concessional applications, or register your profile to unlock verified MoSJE/NSFDC lending benefits.
+      </p>
+    </div>
+
+    <!-- Auth Portal Card Container -->
+    <div class="auth-page-container">
+      <div class="auth-page-card">
+        
+        <!-- Tab Navigation -->
+        <div class="auth-page-tabs">
+          <button type="button" id="page-tab-aadhaar" class="auth-page-tab active" onclick="selectAuthPageTab('aadhaar')">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="3" y="4" width="18" height="16" rx="2"/><line x1="7" y1="8" x2="17" y2="8"/><line x1="7" y1="12" x2="17" y2="12"/><line x1="7" y1="16" x2="13" y2="16"/></svg>
+            <span data-i18n="auth_tab_aadhaar">Aadhaar Card (OTP)</span>
+          </button>
+          <button type="button" id="page-tab-login" class="auth-page-tab" onclick="selectAuthPageTab('login')">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" y1="12" x2="3" y2="12"/></svg>
+            <span data-i18n="auth_tab_password">Password Login</span>
+          </button>
+          <button type="button" id="page-tab-signup" class="auth-page-tab" onclick="selectAuthPageTab('signup')">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="8.5" cy="7" r="4"/><line x1="20" y1="8" x2="20" y2="14"/><line x1="23" y1="11" x2="17" y2="11"/></svg>
+            <span data-i18n="auth_tab_signup">New Registration (Sign Up)</span>
+          </button>
+          <button type="button" id="page-tab-myapps" class="auth-page-tab" onclick="selectAuthPageTab('myapps')">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+            <span data-i18n="auth_btn_my_apps">My Applications</span>
+          </button>
+        </div>
+
+        <!-- Quick Demo Fill Helper Bar for Evaluators -->
+        <div class="auth-demo-bar">
+          <span style="font-size: 0.74rem; font-weight: 700; color: var(--text-muted); display: flex; align-items: center; gap: 4px;">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+            Quick Evaluator Demo Fill:
+          </span>
+          <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+            <button type="button" class="btn-demo-fill" onclick="prefillDemoBeneficiary('aadhaar')">
+              Auto-Fill Aadhaar (1234 5678 9012)
+            </button>
+            <button type="button" class="btn-demo-fill" onclick="prefillDemoBeneficiary('login')">
+              Auto-Fill Login Credentials
+            </button>
+            <button type="button" class="btn-demo-fill" onclick="prefillDemoBeneficiary('signup')">
+              Auto-Fill New SC Beneficiary
+            </button>
+          </div>
+        </div>
+
+        <!-- Notification & Error Banners -->
+        <div id="page-auth-notification" class="auth-info-banner" style="display: none;"></div>
+        <div id="page-auth-error" class="auth-error-banner" style="display: none; margin: 0 24px 16px 24px;"></div>
+
+        <!-- ================= PANEL 0: AADHAAR OTP LOGIN ================= -->
+        <div id="panel-page-aadhaar" class="auth-panel-body">
+          <div style="display: flex; flex-direction: column; gap: 16px;">
+            
+            <!-- Step 1: 12-Digit Aadhaar Input -->
+            <div id="page-aadhaar-step1">
+              <div>
+                <label class="form-label">
+                  <span data-i18n="auth_lbl_aadhaar_12">12-Digit Aadhaar Card Number</span> <span style="color: #dc2626;">*</span>
+                </label>
+                <input type="text" id="page-aadhaar-number" class="form-input aadhaar-input" placeholder="1234 5678 9012" maxlength="14" oninput="formatPageAadhaarInput(this)" style="font-size: 1.15rem; letter-spacing: 2px; font-weight: 700;">
+                <small style="color: var(--text-dim); font-size: 0.74rem; margin-top: 4px; display: block;" data-i18n="auth_aadhaar_help">
+                  Enter full 12-digit Aadhaar to receive OTP on the linked registered mobile number.
+                </small>
+              </div>
+
+              <!-- Live preview of actual registered mobile number -->
+              <div id="page-aadhaar-linked-preview" style="display: none; margin-top: 12px; font-size: 0.85rem; background: var(--green-subtle); color: var(--green-primary); padding: 10px 14px; border-radius: 4px; border: 1px solid var(--green-border);">
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                  <span style="font-weight: 700;">Verified UIDAI Citizen Record:</span>
+                  <span id="page-preview-name" style="font-size: 0.80rem; background: var(--bg-card); padding: 2px 8px; border-radius: 3px; border: 1px solid var(--green-border);">Aakash Kumar</span>
+                </div>
+                <div style="margin-top: 6px; color: var(--text-pure); font-size: 0.90rem;">
+                  Actual Linked Mobile: <strong id="page-preview-phone" style="color: var(--green-primary); font-size: 1.05rem;">+91 9876543210</strong>
+                </div>
+              </div>
+
+              <button type="button" id="btn-page-aadhaar-send-otp" class="btn-primary" style="padding: 12px; font-size: 0.92rem; width: 100%; margin-top: 14px;" onclick="handlePageAadhaarSendOtp()">
+                <span data-i18n="auth_btn_send_otp">Get OTP on Registered Mobile →</span>
+              </button>
+            </div>
+
+            <!-- Step 2: OTP Verification -->
+            <div id="page-aadhaar-step2" style="display: none; flex-direction: column; gap: 14px;">
+              <div class="auth-otp-notice">
+                <div style="display:flex; align-items:flex-start; gap:8px;">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--green-primary)" stroke-width="2" style="flex-shrink:0; margin-top:2px;"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                  <div>
+                    <div>OTP dispatched to registered mobile linked with Aadhaar <strong id="page-otp-masked-aadhaar">XXXX-XXXX-9012</strong>:</div>
+                    <div style="margin-top: 3px; font-size: 0.95rem; color: var(--text-pure);">
+                      Actual Mobile: <strong id="page-otp-phone" style="color: var(--green-primary); font-size: 1.05rem;">+91 9876543210</strong>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="auth-demo-otp-banner" style="display: flex; justify-content: space-between; align-items: center;">
+                <span style="font-size: 0.78rem;">UIDAI Simulation: Demo OTP is <strong id="page-demo-otp-code">123456</strong></span>
+                <button type="button" class="btn-demo-copy" onclick="fillPageDemoOtp()">Auto-Fill OTP</button>
+              </div>
+
+              <div>
+                <label class="form-label">
+                  <span data-i18n="auth_lbl_enter_otp">Enter 6-Digit SMS OTP</span> <span style="color: #dc2626;">*</span>
+                </label>
+                <input type="text" id="page-aadhaar-otp" class="form-input otp-input" placeholder="••••••" maxlength="6" pattern="[0-9]{6}" style="letter-spacing: 4px; font-size: 1.25rem; text-align: center; font-weight: 800;">
+              </div>
+
+              <button type="button" id="btn-page-aadhaar-verify-otp" class="btn-primary" style="padding: 12px; font-size: 0.92rem; width: 100%;" onclick="handlePageAadhaarVerifyOtp()">
+                <span data-i18n="auth_btn_verify_otp">Verify OTP & Sign In →</span>
+              </button>
+
+              <div style="display: flex; justify-content: space-between; font-size: 0.78rem; margin-top: 2px;">
+                <a href="javascript:void(0)" onclick="resetPageAadhaarStep()" style="color: var(--text-muted);" data-i18n="auth_change_aadhaar">Change Aadhaar Number</a>
+                <a href="javascript:void(0)" onclick="handlePageAadhaarSendOtp()" style="color: var(--green-primary); font-weight: 700;" data-i18n="auth_resend_otp">Resend OTP</a>
+              </div>
+            </div>
+
+            <div style="text-align: center; border-top: 1px dashed var(--border-dark); padding-top: 14px; margin-top: 4px;">
+              <p style="font-size: 0.82rem; color: var(--text-muted);">
+                Prefer standard password login?
+                <a href="javascript:void(0)" onclick="selectAuthPageTab('login')" style="color: var(--green-primary); font-weight: 700; margin-left: 4px;">
+                  Sign In with Password →
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- ================= PANEL 1: LOGIN ================= -->
+        <div id="panel-page-login" class="auth-panel-body" style="display: none;">
+          <form id="page-login-form" onsubmit="handlePageLogin(event)" style="display: flex; flex-direction: column; gap: 16px;">
+            <div>
+              <label class="form-label">
+                <span data-i18n="auth_lbl_mobile">10-Digit Mobile Number</span> / Email ID <span style="color: #dc2626;">*</span>
+              </label>
+              <input type="text" id="login-identifier" name="identifier" class="form-input" placeholder="e.g. 9876543210" required>
+              <small style="color: var(--text-dim); font-size: 0.72rem; margin-top: 3px; display: block;">
+                Enter your registered mobile number or statutory email ID.
+              </small>
+            </div>
+
+            <div>
+              <label class="form-label">
+                <span data-i18n="auth_lbl_password">Password</span> <span style="color: #dc2626;">*</span>
+              </label>
+              <input type="password" id="login-password" name="password" class="form-input" placeholder="••••••••" required>
+            </div>
+
+            <button type="submit" id="btn-page-login-submit" class="btn-primary" style="padding: 12px; font-size: 0.92rem; width: 100%;">
+              <span data-i18n="auth_btn_login">Sign In to Account →</span>
+            </button>
+
+            <div style="text-align: center; border-top: 1px dashed var(--border-dark); padding-top: 14px; margin-top: 4px;">
+              <p style="font-size: 0.82rem; color: var(--text-muted);">
+                First time user or applying for a new loan?
+                <a href="javascript:void(0)" onclick="selectAuthPageTab('signup')" style="color: var(--green-primary); font-weight: 700; margin-left: 4px;">
+                  Create Beneficiary Account (Sign Up) →
+                </a>
+              </p>
+            </div>
+          </form>
+        </div>
+
+        <!-- ================= PANEL 2: SIGN UP ================= -->
+        <div id="panel-page-signup" class="auth-panel-body" style="display: none;">
+          <form id="page-signup-form" onsubmit="handlePageSignUp(event)" style="display: flex; flex-direction: column; gap: 16px;">
+            
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px;">
+              <div>
+                <label class="form-label"><span data-i18n="auth_lbl_fullname">Full Legal Name</span> <span style="color: #dc2626;">*</span></label>
+                <input type="text" id="signup-fullname" name="full_name" class="form-input" placeholder="e.g. Rajesh Kumar" required>
+              </div>
+              <div>
+                <label class="form-label"><span data-i18n="auth_lbl_mobile">10-Digit Mobile Number</span> <span style="color: #dc2626;">*</span></label>
+                <input type="tel" id="signup-phone" name="phone_number" class="form-input" placeholder="e.g. 9876543210" pattern="[6-9][0-9]{9}" required>
+              </div>
+            </div>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px;">
+              <div>
+                <label class="form-label"><span data-i18n="auth_lbl_password">Password</span> (Min 6 chars) <span style="color: #dc2626;">*</span></label>
+                <input type="password" id="signup-password" name="password" class="form-input" placeholder="Create secure password" minlength="6" required>
+              </div>
+              <div>
+                <label class="form-label">Email ID (Optional)</label>
+                <input type="email" id="signup-email" name="email" class="form-input" placeholder="applicant@example.gov.in">
+              </div>
+            </div>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px;">
+              <div>
+                <label class="form-label"><span data-i18n="auth_lbl_caste">Target Community Category</span> <span style="color: #dc2626;">*</span></label>
+                <select id="signup-caste" name="caste_category" class="form-select" required>
+                  <option value="SC" selected>Scheduled Caste (SC)</option>
+                  <option value="Safai Karamchari / Dependent">Safai Karamchari / Dependent</option>
+                  <option value="ST">Scheduled Tribe (ST)</option>
+                  <option value="OBC">Other Backward Classes (OBC)</option>
+                  <option value="General">General Category</option>
+                </select>
+              </div>
+              <div>
+                <label class="form-label">Caste Certificate No.</label>
+                <input type="text" id="signup-caste-cert" name="caste_cert_number" class="form-input" placeholder="e.g. DL/REV/SC/77291">
+              </div>
+            </div>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px;">
+              <div>
+                <label class="form-label"><span data-i18n="auth_lbl_income">Annual Family Income (₹)</span> <span style="color: #dc2626;">*</span></label>
+                <input type="number" id="signup-income" name="annual_income" class="form-input" value="180000" min="10000" max="1500000" step="5000" required>
+                <small style="color: var(--text-dim); font-size: 0.72rem;">Statutory ceiling: ₹3,00,000 for standard concessional credit.</small>
+              </div>
+              <div>
+                <label class="form-label"><span data-i18n="auth_lbl_gender">Gender</span> <span style="color: #dc2626;">*</span></label>
+                <select id="signup-gender" name="gender" class="form-select" required>
+                  <option value="Female" selected>Female (Additional Concession Priority)</option>
+                  <option value="Male">Male</option>
+                  <option value="Other">Other</option>
+                </select>
+              </div>
+            </div>
+
+            <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 14px;">
+              <div>
+                <label class="form-label"><span data-i18n="auth_lbl_state">State & District</span> <span style="color: #dc2626;">*</span></label>
+                <input type="text" id="signup-state-district" name="state_district" class="form-input" value="Delhi, Central Delhi" required>
+              </div>
+              <div>
+                <label class="form-label"><span data-i18n="auth_lbl_aadhaar">Aadhaar (Last 4 Digits)</span> <span style="color: #dc2626;">*</span></label>
+                <input type="text" id="signup-aadhaar" name="aadhaar_last_four" class="form-input" placeholder="8842" maxlength="4" pattern="[0-9]{4}" required>
+              </div>
+            </div>
+
+            <button type="submit" id="btn-page-signup-submit" class="btn-primary" style="padding: 12px; font-size: 0.92rem; width: 100%; margin-top: 6px;">
+              <span data-i18n="auth_btn_signup">Create Beneficiary Account & Sign In →</span>
+            </button>
+
+            <div style="text-align: center; border-top: 1px dashed var(--border-dark); padding-top: 14px;">
+              <p style="font-size: 0.82rem; color: var(--text-muted);">
+                Already have an account?
+                <a href="javascript:void(0)" onclick="selectAuthPageTab('login')" style="color: var(--green-primary); font-weight: 700; margin-left: 4px;">
+                  Sign In to Account →
+                </a>
+              </p>
+            </div>
+          </form>
+        </div>
+
+        <!-- ================= PANEL 3: MY APPLICATIONS ================= -->
+        <div id="panel-page-myapps" class="auth-panel-body" style="display: none;">
+          <div id="page-myapps-container">
+            <!-- Dynamically populated via loadPageMyApplications() -->
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div>
+        <h4 data-i18n="footer_title">Scheme Sathi • SIH 26092</h4>
+        <p data-i18n="footer_desc">AI-Driven Concessional Scheme Matching Platform for Marginalized Entrepreneurs</p>
+      </div>
+      <div>
+        <p data-i18n="footer_guidelines">Statutory guidelines under NSFDC, NSKFDC, and Ministry of Social Justice & Empowerment (MoSJE).</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/static/app.js?v=3.2"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Determine initial tab from path or hash
+      const path = window.location.pathname.toLowerCase();
+      const hash = window.location.hash.toLowerCase();
+
+      if (path.includes('signup') || hash === '#signup') {
+        selectAuthPageTab('signup');
+      } else if (path.includes('my-applications') || hash === '#my-applications' || hash === '#myapps') {
+        selectAuthPageTab('myapps');
+      } else if (path.includes('password') || hash === '#password') {
+        selectAuthPageTab('login');
+      } else {
+        // If already logged in, default to myapps, else Aadhaar OTP login
+        if (currentUserProfile && currentUserToken) {
+          selectAuthPageTab('myapps');
+        } else {
+          selectAuthPageTab('aadhaar');
+        }
+      }
+    });
+
+    function selectAuthPageTab(tabName) {
+      hidePageAuthError();
+
+      const tabAadhaar = document.getElementById('page-tab-aadhaar');
+      const tabLogin = document.getElementById('page-tab-login');
+      const tabSignup = document.getElementById('page-tab-signup');
+      const tabMyApps = document.getElementById('page-tab-myapps');
+
+      const panelAadhaar = document.getElementById('panel-page-aadhaar');
+      const panelLogin = document.getElementById('panel-page-login');
+      const panelSignup = document.getElementById('panel-page-signup');
+      const panelMyApps = document.getElementById('panel-page-myapps');
+
+      [tabAadhaar, tabLogin, tabSignup, tabMyApps].forEach(t => t && t.classList.remove('active'));
+      [panelAadhaar, panelLogin, panelSignup, panelMyApps].forEach(p => p && (p.style.display = 'none'));
+
+      if (tabName === 'signup') {
+        tabSignup.classList.add('active');
+        panelSignup.style.display = 'block';
+        window.history.replaceState(null, '', '/signup');
+      } else if (tabName === 'login') {
+        tabLogin.classList.add('active');
+        panelLogin.style.display = 'block';
+        window.history.replaceState(null, '', '/login#password');
+      } else if (tabName === 'myapps') {
+        tabMyApps.classList.add('active');
+        panelMyApps.style.display = 'block';
+        window.history.replaceState(null, '', '/my-applications');
+        loadPageMyApplications();
+      } else {
+        tabAadhaar.classList.add('active');
+        panelAadhaar.style.display = 'block';
+        window.history.replaceState(null, '', '/login');
+      }
+    }
+
+    let pageAadhaarLookupTimeout = null;
+
+    function formatPageAadhaarInput(el) {
+      if (!el) return;
+      let val = el.value.replace(/\D/g, '');
+      if (val.length > 12) val = val.substring(0, 12);
+      let parts = [];
+      for (let i = 0; i < val.length; i += 4) {
+        parts.push(val.substring(i, i + 4));
+      }
+      el.value = parts.join(' ');
+
+      const previewBox = document.getElementById('page-aadhaar-linked-preview');
+      if (val.length === 12) {
+        if (pageAadhaarLookupTimeout) clearTimeout(pageAadhaarLookupTimeout);
+        pageAadhaarLookupTimeout = setTimeout(async () => {
+          try {
+            const res = await fetch('/api/auth/aadhaar/linked-mobile?aadhaar_number=' + val);
+            if (res.ok) {
+              const data = await res.json();
+              const phoneEl = document.getElementById('page-preview-phone');
+              const nameEl = document.getElementById('page-preview-name');
+              if (phoneEl) phoneEl.innerText = '+91 ' + (data.phone_number || data.linked_phone);
+              if (nameEl) nameEl.innerText = data.full_name || 'Verified Citizen';
+              if (previewBox) previewBox.style.display = 'block';
+            }
+          } catch (err) {
+            console.warn('Aadhaar page lookup failed:', err);
+          }
+        }, 120);
+      } else {
+        if (previewBox) previewBox.style.display = 'none';
+      }
+    }
+
+    function fillPageDemoOtp() {
+      const code = document.getElementById('page-demo-otp-code');
+      const input = document.getElementById('page-aadhaar-otp');
+      if (code && input) {
+        input.value = code.innerText.trim();
+      }
+    }
+
+    function resetPageAadhaarStep() {
+      const s1 = document.getElementById('page-aadhaar-step1');
+      const s2 = document.getElementById('page-aadhaar-step2');
+      if (s1 && s2) {
+        s1.style.display = 'block';
+        s2.style.display = 'none';
+      }
+      const inp = document.getElementById('page-aadhaar-number');
+      if (inp) {
+        inp.focus();
+        formatPageAadhaarInput(inp);
+      }
+    }
+
+    async function handlePageAadhaarSendOtp() {
+      hidePageAuthError();
+      const input = document.getElementById('page-aadhaar-number');
+      if (!input) return;
+      const raw = input.value.replace(/\D/g, '');
+      if (raw.length !== 12) {
+        showPageAuthError("Please enter a valid 12-digit numerical Aadhaar card number.");
+        input.focus();
+        return;
+      }
+
+      const btn = document.getElementById('btn-page-aadhaar-send-otp');
+      const origText = btn.innerHTML;
+      btn.disabled = true;
+      btn.innerText = 'Dispatched OTP to Mobile...';
+
+      try {
+        const res = await fetch('/api/auth/aadhaar/send-otp', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ aadhaar_number: raw })
+        });
+        const data = await res.json();
+
+        if (res.ok && data.status === 'success') {
+          const pPhone = document.getElementById('page-otp-masked-phone');
+          const pAadhaar = document.getElementById('page-otp-masked-aadhaar');
+          const pDemo = document.getElementById('page-demo-otp-code');
+          const pActualPhone = document.getElementById('page-otp-phone');
+          if (pPhone) pPhone.innerText = data.phone_masked;
+          if (pAadhaar) pAadhaar.innerText = data.aadhaar_masked;
+          if (pDemo) pDemo.innerText = data.otp_demo;
+          if (pActualPhone) pActualPhone.innerText = '+91 ' + (data.phone_number || data.linked_phone || data.phone_masked);
+
+          const s1 = document.getElementById('page-aadhaar-step1');
+          const s2 = document.getElementById('page-aadhaar-step2');
+          if (s1 && s2) {
+            s1.style.display = 'none';
+            s2.style.display = 'flex';
+          }
+          const otpInput = document.getElementById('page-aadhaar-otp');
+          if (otpInput) {
+            otpInput.value = '';
+            otpInput.focus();
+          }
+          showPageNotification(data.message);
+        } else {
+          showPageAuthError(data.detail || data.message || "Failed to dispatch OTP. Check Aadhaar number.");
+        }
+      } catch (e) {
+        showPageAuthError("Network error: " + e.message);
+      } finally {
+        btn.disabled = false;
+        btn.innerHTML = origText;
+      }
+    }
+
+    async function handlePageAadhaarVerifyOtp() {
+      hidePageAuthError();
+      const aadhaarInput = document.getElementById('page-aadhaar-number');
+      const otpInput = document.getElementById('page-aadhaar-otp');
+      if (!aadhaarInput || !otpInput) return;
+
+      const rawAadhaar = aadhaarInput.value.replace(/\D/g, '');
+      const rawOtp = otpInput.value.trim();
+
+      if (rawAadhaar.length !== 12) {
+        showPageAuthError("Aadhaar Number must be 12 digits.");
+        return;
+      }
+      if (!rawOtp || rawOtp.length < 4) {
+        showPageAuthError("Please enter the 6-digit OTP code sent to your registered mobile.");
+        otpInput.focus();
+        return;
+      }
+
+      const btn = document.getElementById('btn-page-aadhaar-verify-otp');
+      const origText = btn.innerHTML;
+      btn.disabled = true;
+      btn.innerText = 'Verifying Aadhaar Credentials...';
+
+      try {
+        const res = await fetch('/api/auth/aadhaar/verify-otp', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            aadhaar_number: rawAadhaar,
+            otp: rawOtp
+          })
+        });
+        const data = await res.json();
+
+        if (res.ok && data.status === 'success') {
+          currentUserToken = data.token;
+          currentUserProfile = data.user;
+          localStorage.setItem('scheme_sathi_token', data.token);
+          localStorage.setItem('scheme_sathi_user', JSON.stringify(data.user));
+
+          renderAuthNav();
+          showPageNotification('Aadhaar authentication successful! Redirecting to My Applications...');
+          setTimeout(() => {
+            selectAuthPageTab('myapps');
+          }, 600);
+        } else {
+          showPageAuthError(data.detail || data.message || "Invalid OTP entered. Please try again.");
+        }
+      } catch (e) {
+        showPageAuthError("Network error: " + e.message);
+      } finally {
+        btn.disabled = false;
+        btn.innerHTML = origText;
+      }
+    }
+
+    function showPageAuthError(msg) {
+      const banner = document.getElementById('page-auth-error');
+      if (banner) {
+        banner.innerText = msg;
+        banner.style.display = 'block';
+      }
+    }
+
+    function hidePageAuthError() {
+      const banner = document.getElementById('page-auth-error');
+      if (banner) banner.style.display = 'none';
+    }
+
+    function showPageNotification(msg) {
+      const b = document.getElementById('page-auth-notification');
+      if (b) {
+        b.innerText = msg;
+        b.style.display = 'block';
+        setTimeout(() => { b.style.display = 'none'; }, 4000);
+      }
+    }
+
+    function prefillDemoBeneficiary(type) {
+      hidePageAuthError();
+      if (type === 'aadhaar') {
+        selectAuthPageTab('aadhaar');
+        document.getElementById('page-aadhaar-number').value = '1234 5678 9012';
+        resetPageAadhaarStep();
+        showPageNotification('Demo Aadhaar pre-filled (1234 5678 9012 • Aakash Kumar, SC, Delhi). Click Get OTP.');
+      } else if (type === 'login') {
+        selectAuthPageTab('login');
+        document.getElementById('login-identifier').value = '9876543210';
+        document.getElementById('login-password').value = 'Demo@123';
+        showPageNotification('Demo Login credentials pre-filled (Mobile: 9876543210 / Password: Demo@123)');
+      } else {
+        selectAuthPageTab('signup');
+        document.getElementById('signup-fullname').value = 'Pooja Devi';
+        document.getElementById('signup-phone').value = '98' + Math.floor(10000000 + Math.random() * 90000000);
+        document.getElementById('signup-password').value = 'Demo@123';
+        document.getElementById('signup-email').value = 'pooja.devi@beneficiary.gov.in';
+        document.getElementById('signup-caste').value = 'SC';
+        document.getElementById('signup-caste-cert').value = 'DL/REV/SC/' + Math.floor(10000 + Math.random() * 90000);
+        document.getElementById('signup-income').value = '160000';
+        document.getElementById('signup-gender').value = 'Female';
+        document.getElementById('signup-state-district').value = 'Delhi, North Delhi';
+        document.getElementById('signup-aadhaar').value = '7842';
+        showPageNotification('Demo Beneficiary profile pre-filled with verified SC credentials.');
+      }
+    }
+
+    async function handlePageLogin(e) {
+      e.preventDefault();
+      hidePageAuthError();
+      const btn = document.getElementById('btn-page-login-submit');
+      const origText = btn.innerHTML;
+      btn.disabled = true;
+      btn.innerText = 'Authenticating Beneficiary...';
+
+      const form = e.target;
+      try {
+        const res = await fetch('/api/auth/login', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            identifier: form.identifier.value.trim(),
+            password: form.password.value
+          })
+        });
+        const data = await res.json();
+
+        if (res.ok && data.status === 'success') {
+          currentUserToken = data.token;
+          currentUserProfile = data.user;
+          localStorage.setItem('scheme_sathi_token', data.token);
+          localStorage.setItem('scheme_sathi_user', JSON.stringify(data.user));
+
+          renderAuthNav();
+          showPageNotification('Login successful! Redirecting to My Applications...');
+          setTimeout(() => {
+            selectAuthPageTab('myapps');
+          }, 600);
+        } else {
+          showPageAuthError(data.detail || data.message || "Invalid credentials. Please check your mobile/email and password.");
+        }
+      } catch (err) {
+        showPageAuthError("Connection error: " + err.message);
+      } finally {
+        btn.disabled = false;
+        btn.innerHTML = origText;
+      }
+    }
+
+    async function handlePageSignUp(e) {
+      e.preventDefault();
+      hidePageAuthError();
+      const btn = document.getElementById('btn-page-signup-submit');
+      const origText = btn.innerHTML;
+      btn.disabled = true;
+      btn.innerText = 'Registering Beneficiary Account...';
+
+      const form = e.target;
+      const stateDist = form.state_district.value.split(',');
+      const state = stateDist[0] ? stateDist[0].trim() : 'Delhi';
+      const district = stateDist[1] ? stateDist[1].trim() : 'Central Delhi';
+
+      const payload = {
+        full_name: form.full_name.value.trim(),
+        phone_number: form.phone_number.value.trim(),
+        password: form.password.value,
+        email: form.email.value.trim(),
+        caste_category: form.caste_category.value,
+        caste_cert_number: form.caste_cert_number.value.trim(),
+        annual_income: parseFloat(form.annual_income.value) || 180000,
+        gender: form.gender.value,
+        state: state,
+        district: district,
+        aadhaar_last_four: form.aadhaar_last_four.value.trim()
+      };
+
+      try {
+        const res = await fetch('/api/auth/signup', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload)
+        });
+        const data = await res.json();
+
+        if (res.ok && data.status === 'success') {
+          currentUserToken = data.token;
+          currentUserProfile = data.user;
+          localStorage.setItem('scheme_sathi_token', data.token);
+          localStorage.setItem('scheme_sathi_user', JSON.stringify(data.user));
+
+          renderAuthNav();
+          showPageNotification('Beneficiary account created successfully!');
+          setTimeout(() => {
+            selectAuthPageTab('myapps');
+          }, 600);
+        } else {
+          showPageAuthError(data.detail || data.message || "Registration failed. Please check required fields.");
+        }
+      } catch (err) {
+        showPageAuthError("Connection error: " + err.message);
+      } finally {
+        btn.disabled = false;
+        btn.innerHTML = origText;
+      }
+    }
+
+    async function loadPageMyApplications() {
+      const container = document.getElementById('page-myapps-container');
+      if (!container) return;
+
+      if (!currentUserProfile || !currentUserToken) {
+        container.innerHTML = `
+          <div style="text-align: center; padding: 36px 20px; background: var(--bg-card-subtle); border-radius: 6px; border: 1px dashed var(--border-dark);">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="var(--text-dim)" stroke-width="2" style="margin-bottom: 12px;"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+            <h4 style="font-size: 1.05rem; font-weight: 700; color: var(--text-pure); margin-bottom: 6px;">Sign In Required</h4>
+            <p style="color: var(--text-muted); font-size: 0.85rem; max-width: 420px; margin: 0 auto 16px auto;">
+              Please sign in or create an account to view and manage your submitted statutory scheme registrations.
+            </p>
+            <button class="btn-primary" onclick="selectAuthPageTab('login')" style="padding: 8px 18px; font-size: 0.84rem;">
+              Sign In to Your Account →
+            </button>
+          </div>
+        `;
+        return;
+      }
+
+      container.innerHTML = `<p style="color: var(--text-muted); font-size: 0.86rem; text-align: center; padding: 24px;">Fetching your official registered applications from MoSJE database...</p>`;
+
+      try {
+        const res = await fetch('/api/auth/my-applications', {
+          headers: { 'Authorization': `Bearer ${currentUserToken}` }
+        });
+        const data = await res.json();
+        const apps = data.applications || [];
+
+        if (apps.length === 0) {
+          container.innerHTML = `
+            <div style="text-align: center; padding: 36px 20px; background: var(--bg-card-subtle); border-radius: 6px; border: 1px dashed var(--border-dark);">
+              <div style="display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; border-radius: 50%; background: var(--green-subtle); color: var(--green-primary); margin-bottom: 12px;">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+              </div>
+              <h4 style="font-size: 1.05rem; font-weight: 700; color: var(--text-pure); margin-bottom: 4px;">No Scheme Applications Submitted Yet</h4>
+              <p style="color: var(--text-muted); font-size: 0.85rem; max-width: 440px; margin: 0 auto 18px auto;">
+                Welcome, <strong>${currentUserProfile.full_name}</strong>! You have not registered for any concessional loan schemes yet. Use our AI Recommender to find matching credit programs.
+              </p>
+              <a href="/recommender" class="btn-primary" style="display: inline-block; font-size: 0.84rem; padding: 9px 20px;">
+                Explore Eligible Schemes via AI Recommender →
+              </a>
+            </div>
+          `;
+          return;
+        }
+
+        container.innerHTML = `
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px; border-bottom: 1px solid var(--border-dark); padding-bottom: 8px;">
+            <span style="font-size: 0.82rem; font-weight: 700; color: var(--text-pure);">
+              Total Registered Applications: <span style="color: var(--green-primary);">${apps.length}</span>
+            </span>
+            <a href="/recommender" class="btn-secondary" style="font-size: 0.74rem; padding: 4px 10px;">
+              + Apply for Another Scheme
+            </a>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 12px;">
+            ${apps.map(a => `
+              <div class="my-apps-item">
+                <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 8px; flex-wrap: wrap;">
+                  <div>
+                    <span style="font-size: 0.72rem; background: var(--green-subtle); color: var(--green-primary); font-weight: 700; padding: 2px 8px; border-radius: 3px; border: 1px solid var(--green-border);">
+                      REF ID: ${a.registration_id}
+                    </span>
+                    <h4 style="font-size: 1.0rem; font-weight: 800; color: var(--text-pure); margin-top: 6px;">${a.scheme.name}</h4>
+                  </div>
+                  <span style="font-size: 0.76rem; background: var(--green-subtle); color: var(--green-primary); border: 1px solid var(--green-border); padding: 3px 10px; border-radius: 4px; font-weight: 700;">
+                    ${a.status_label_en}
+                  </span>
+                </div>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px; font-size: 0.82rem; color: var(--text-muted); background: var(--bg-deep); padding: 10px 12px; border-radius: 4px; border: 1px solid var(--border-subtle); margin-top: 4px;">
+                  <div>
+                    Concessional Loan: <strong style="color: var(--text-pure);">₹${a.financial_summary.concessional_loan_amount.toLocaleString('en-IN')}</strong><br/>
+                    Interest Rate: <strong style="color: var(--green-primary);">${a.financial_summary.interest_rate_beneficiary_pct}% p.a.</strong>
+                  </div>
+                  <div>
+                    Submitted On: <strong style="color: var(--text-pure);">${a.submission_timestamp}</strong><br/>
+                    Moratorium: <strong style="color: var(--text-pure);">${a.financial_summary.moratorium_months} Months</strong>
+                  </div>
+                </div>
+                <div style="font-size: 0.80rem; color: var(--text-muted); margin-top: 2px;">
+                  Allocated Verification Branch: <strong style="color: var(--green-primary);">${a.allocated_channel_partner.name}</strong> (${a.allocated_channel_partner.branch_name}, ${a.allocated_channel_partner.district})
+                </div>
+                <div style="display: flex; justify-content: flex-end; gap: 8px; margin-top: 4px;">
+                  <button class="btn-secondary" style="font-size: 0.76rem; padding: 5px 12px;" onclick="viewPastAcknowledgement('${a.registration_id}')">
+                    View & Print Official Acknowledgement Slip →
+                  </button>
+                </div>
+              </div>
+            `).join('')}
+          </div>
+        `;
+      } catch (err) {
+        container.innerHTML = `<p style="color: #dc2626; font-size: 0.86rem; text-align: center; padding: 20px;">Failed to load applications: ${err.message}</p>`;
+      }
+    }
+  </script>
+</body>
+</html>

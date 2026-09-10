@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scheme Sathi • AI Concessional Scheme Matching Platform (SIH 26092)</title>
+  <link rel="stylesheet" href="/static/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220%22%200%22%20100%22%20100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%23047857%22/><text y=%2268%22 x=%2220%22 font-family=%22sans-serif%22 font-weight=%22900%22 font-size=%2250%22 fill=%22%23ffffff%22>SS</text></svg>">
+</head>
+<body>
+
+  <!-- Top Gov Ribbon -->
+  <div class="gov-ribbon">
+    <div class="gov-ribbon-left">
+      <span class="flag-strip"><span></span><span></span><span></span></span>
+      <span data-i18n="gov_ribbon_text">Ministry of Social Justice and Empowerment (MoSJE) • National Scheduled Castes Finance & Development Corp</span>
+    </div>
+    <div class="gov-ribbon-right">
+      <span class="gov-status-pill">
+        <span class="gov-status-dot"></span>
+        <span>UIDAI & MoSJE Live</span>
+      </span>
+      <a href="tel:1800110505" class="gov-ribbon-link" title="National Concessional Scheme Helpline">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+        <span>Helpline: <strong>1800 11 0505</strong></span>
+      </a>
+      <div class="gov-accessibility-tools" title="Portal Font Size Accessibility">
+        <button type="button" class="font-size-btn" onclick="changeFontSize(-1)" title="Smaller Text">A-</button>
+        <button type="button" class="font-size-btn" onclick="changeFontSize(0)" title="Default Text">A</button>
+        <button type="button" class="font-size-btn" onclick="changeFontSize(1)" title="Larger Text">A+</button>
+      </div>
+      <span><span data-i18n="sih_tag">SIH PS: </span><strong style="color:var(--green-neon);">26092</strong></span>
+    </div>
+  </div>
+
+  <!-- Header Navigation -->
+  <header>
+    <div class="nav-container">
+      <a href="/" class="brand-wrapper" title="Scheme Sathi • MoSJE Concessional Lending Portal">
+        <div class="brand-emblem-badge">
+          <svg width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10" stroke="#f59e0b" stroke-width="1.8"/>
+            <path d="M12 2a10 10 0 0 1 10 10M12 22a10 10 0 0 1-10-10" stroke="#10b981" stroke-width="2"/>
+            <circle cx="12" cy="12" r="4" fill="#ffffff" fill-opacity="0.15"/>
+            <path d="M12 6v12M6 12h12M7.76 7.76l8.48 8.48M7.76 16.24l8.48-8.48" stroke="#ffffff" stroke-width="1.4" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <h1>Scheme Sathi <span class="sih-badge">SIH 26092</span></h1>
+          <p data-i18n="portal_subtitle">AI Channel Finance Recommender & Concessional Lending Portal</p>
+        </div>
+      </a>
+
+      <!-- Mobile Hamburger Button -->
+      <button type="button" class="nav-mobile-toggle" onclick="toggleMobileNav(event)" aria-label="Toggle Navigation Menu">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+      </button>
+
+      <nav class="nav-links">
+        <a href="/" class="nav-item active" data-i18n="nav_overview">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+          <span data-i18n="nav_overview">Overview</span>
+        </a>
+        <a href="/recommender" class="nav-item" data-i18n="nav_recommender">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
+          <span data-i18n="nav_recommender">AI Recommender</span>
+        </a>
+        <a href="/calculator" class="nav-item" data-i18n="nav_calculator">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><rect x="4" y="2" width="16" height="20" rx="2"></rect><line x1="8" y1="6" x2="16" y2="6"></line><line x1="16" y1="14" x2="16" y2="18"></line><path d="M16 10h.01M12 10h.01M8 10h.01M12 14h.01M8 14h.01M12 18h.01M8 18h.01"></path></svg>
+          <span data-i18n="nav_calculator">EMI Calculator</span>
+        </a>
+        <a href="/locator" class="nav-item" data-i18n="nav_locator">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+          <span data-i18n="nav_locator">Channel Partners</span>
+        </a>
+        
+        <div class="nav-controls">
+          <div class="lang-select-box" title="Select Official Language">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--green-primary)" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+            <select id="lang-select" class="lang-dropdown" onchange="setLanguage(this.value)" aria-label="Language Selector">
+              <option value="en">English</option>
+              <option value="hi">हिन्दी (Hindi)</option>
+              <option value="mr">मराठी (Marathi)</option>
+              <option value="ta">தமிழ் (Tamil)</option>
+              <option value="te">తెలుగు (Telugu)</option>
+              <option value="bn">বাংলা (Bengali)</option>
+            </select>
+          </div>
+          <button id="theme-toggle-btn" class="theme-toggle-btn" onclick="toggleTheme()" title="Toggle Theme">
+            🌙 Dark
+          </button>
+          <div id="auth-nav-container" class="auth-nav-container"></div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="main-wrapper">
+
+    <!-- Hero Section -->
+    <section class="gov-hero">
+      <div class="gov-badge">
+        <span data-i18n="hero_badge">Smart Automation Platform • Department of Social Justice</span>
+      </div>
+      <h2><span data-i18n="hero_h2_1">AI-Driven Concessional Scheme Matching for </span><span data-i18n="hero_h2_highlight">Marginalized Entrepreneurs</span></h2>
+      <p data-i18n="hero_desc">
+        Empowering Scheduled Caste (SC) entrepreneurs and students with AI-matched concessional lending schemes (up to ₹50 Lakhs at 4.0% - 8.0% p.a.), reducing-balance EMI calculations with grace periods, and verified Channel Partner routing.
+      </p>
+
+      <div style="display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 24px;">
+        <a href="/recommender" class="btn-primary" data-i18n="btn_launch_ai">Launch AI Recommender →</a>
+        <a href="/calculator" class="btn-secondary" data-i18n="btn_open_calc">Open Financial Calculator</a>
+        <a href="/locator" class="btn-secondary" data-i18n="btn_locate_partners">Locate Channel Partners</a>
+      </div>
+
+      <div class="hero-stats-grid">
+        <div class="stat-box">
+          <h4>4.0% - 8.0%</h4>
+          <p data-i18n="stat_rates_lbl">Concessional Interest Rates</p>
+        </div>
+        <div class="stat-box">
+          <h4>Up to 95%</h4>
+          <p data-i18n="stat_funding_lbl">Project Cost Financing</p>
+        </div>
+        <div class="stat-box">
+          <h4>97.6%</h4>
+          <p data-i18n="stat_accuracy_lbl">ML Predictor Accuracy</p>
+        </div>
+        <div class="stat-box">
+          <h4>40+ Verified</h4>
+          <p data-i18n="stat_partners_lbl">SCAs, PSBs & RRB Partners</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3-Step Simple Stepper (How It Works - No Overwhelm) -->
+    <div style="margin-bottom: 28px;">
+      <h3 style="font-size: 1.15rem; font-weight: 700; color: var(--text-pure); margin-bottom: 4px;" data-i18n="how_title">
+        How It Works
+      </h3>
+      <p style="color: var(--text-muted); font-size: 0.86rem; margin-bottom: 14px;" data-i18n="how_desc">
+        A 3-step structured pathway from business idea to loan disbursement.
+      </p>
+      
+      <div class="stepper-grid">
+        <div class="step-card">
+          <span class="step-number" data-i18n="step1_num">Step 01</span>
+          <h4 class="step-title" data-i18n="step1_title">Enter Profile & Project Idea</h4>
+          <p class="step-desc" data-i18n="step1_desc">Provide family income, caste status, and your business concept in simple plain language.</p>
+        </div>
+        <div class="step-card">
+          <span class="step-number" data-i18n="step2_num">Step 02</span>
+          <h4 class="step-title" data-i18n="step2_title">AI Matches & Scores Schemes</h4>
+          <p class="step-desc" data-i18n="step2_desc">Our hybrid engine checks statutory guidelines, NLP semantic fit, and predicts loan approval likelihood.</p>
+        </div>
+        <div class="step-card">
+          <span class="step-number" data-i18n="step3_num">Step 03</span>
+          <h4 class="step-title" data-i18n="step3_title">Route to Eligible Channel Partner</h4>
+          <p class="step-desc" data-i18n="step3_desc">Identify the nearest verified Bank or SCA branch with healthy NPAs (&lt;5%) and available fund quotas.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3 Dedicated Modules Showcase -->
+    <div style="margin-bottom: 32px;">
+      <h3 style="font-size: 1.15rem; font-weight: 700; color: var(--text-pure); margin-bottom: 4px;" data-i18n="modules_title">
+        Platform Modules
+      </h3>
+      <p style="color: var(--text-muted); font-size: 0.86rem; margin-bottom: 16px;" data-i18n="modules_desc">
+        Access each specialized tool on its dedicated interface:
+      </p>
+
+      <div class="module-cards-grid">
+        <div class="module-card">
+          <div>
+            <div class="module-tag-header">
+              <span class="module-index">Module 01</span>
+              <span class="sih-badge" data-i18n="m1_tag">Core Engine</span>
+            </div>
+            <h3 data-i18n="m1_title">Smart Scheme Recommender</h3>
+            <p data-i18n="m1_desc">
+              Rule filter + NLP semantic intent matching + Random Forest ML classifier for approval probability and Explainable AI (XAI) rationale.
+            </p>
+          </div>
+          <a href="/recommender" class="btn-primary" data-i18n="m1_btn">Open AI Recommender →</a>
+        </div>
+
+        <div class="module-card">
+          <div>
+            <div class="module-tag-header">
+              <span class="module-index">Module 02</span>
+              <span class="sih-badge" data-i18n="m2_tag">Financial Tool</span>
+            </div>
+            <h3 data-i18n="m2_title">Financial & Moratorium Calculator</h3>
+            <p data-i18n="m2_desc">
+              Dynamic loan simulation accounting for official NSFDC concessional rates (4.0%-8.0%), 3-18 months grace periods, and interest savings vs 12% commercial rates.
+            </p>
+          </div>
+          <a href="/calculator" class="btn-primary" data-i18n="m2_btn">Open EMI Calculator →</a>
+        </div>
+
+        <div class="module-card">
+          <div>
+            <div class="module-tag-header">
+              <span class="module-index">Module 03</span>
+              <span class="sih-badge" data-i18n="m3_tag">Geo-Spatial</span>
+            </div>
+            <h3 data-i18n="m3_title">Geo-Spatial Partner Router</h3>
+            <p data-i18n="m3_desc">
+              Interactive mapping service routing applications to nearest authorized SCAs, PSBs, and RRBs with NPA &lt; 5% and active fund quotas.
+            </p>
+          </div>
+          <a href="/locator" class="btn-primary" data-i18n="m3_btn">Explore Partner Map →</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Official Government Schemes Directory with Category Tabs -->
+    <section class="gov-card">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px; flex-wrap: wrap; gap: 10px;">
+        <div>
+          <h3 style="font-size: 1.15rem; font-weight: 700; color: var(--text-pure);" data-i18n="schemes_dir_title">
+            Official MoSJE & NSFDC Concessional Credit Schemes
+          </h3>
+          <p style="font-size: 0.82rem; color: var(--text-dim);" data-i18n="schemes_dir_desc">
+            Filter by sector to view statutory limits and concessional interest rates
+          </p>
+        </div>
+        <a href="/recommender" class="btn-secondary" style="padding: 6px 14px; font-size: 0.78rem;" data-i18n="btn_match_profile">
+          Match My Profile →
+        </a>
+      </div>
+
+      <!-- Category Filter Tabs to Prevent Overwhelm -->
+      <div class="tab-pills-bar">
+        <button class="tab-pill active" onclick="filterLandingSchemes('all', this)" data-i18n="tab_all">All Categories</button>
+        <button class="tab-pill" onclick="filterLandingSchemes('micro_finance', this)" data-i18n="tab_micro">Micro Finance (≤ ₹1.4L)</button>
+        <button class="tab-pill" onclick="filterLandingSchemes('term_loan', this)" data-i18n="tab_term">Term Loans & Small Business</button>
+        <button class="tab-pill" onclick="filterLandingSchemes('green_energy', this)" data-i18n="tab_green">Green EV & Clean Energy</button>
+        <button class="tab-pill" onclick="filterLandingSchemes('education', this)" data-i18n="tab_edu">Higher Education</button>
+        <button class="tab-pill" onclick="filterLandingSchemes('sanitation', this)" data-i18n="tab_sanitation">Sanitation Equipment</button>
+      </div>
+
+      <div id="schemes-preview-grid" class="schemes-result-grid">
+        <!-- Populated via JS -->
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-inner">
+      <div>
+        <h4 style="color: #ffffff; font-size: 0.95rem; margin-bottom: 2px;" data-i18n="footer_title">Scheme Sathi • SIH 26092</h4>
+        <p data-i18n="footer_desc">AI-Driven Concessional Scheme Matching Platform for Marginalized Entrepreneurs</p>
+      </div>
+      <div>
+        <p data-i18n="footer_guidelines">Statutory guidelines under NSFDC, NSKFDC, and Ministry of Social Justice & Empowerment (MoSJE).</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/static/app.js?v=3.2"></script>
+  <script>
+    let cachedSchemes = [];
+    let currentCategoryFilter = 'all';
+
+    document.addEventListener('DOMContentLoaded', async () => {
+      try {
+        const res = await fetch('/api/schemes');
+        const data = await res.json();
+        cachedSchemes = data.schemes || [];
+        renderSchemes(cachedSchemes);
+      } catch (e) {
+        console.error(e);
+      }
+    });
+
+    window.onLanguageChange = function(lang) {
+      if (cachedSchemes.length > 0) {
+        if (currentCategoryFilter === 'all') {
+          renderSchemes(cachedSchemes);
+        } else {
+          renderSchemes(cachedSchemes.filter(s => s.category === currentCategoryFilter));
+        }
+      }
+    };
+
+    function filterLandingSchemes(cat, btn) {
+      currentCategoryFilter = cat;
+      document.querySelectorAll('.tab-pill').forEach(p => p.classList.remove('active'));
+      btn.classList.add('active');
+
+      if (cat === 'all') {
+        renderSchemes(cachedSchemes);
+      } else {
+        const filtered = cachedSchemes.filter(s => s.category === cat);
+        renderSchemes(filtered);
+      }
+    }
+
+    function renderSchemes(list) {
+      const container = document.getElementById('schemes-preview-grid');
+      if (!container) return;
+
+      container.innerHTML = list.map(s => {
+        const displayName = (currentLang !== 'en' && s.name_hi) ? s.name_hi : s.name;
+        const displaySubName = (currentLang !== 'en' && s.name_hi) ? s.name : s.name_hi;
+        const displayDesc = (currentLang !== 'en' && s.description_hi) ? s.description_hi : s.description_en;
+
+        return `
+          <div class="scheme-card">
+            <div>
+              <span class="scheme-cat-pill">${s.category.replace('_', ' ')}</span>
+              <h4 class="scheme-title" style="font-size: 1.05rem;">${displayName}</h4>
+              <p class="scheme-title-hi">${displaySubName}</p>
+              
+              <div class="spec-grid">
+                <div class="spec-cell">
+                  <span>${t('card_rate')}</span>
+                  <span class="concessional-rate">${s.interest_rate_beneficiary_pct}% p.a.</span>
+                </div>
+                <div class="spec-cell">
+                  <span>${t('card_max_loan')}</span>
+                  <span>₹${(s.max_loan_amount).toLocaleString('en-IN')}</span>
+                </div>
+                <div class="spec-cell">
+                  <span>${t('card_moratorium')}</span>
+                  <span>${s.moratorium_months} ${currentLang === 'hi' ? 'माह' : 'Months'}</span>
+                </div>
+                <div class="spec-cell">
+                  <span>${t('card_tenure')}</span>
+                  <span>${s.max_tenure_years} ${currentLang === 'hi' ? 'वर्ष' : 'Years'}</span>
+                </div>
+              </div>
+              <p style="font-size: 0.82rem; color: var(--text-muted); margin-bottom: 16px; line-height: 1.5;">${displayDesc}</p>
+            </div>
+            <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+              <a href="/recommender" class="btn-secondary" style="flex:1; font-size:0.78rem; padding:8px; text-align:center;">${currentLang === 'hi' ? 'पात्रता जांचें' : 'Check Eligibility'}</a>
+              <a href="/calculator?loan=${s.max_loan_amount}&rate=${s.interest_rate_beneficiary_pct}&tenure=${s.max_tenure_years}&moratorium=${s.moratorium_months}" class="btn-secondary" style="flex:1; font-size:0.78rem; padding:8px; text-align:center;">${t('btn_calc_emi')}</a>
+              <button onclick="openRegistrationModal('${s.id}')" class="btn-primary" style="width:100%; font-size:0.80rem; padding:8px; margin-top:4px;">${currentLang === 'hi' ? 'योजना हेतु ऑनलाइन पंजीकरण करें →' : 'Register for Scheme Online →'}</button>
+            </div>
+          </div>
+        `;
+      }).join('');
+    }
+  </script>
+</body>
+</html>

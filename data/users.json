@@ -1,0 +1,23 @@
+[
+  {
+    "user_id": "USR-2026-225061",
+    "full_name": "Aakash Vala",
+    "phone_number": "7984823902",
+    "email": "",
+    "password_hash": "3fde7ff57c62a5bb5024c69814b14e87c72eca0f535f5e51eb776b7db11882c5",
+    "salt": "383708901c4b8d177bbee07134fb3d53",
+    "auth_provider": "password",
+    "caste_category": "SC",
+    "caste_cert_number": "DL/REV/SC/77291",
+    "annual_income": 180000.0,
+    "income_cert_authority": "Revenue Dept / SDM",
+    "gender": "Female",
+    "state": "Delhi",
+    "district": "Central Delhi",
+    "aadhaar_number": "",
+    "aadhaar_last_four": "8842",
+    "aadhaar_verified": false,
+    "created_at": "2026-09-10 13:44:17",
+    "last_login": "2026-09-10 13:44:17"
+  }
+]

@@ -1,0 +1,2612 @@
+[
+  {
+    "registration_id": "MoSJE-NSFDC-2026-526325",
+    "applicant_user_id": "USR-2026-225061",
+    "submission_timestamp": "2026-09-10 13:44:39",
+    "status": "PROVISIONALLY_APPROVED_ROUTED_TO_CHANNEL_PARTNER",
+    "status_label_en": "Provisionally Approved • Routed to Channel Partner",
+    "status_label_hi": "अनंतिम स्वीकृत • चैनल पार्टनर को प्रेषित",
+    "applicant": {
+      "name": "Aakash Vala",
+      "phone": "7984823902",
+      "email": "applicant@example.gov.in",
+      "aadhaar_last_four": "8842",
+      "caste_category": "SC",
+      "caste_cert_number": "DL/REV/SC/77291",
+      "annual_income": 180000.0,
+      "income_cert_authority": "Revenue Dept / SDM",
+      "gender": "Female",
+      "state": "Delhi",
+      "district": "Central Delhi"
+    },
+    "scheme": {
+      "id": "nsfdc_msy",
+      "name": "Mahila Samriddhi Yojana (MSY)",
+      "name_hi": "महिला समृद्धि योजना (MSY)",
+      "category": "micro_finance",
+      "ministry": "Ministry of Social Justice and Empowerment (MoSJE)",
+      "implementing_agency": "National Scheduled Castes Finance and Development Corporation (NSFDC)"
+    },
+    "financial_summary": {
+      "project_cost": 140000.0,
+      "concessional_loan_amount": 125000.0,
+      "promoter_margin_money": 15000.0,
+      "interest_rate_beneficiary_pct": 4.0,
+      "commercial_bank_rate_pct": 12.5,
+      "annual_interest_savings_pct": 8.5,
+      "tenure_years": 3,
+      "moratorium_months": 3,
+      "repayment_frequency": "Quarterly"
+    },
+    "allocated_channel_partner": {
+      "id": "sca_dl_01",
+      "name": "Delhi SC/ST/OBC/Minorities Development & Finance Corp (DSFDC)",
+      "partner_type": "SCA",
+      "branch_name": "New Delhi",
+      "address": "2, Battery Lane, Rajpur Road, Civil Lines, Delhi - 110054",
+      "phone": "011-23912384",
+      "email": "contact@dsfdc.delhi.gov.in",
+      "npa_ratio_pct": 2.8
+    },
+    "document_checklist": [
+      {
+        "document_name": "SC Caste Certificate (Self)",
+        "issuing_authority": "Revenue Dept / SDM / Tehsildar",
+        "status": "Required for Physical Verification"
+      },
+      {
+        "document_name": "Income Certificate (< ₹3 Lakhs/yr)",
+        "issuing_authority": "Revenue Dept / SDM / Tehsildar",
+        "status": "Required for Physical Verification"
+      },
+      {
+        "document_name": "Aadhaar Card",
+        "issuing_authority": "UIDAI / Bank",
+        "status": "Required for Physical Verification"
+      },
+      {
+        "document_name": "Bank Passbook (Individual or SHG)",
+        "issuing_authority": "UIDAI / Bank",
+        "status": "Required for Physical Verification"
+      },
+      {
+        "document_name": "Project Cost Quotation",
+        "issuing_authority": "Merchant / CA",
+        "status": "Required for Physical Verification"
+      }
+    ],
+    "next_steps_en": "Visit Delhi SC/ST/OBC/Minorities Development & Finance Corp (DSFDC) within 15 working days with your Reference Slip and original documents for physical KYC verification.",
+    "next_steps_hi": "15 कार्य दिवसों के भीतर अपनी संदर्भ पर्ची और मूल दस्तावेजों के साथ भौतिक सत्यापन हेतु Delhi SC/ST/OBC/Minorities Development & Finance Corp (DSFDC) में संपर्क करें।"
+  },
+  {
+    "registration_id": "MoSJE-NSFDC-2026-796428",
+    "applicant_user_id": null,
+    "submission_timestamp": "2026-09-10 13:40:13",
+    "status": "PROVISIONALLY_APPROVED_ROUTED_TO_CHANNEL_PARTNER",
+    "status_label_en": "Provisionally Approved • Routed to Channel Partner",
+    "status_label_hi": "अनंतिम स्वीकृत • चैनल पार्टनर को प्रेषित",
+    "applicant": {
+      "name": "Pooja Rani",
+      "phone": "9876543210",
+      "email": "pooja@example.com",
+      "aadhaar_last_four": "8842",
+      "caste_category": "SC",
+      "caste_cert_number": "DL/SC/12345",
+      "annual_income": 150000.0,
+      "income_cert_authority": "Revenue Dept / SDM / Tehsildar",
+      "gender": "Female",
+      "state": "Delhi",
+      "district": "Central Delhi"
+    },
+    "scheme": {
+      "id": "nsfdc_msy",
+      "name": "Mahila Samriddhi Yojana (MSY)",
+      "name_hi": "महिला समृद्धि योजना (MSY)",
+      "category": "micro_finance",
+      "ministry": "Ministry of Social Justice and Empowerment (MoSJE)",
+      "implementing_agency": "National Scheduled Castes Finance and Development Corporation (NSFDC)"
+    },
+    "financial_summary": {
+      "project_cost": 120000.0,
+      "concessional_loan_amount": 114000.0,
+      "promoter_margin_money": 6000.0,
+      "interest_rate_beneficiary_pct": 4.0,
+      "commercial_bank_rate_pct": 12.5,
+      "annual_interest_savings_pct": 8.5,
+      "tenure_years": 3,
+      "moratorium_months": 3,
+      "repayment_frequency": "Quarterly"
+    },
+    "allocated_channel_partner": {
+      "id": "sca_dl_01",
+      "name": "Delhi SC/ST/OBC/Minorities Development & Finance Corp (DSFDC)",
+      "partner_type": "SCA",
+      "branch_name": "New Delhi",
+      "address": "2, Battery Lane, Rajpur Road, Civil Lines, Delhi - 110054",
+      "phone": "011-23912384",
+      "email": "contact@dsfdc.delhi.gov.in",
+      "npa_ratio_pct": 2.8
+    },
+    "document_checklist": [
+      {
+        "document_name": "SC Caste Certificate (Self)",
+        "issuing_authority": "Revenue Dept / SDM / Tehsildar",
+        "status": "Required for Physical Verification"
+      },
+      {
+        "document_name": "Income Certificate (< ₹3 Lakhs/yr)",
+        "issuing_authority": "Revenue Dept / SDM / Tehsildar",
+        "status": "Required for Physical Verification"
+      },
+      {
+        "document_name": "Aadhaar Card",
+        "issuing_authority": "UIDAI / Bank",
+        "status": "Required for Physical Verification"
+      },
+      {
+        "document_name": "Bank Passbook (Individual or SHG)",
+        "issuing_authority": "UIDAI / Bank",
+        "status": "Required for Physical Verification"
+      },
+      {
+        "document_name": "Project Cost Quotation",
+        "issuing_authority": "Merchant / CA",
+        "status": "Required for Physical Verification"
+      }
+    ],
+    "next_steps_en": "Visit Delhi SC/ST/OBC/Minorities Development & Finance Corp (DSFDC) within 15 working days with your Reference Slip and original documents for physical KYC verification.",
+    "next_steps_hi": "15 कार्य दिवसों के भीतर अपनी संदर्भ पर्ची और मूल दस्तावेजों के साथ भौतिक सत्यापन हेतु Delhi SC/ST/OBC/Minorities Development & Finance Corp (DSFDC) में संपर्क करें।"
+  },
+  {
+    "registration_id": "MoSJE-NSFDC-2026-886713",
+    "applicant_user_id": "USR-2026-364225",
+    "submission_timestamp": "2026-09-10 13:40:10",
+    "status": "PROVISIONALLY_APPROVED_ROUTED_TO_CHANNEL_PARTNER",
+    "status_label_en": "Provisionally Approved • Routed to Channel Partner",
+    "status_label_hi": "अनंतिम स्वीकृत • चैनल पार्टनर को प्रेषित",
+    "applicant": {
+      "name": "Pooja Bharti",
+      "phone": "9812345678",
+      "email": "pooja@example.gov.in",
+      "aadhaar_last_four": "4455",
+      "caste_category": "SC",
+      "caste_cert_number": "",
+      "annual_income": 160000.0,
+      "income_cert_authority": "Revenue Dept / SDM / Tehsildar",
+      "gender": "Female",
+      "state": "Delhi",
+      "district": "North Delhi"
+    },
+    "scheme": {
+      "id": "nsfdc_msy",
+      "name": "Mahila Samriddhi Yojana (MSY)",
+      "name_hi": "महिला समृद्धि योजना (MSY)",
+      "category": "micro_finance",
+      "ministry": "Ministry of Social Justice and Empowerment (MoSJE)",
+      "implementing_agency": "National Scheduled Castes Finance and Development Corporation (NSFDC)"
+    },
+    "financial_summary": {
+      "project_cost": 120000.0,
+      "concessional_loan_amount": 114000.0,
+      "promoter_margin_money": 6000.0,
+      "interest_rate_beneficiary_pct": 4.0,
+      "commercial_bank_rate_pct": 12.5,
+      "annual_interest_savings_pct": 8.5,
+      "tenure_years": 3,
+      "moratorium_months": 3,
+      "repayment_frequency": "Quarterly"
+    },
+    "allocated_channel_partner": {
+      "id": "sca_dl_01",
+      "name": "Delhi SC/ST/OBC/Minorities Development & Finance Corp (DSFDC)",
+      "partner_type": "SCA",
+      "branch_name": "New Delhi",
+      "address": "2, Battery Lane, Rajpur Road, Civil Lines, Delhi - 110054",
+      "phone": "011-23912384",
+      "email": "contact@dsfdc.delhi.gov.in",
+      "npa_ratio_pct": 2.8
+    },
+    "document_checklist": [
+      {
+        "document_name": "SC Caste Certificate (Self)",
+        "issuing_authority": "Revenue Dept / SDM / Tehsildar",
+        "status": "Required for Physical Verification"
+      },
+      {
+        "document_name": "Income Certificate (< ₹3 Lakhs/yr)",
+        "issuing_authority": "Revenue Dept / SDM / Tehsildar",
+        "status": "Required for Physical Verification"
+      },
+      {
+        "document_name": "Aadhaar Card",
+        "issuing_authority": "UIDAI / Bank",
+        "status": "Required for Physical Verification"
+      },
+      {
+        "document_name": "Bank Passbook (Individual or SHG)",
+        "issuing_authority": "UIDAI / Bank",
+        "status": "Required for Physical Verification"
+      },
+      {
+        "document_name": "Project Cost Quotation",
+        "issuing_authority": "Merchant / CA",
+        "status": "Required for Physical Verification"
+      }
+    ],
+    "next_steps_en": "Visit Delhi SC/ST/OBC/Minorities Development & Finance Corp (DSFDC) within 15 working days with your Reference Slip and original documents for physical KYC verification.",
+    "next_steps_hi": "15 कार्य दिवसों के भीतर अपनी संदर्भ पर्ची और मूल दस्तावेजों के साथ भौतिक सत्यापन हेतु Delhi SC/ST/OBC/Minorities Development & Finance Corp (DSFDC) में संपर्क करें।"
+  },
+  {
+    "registration_id": "MoSJE-NSFDC-2026-851824",
+    "applicant_user_id": null,
+    "submission_timestamp": "2026-09-10 13:34:46",
+    "status": "PROVISIONALLY_APPROVED_ROUTED_TO_CHANNEL_PARTNER",
+    "status_label_en": "Provisionally Approved • Routed to Channel Partner",
+    "status_label_hi": "अनंतिम स्वीकृत • चैनल पार्टनर को प्रेषित",
+    "applicant": {
+      "name": "Pooja Rani",
+      "phone": "9876543210",
+      "email": "pooja@example.com",
+      "aadhaar_last_four": "8842",
+      "caste_category": "SC",
+      "caste_cert_number": "DL/SC/12345",
+      "annual_income": 150000.0,
+      "income_cert_authority": "Revenue Dept / SDM / Tehsildar",
+      "gender": "Female",
+      "state": "Delhi",
+      "district": "Central Delhi"
+    },
+    "scheme": {
+      "id": "nsfdc_msy",
+      "name": "Mahila Samriddhi Yojana (MSY)",
+      "name_hi": "महिला समृद्धि योजना (MSY)",
+      "category": "micro_finance",
+      "ministry": "Ministry of Social Justice and Empowerment (MoSJE)",
+      "implementing_agency": "National Scheduled Castes Finance and Development Corporation (NSFDC)"
+    },
+    "financial_summary": {
+      "project_cost": 120000.0,
+      "concessional_loan_amount": 114000.0,
+      "promoter_margin_money": 6000.0,
+      "interest_rate_beneficiary_pct": 4.0,
+      "commercial_bank_rate_pct": 12.5,
+      "annual_interest_savings_pct": 8.5,
+      "tenure_years": 3,
+      "moratorium_months": 3,
+      "repayment_frequency": "Quarterly"
+    },
+    "allocated_channel_partner": {
+      "id": "sca_dl_01",
+      "name": "Delhi SC/ST/OBC/Minorities Development & Finance Corp (DSFDC)",
+      "partner_type": "SCA",
+      "branch_name": "New Delhi",
+      "address": "2, Battery Lane, Rajpur Road, Civil Lines, Delhi - 110054",
+      "phone": "011-23912384",
+      "email": "contact@dsfdc.delhi.gov.in",
+      "npa_ratio_pct": 2.8
+    },
+    "document_checklist": [
+      {
+        "document_name": "SC Caste Certificate (Self)",
+        "issuing_authority": "Revenue Dept / SDM / Tehsildar",
+        "status": "Required for Physical Verification"
+      },
+      {
+        "document_name": "Income Certificate (< ₹3 Lakhs/yr)",
+        "issuing_authority": "Revenue Dept / SDM / Tehsildar",
+        "status": "Required for Physical Verification"
+      },
+      {
+        "document_name": "Aadhaar Card",
+        "issuing_authority": "UIDAI / Bank",
+        "status": "Required for Physical Verification"
+      },
+      {
+        "document_name": "Bank Passbook (Individual or SHG)",
+        "issuing_authority": "UIDAI / Bank",
+        "status": "Required for Physical Verification"
+      },
+      {
+        "document_name": "Project Cost Quotation",
+        "issuing_authority": "Merchant / CA",
+        "status": "Required for Physical Verification"
+      }
+    ],
+    "next_steps_en": "Visit Delhi SC/ST/OBC/Minorities Development & Finance Corp (DSFDC) within 15 working days with your Reference Slip and original documents for physical KYC verification.",
+    "next_steps_hi": "15 कार्य दिवसों के भीतर अपनी संदर्भ पर्ची और मूल दस्तावेजों के साथ भौतिक सत्यापन हेतु Delhi SC/ST/OBC/Minorities Development & Finance Corp (DSFDC) में संपर्क करें।"
+  },
+  {
+    "registration_id": "MoSJE-NSFDC-2026-903279",
+    "applicant_user_id": "USR-2026-832284",
+    "submission_timestamp": "2026-09-10 13:34:43",
+    "status": "PROVISIONALLY_APPROVED_ROUTED_TO_CHANNEL_PARTNER",
+    "status_label_en": "Provisionally Approved • Routed to Channel Partner",
+    "status_label_hi": "अनंतिम स्वीकृत • चैनल पार्टनर को प्रेषित",
+    "applicant": {
+      "name": "Pooja Bharti",
+      "phone": "9812345678",
+      "email": "pooja@example.gov.in",
+      "aadhaar_last_four": "4455",
+      "caste_category": "SC",
+      "caste_cert_number": "",
+      "annual_income": 160000.0,
+      "income_cert_authority": "Revenue Dept / SDM / Tehsildar",
+      "gender": "Female",
+      "state": "Delhi",
+      "district": "North Delhi"
+    },
+    "scheme": {
+      "id": "nsfdc_msy",
+      "name": "Mahila Samriddhi Yojana (MSY)",
+      "name_hi": "महिला समृद्धि योजना (MSY)",
+      "category": "micro_finance",
+      "ministry": "Ministry of Social Justice and Empowerment (MoSJE)",
+      "implementing_agency": "National Scheduled Castes Finance and Development Corporation (NSFDC)"
+    },
+    "financial_summary": {
+      "project_cost": 120000.0,
+      "concessional_loan_amount": 114000.0,
+      "promoter_margin_money": 6000.0,
+      "interest_rate_beneficiary_pct": 4.0,
+      "commercial_bank_rate_pct": 12.5,
+      "annual_interest_savings_pct": 8.5,
+      "tenure_years": 3,
+      "moratorium_months": 3,
+      "repayment_frequency": "Quarterly"
+    },
+    "allocated_channel_partner": {
+      "id": "sca_dl_01",
+      "name": "Delhi SC/ST/OBC/Minorities Development & Finance Corp (DSFDC)",
+      "partner_type": "SCA",
+      "branch_name": "New Delhi",
+      "address": "2, Battery Lane, Rajpur Road, Civil Lines, Delhi - 110054",
+      "phone": "011-23912384",
+      "email": "contact@dsfdc.delhi.gov.in",
+      "npa_ratio_pct": 2.8
+    },
+    "document_checklist": [
+      {
+        "document_name": "SC Caste Certificate (Self)",
+        "issuing_authority": "Revenue Dept / SDM / Tehsildar",
+        "status": "Required for Physical Verification"
+      },
+      {
+        "document_name": "Income Certificate (< ₹3 Lakhs/yr)",
+        "issuing_authority": "Revenue Dept / SDM / Tehsildar",
+        "status": "Required for Physical Verification"
+      },
+      {
+        "document_name": "Aadhaar Card",
+        "issuing_authority": "UIDAI / Bank",
+        "status": "Required for Physical Verification"
+      },
+      {
+        "document_name": "Bank Passbook (Individual or SHG)",
+        "issuing_authority": "UIDAI / Bank",
+        "status": "Required for Physical Verification"
+      },
+      {
+        "document_name": "Project Cost Quotation",
+        "issuing_authority": "Merchant / CA",
+        "status": "Required for Physical Verification"
+      }
+    ],
+    "next_steps_en": "Visit Delhi SC/ST/OBC/Minorities Development & Finance Corp (DSFDC) within 15 working days with your Reference Slip and original documents for physical KYC verification.",
+    "next_steps_hi": "15 कार्य दिवसों के भीतर अपनी संदर्भ पर्ची और मूल दस्तावेजों के साथ भौतिक सत्यापन हेतु Delhi SC/ST/OBC/Minorities Development & Finance Corp (DSFDC) में संपर्क करें।"
+  },
+  {
+    "registration_id": "MoSJE-NSFDC-2026-473406",
+    "applicant_user_id": "USR-2026-961930",
+    "submission_timestamp": "2026-09-10 13:34:35",
+    "status": "PROVISIONALLY_APPROVED_ROUTED_TO_CHANNEL_PARTNER",
+    "status_label_en": "Provisionally Approved • Routed to Channel Partner",
+    "status_label_hi": "अनंतिम स्वीकृत • चैनल पार्टनर को प्रेषित",
+    "applicant": {
+      "name": "Pooja Bharti",
+      "phone": "9812345678",
+      "email": "pooja@example.gov.in",
+      "aadhaar_last_four": "4455",
+      "caste_category": "SC",
+      "caste_cert_number": "",
+      "annual_income": 160000.0,
+      "income_cert_authority": "Revenue Dept / SDM / Tehsildar",
+      "gender": "Female",
+      "state": "Delhi",
+      "district": "North Delhi"
+    },
+    "scheme": {
+      "id": "nsfdc_msy",
+      "name": "Mahila Samriddhi Yojana (MSY)",
+      "name_hi": "महिला समृद्धि योजना (MSY)",
+      "category": "micro_finance",
+      "ministry": "Ministry of Social Justice and Empowerment (MoSJE)",
+      "implementing_agency": "National Scheduled Castes Finance and Development Corporation (NSFDC)"
+    },
+    "financial_summary": {
+      "project_cost": 120000.0,
+      "concessional_loan_amount": 114000.0,
+      "promoter_margin_money": 6000.0,
+      "interest_rate_beneficiary_pct": 4.0,
+      "commercial_bank_rate_pct": 12.5,
+      "annual_interest_savings_pct": 8.5,
+      "tenure_years": 3,
+      "moratorium_months": 3,
+      "repayment_frequency": "Quarterly"
+    },
+    "allocated_channel_partner": {
+      "id": "sca_dl_01",
+      "name": "Delhi SC/ST/OBC/Minorities Development & Finance Corp (DSFDC)",
+      "partner_type": "SCA",
+      "branch_name": "New Delhi",
+      "address": "2, Battery Lane, Rajpur Road, Civil Lines, Delhi - 110054",
+      "phone": "011-23912384",
+      "email": "contact@dsfdc.delhi.gov.in",
+      "npa_ratio_pct": 2.8
+    },
+    "document_checklist": [
+      {
+        "document_name": "SC Caste Certificate (Self)",
+        "issuing_authority": "Revenue Dept / SDM / Tehsildar",
+        "status": "Required for Physical Verification"
+      },
+      {
+        "document_name": "Income Certificate (< ₹3 Lakhs/yr)",
+        "issuing_authority": "Revenue Dept / SDM / Tehsildar",
+        "status": "Required for Physical Verification"
+      },
+      {
+        "document_name": "Aadhaar Card",
+        "issuing_authority": "UIDAI / Bank",
+        "status": "Required for Physical Verification"
+      },
+      {
+        "document_name": "Bank Passbook (Individual or SHG)",
+        "issuing_authority": "UIDAI / Bank",
+        "status": "Required for Physical Verification"
+      },
+      {
+        "document_name": "Project Cost Quotation",
+        "issuing_authority": "Merchant / CA",
+        "status": "Required for Physical Verification"
+      }
+    ],
+    "next_steps_en": "Visit Delhi SC/ST/OBC/Minorities Development & Finance Corp (DSFDC) within 15 working days with your Reference Slip and original documents for physical KYC verification.",
+    "next_steps_hi": "15 कार्य दिवसों के भीतर अपनी संदर्भ पर्ची और मूल दस्तावेजों के साथ भौतिक सत्यापन हेतु Delhi SC/ST/OBC/Minorities Development & Finance Corp (DSFDC) में संपर्क करें।"
+  },
+  {
+    "registration_id": "MoSJE-NSFDC-2026-741253",
+    "applicant_user_id": null,
+    "submission_timestamp": "2026-09-10 13:28:25",
+    "status": "PROVISIONALLY_APPROVED_ROUTED_TO_CHANNEL_PARTNER",
+    "status_label_en": "Provisionally Approved • Routed to Channel Partner",
+    "status_label_hi": "अनंतिम स्वीकृत • चैनल पार्टनर को प्रेषित",
+    "applicant": {
+      "name": "Pooja Rani",
+      "phone": "9876543210",
+      "email": "pooja@example.com",
+      "aadhaar_last_four": "8842",
+      "caste_category": "SC",
+      "caste_cert_number": "DL/SC/12345",
+      "annual_income": 150000.0,
+      "income_cert_authority": "Revenue Dept / SDM / Tehsildar",
+      "gender": "Female",
+      "state": "Delhi",
+      "district": "Central Delhi"
+    },
+    "scheme": {
+      "id": "nsfdc_msy",
+      "name": "Mahila Samriddhi Yojana (MSY)",
+      "name_hi": "महिला समृद्धि योजना (MSY)",
+      "category": "micro_finance",
+      "ministry": "Ministry of Social Justice and Empowerment (MoSJE)",
+      "implementing_agency": "National Scheduled Castes Finance and Development Corporation (NSFDC)"
+    },
+    "financial_summary": {
+      "project_cost": 120000.0,
+      "concessional_loan_amount": 114000.0,
+      "promoter_margin_money": 6000.0,
+      "interest_rate_beneficiary_pct": 4.0,
+      "commercial_bank_rate_pct": 12.5,
+      "annual_interest_savings_pct": 8.5,
+      "tenure_years": 3,
+      "moratorium_months": 3,
+      "repayment_frequency": "Quarterly"
+    },
+    "allocated_channel_partner": {
+      "id": "sca_dl_01",
+      "name": "Delhi SC/ST/OBC/Minorities Development & Finance Corp (DSFDC)",
+      "partner_type": "SCA",
+      "branch_name": "New Delhi",
+      "address": "2, Battery Lane, Rajpur Road, Civil Lines, Delhi - 110054",
+      "phone": "011-23912384",
+      "email": "contact@dsfdc.delhi.gov.in",
+      "npa_ratio_pct": 2.8
+    },
+    "document_checklist": [
+      {
+        "document_name": "SC Caste Certificate (Self)",
+        "issuing_authority": "Revenue Dept / SDM / Tehsildar",
+        "status": "Required for Physical Verification"
+      },
+      {
+        "document_name": "Income Certificate (< ₹3 Lakhs/yr)",
+        "issuing_authority": "Revenue Dept / SDM / Tehsildar",
+        "status": "Required for Physical Verification"
+      },
+      {
+        "document_name": "Aadhaar Card",
+        "issuing_authority": "UIDAI / Bank",
+        "status": "Required for Physical Verification"
+      },
+      {
+        "document_name": "Bank Passbook (Individual or SHG)",
+        "issuing_authority": "UIDAI / Bank",
+        "status": "Required for Physical Verification"
+      },
+      {
+        "document_name": "Project Cost Quotation",
+        "issuing_authority": "Merchant / CA",
+        "status": "Required for Physical Verification"
+      }
+    ],
+    "next_steps_en": "Visit Delhi SC/ST/OBC/Minorities Development & Finance Corp (DSFDC) within 15 working days with your Reference Slip and original documents for physical KYC verification.",
+    "next_steps_hi": "15 कार्य दिवसों के भीतर अपनी संदर्भ पर्ची और मूल दस्तावेजों के साथ भौतिक सत्यापन हेतु Delhi SC/ST/OBC/Minorities Development & Finance Corp (DSFDC) में संपर्क करें।"
+  },
+  {
+    "registration_id": "MoSJE-NSFDC-2026-347236",
+    "applicant_user_id": "USR-2026-747910",
+    "submission_timestamp": "2026-09-10 13:28:22",
+    "status": "PROVISIONALLY_APPROVED_ROUTED_TO_CHANNEL_PARTNER",
+    "status_label_en": "Provisionally Approved • Routed to Channel Partner",
+    "status_label_hi": "अनंतिम स्वीकृत • चैनल पार्टनर को प्रेषित",
+    "applicant": {
+      "name": "Pooja Bharti",
+      "phone": "9812345678",
+      "email": "pooja@example.gov.in",
+      "aadhaar_last_four": "4455",
+      "caste_category": "SC",
+      "caste_cert_number": "",
+      "annual_income": 160000.0,
+      "income_cert_authority": "Revenue Dept / SDM / Tehsildar",
+      "gender": "Female",
+      "state": "Delhi",
+      "district": "North Delhi"
+    },
+    "scheme": {
+      "id": "nsfdc_msy",
+      "name": "Mahila Samriddhi Yojana (MSY)",
+      "name_hi": "महिला समृद्धि योजना (MSY)",
+      "category": "micro_finance",
+      "ministry": "Ministry of Social Justice and Empowerment (MoSJE)",
+      "implementing_agency": "National Scheduled Castes Finance and Development Corporation (NSFDC)"
+    },
+    "financial_summary": {
+      "project_cost": 120000.0,
+      "concessional_loan_amount": 114000.0,
+      "promoter_margin_money": 6000.0,
+      "interest_rate_beneficiary_pct": 4.0,
+      "commercial_bank_rate_pct": 12.5,
+      "annual_interest_savings_pct": 8.5,
+      "tenure_years": 3,
+      "moratorium_months": 3,
+      "repayment_frequency": "Quarterly"
+    },
+    "allocated_channel_partner": {
+      "id": "sca_dl_01",
+      "name": "Delhi SC/ST/OBC/Minorities Development & Finance Corp (DSFDC)",
+      "partner_type": "SCA",
+      "branch_name": "New Delhi",
+      "address": "2, Battery Lane, Rajpur Road, Civil Lines, Delhi - 110054",
+      "phone": "011-23912384",
+      "email": "contact@dsfdc.delhi.gov.in",
+      "npa_ratio_pct": 2.8
+    },
+    "document_checklist": [
+      {
+        "document_name": "SC Caste Certificate (Self)",
+        "issuing_authority": "Revenue Dept / SDM / Tehsildar",
+        "status": "Required for Physical Verification"
+      },
+      {
+        "document_name": "Income Certificate (< ₹3 Lakhs/yr)",
+        "issuing_authority": "Revenue Dept / SDM / Tehsildar",
+        "status": "Required for Physical Verification"
+      },
+      {
+        "document_name": "Aadhaar Card",
+        "issuing_authority": "UIDAI / Bank",
+        "status": "Required for Physical Verification"
+      },
+      {
+        "document_name": "Bank Passbook (Individual or SHG)",
+        "issuing_authority": "UIDAI / Bank",
+        "status": "Required for Physical Verification"
+      },
+      {
+        "document_name": "Project Cost Quotation",
+        "issuing_authority": "Merchant / CA",
+        "status": "Required for Physical Verification"
+      }
+    ],
+    "next_steps_en": "Visit Delhi SC/ST/OBC/Minorities Development & Finance Corp (DSFDC) within 15 working days with your Reference Slip and original documents for physical KYC verification.",
+    "next_steps_hi": "15 कार्य दिवसों के भीतर अपनी संदर्भ पर्ची और मूल दस्तावेजों के साथ भौतिक सत्यापन हेतु Delhi SC/ST/OBC/Minorities Development & Finance Corp (DSFDC) में संपर्क करें।"
+  },
+  {
+    "registration_id": "MoSJE-NSFDC-2026-529517",
+    "applicant_user_id": "USR-2026-260080",
+    "submission_timestamp": "2026-09-10 13:24:38",
+    "status": "PROVISIONALLY_APPROVED_ROUTED_TO_CHANNEL_PARTNER",
+    "status_label_en": "Provisionally Approved • Routed to Channel Partner",
+    "status_label_hi": "अनंतिम स्वीकृत • चैनल पार्टनर को प्रेषित",
+    "applicant": {
+      "name": "Pooja Bharti",
+      "phone": "9812345678",
+      "email": "pooja@example.gov.in",
+      "aadhaar_last_four": "4455",
+      "caste_category": "SC",
+      "caste_cert_number": "",
+      "annual_income": 160000.0,
+      "income_cert_authority": "Revenue Dept / SDM / Tehsildar",
+      "gender": "Female",
+      "state": "Delhi",
+      "district": "North Delhi"
+    },
+    "scheme": {
+      "id": "nsfdc_msy",
+      "name": "Mahila Samriddhi Yojana (MSY)",
+      "name_hi": "महिला समृद्धि योजना (MSY)",
+      "category": "micro_finance",
+      "ministry": "Ministry of Social Justice and Empowerment (MoSJE)",
+      "implementing_agency": "National Scheduled Castes Finance and Development Corporation (NSFDC)"
+    },
+    "financial_summary": {
+      "project_cost": 120000.0,
+      "concessional_loan_amount": 114000.0,
+      "promoter_margin_money": 6000.0,
+      "interest_rate_beneficiary_pct": 4.0,
+      "commercial_bank_rate_pct": 12.5,
+      "annual_interest_savings_pct": 8.5,
+      "tenure_years": 3,
+      "moratorium_months": 3,
+      "repayment_frequency": "Quarterly"
+    },
+    "allocated_channel_partner": {
+      "id": "sca_dl_01",
+      "name": "Delhi SC/ST/OBC/Minorities Development & Finance Corp (DSFDC)",
+      "partner_type": "SCA",
+      "branch_name": "New Delhi",
+      "address": "2, Battery Lane, Rajpur Road, Civil Lines, Delhi - 110054",
+      "phone": "011-23912384",
+      "email": "contact@dsfdc.delhi.gov.in",
+      "npa_ratio_pct": 2.8
+    },
+    "document_checklist": [
+      {
+        "document_name": "SC Caste Certificate (Self)",
+        "issuing_authority": "Revenue Dept / SDM / Tehsildar",
+        "status": "Required for Physical Verification"
+      },
+      {
+        "document_name": "Income Certificate (< ₹3 Lakhs/yr)",
+        "issuing_authority": "Revenue Dept / SDM / Tehsildar",
+        "status": "Required for Physical Verification"
+      },
+      {
+        "document_name": "Aadhaar Card",
+        "issuing_authority": "UIDAI / Bank",
+        "status": "Required for Physical Verification"
+      },
+      {
+        "document_name": "Bank Passbook (Individual or SHG)",
+        "issuing_authority": "UIDAI / Bank",
+        "status": "Required for Physical Verification"
+      },
+      {
+        "document_name": "Project Cost Quotation",
+        "issuing_authority": "Merchant / CA",
+        "status": "Required for Physical Verification"
+      }
+    ],
+    "next_steps_en": "Visit Delhi SC/ST/OBC/Minorities Development & Finance Corp (DSFDC) within 15 working days with your Reference Slip and original documents for physical KYC verification.",
+    "next_steps_hi": "15 कार्य दिवसों के भीतर अपनी संदर्भ पर्ची और मूल दस्तावेजों के साथ भौतिक सत्यापन हेतु Delhi SC/ST/OBC/Minorities Development & Finance Corp (DSFDC) में संपर्क करें।"
+  },
+  {
+    "registration_id": "MoSJE-NSFDC-2026-373927",
+    "applicant_user_id": null,
+    "submission_timestamp": "2026-09-10 13:21:39",
+    "status": "PROVISIONALLY_APPROVED_ROUTED_TO_CHANNEL_PARTNER",
+    "status_label_en": "Provisionally Approved • Routed to Channel Partner",
+    "status_label_hi": "अनंतिम स्वीकृत • चैनल पार्टनर को प्रेषित",
+    "applicant": {
+      "name": "Pooja Rani",
+      "phone": "9876543210",
+      "email": "pooja@example.com",
+      "aadhaar_last_four": "8842",
+      "caste_category": "SC",
+      "caste_cert_number": "DL/SC/12345",
+      "annual_income": 150000.0,
+      "income_cert_authority": "Revenue Dept / SDM / Tehsildar",
+      "gender": "Female",
+      "state": "Delhi",
+      "district": "Central Delhi"
+    },
+    "scheme": {
+      "id": "nsfdc_msy",
+      "name": "Mahila Samriddhi Yojana (MSY)",
+      "name_hi": "महिला समृद्धि योजना (MSY)",
+      "category": "micro_finance",
+      "ministry": "Ministry of Social Justice and Empowerment (MoSJE)",
+      "implementing_agency": "National Scheduled Castes Finance and Development Corporation (NSFDC)"
+    },
+    "financial_summary": {
+      "project_cost": 120000.0,
+      "concessional_loan_amount": 114000.0,
+      "promoter_margin_money": 6000.0,
+      "interest_rate_beneficiary_pct": 4.0,
+      "commercial_bank_rate_pct": 12.5,
+      "annual_interest_savings_pct": 8.5,
+      "tenure_years": 3,
+      "moratorium_months": 3,
+      "repayment_frequency": "Quarterly"
+    },
+    "allocated_channel_partner": {
+      "id": "sca_dl_01",
+      "name": "Delhi SC/ST/OBC/Minorities Development & Finance Corp (DSFDC)",
+      "partner_type": "SCA",
+      "branch_name": "New Delhi",
+      "address": "2, Battery Lane, Rajpur Road, Civil Lines, Delhi - 110054",
+      "phone": "011-23912384",
+      "email": "contact@dsfdc.delhi.gov.in",
+      "npa_ratio_pct": 2.8
+    },
+    "document_checklist": [
+      {
+        "document_name": "SC Caste Certificate (Self)",
+        "issuing_authority": "Revenue Dept / SDM / Tehsildar",
+        "status": "Required for Physical Verification"
+      },
+      {
+        "document_name": "Income Certificate (< ₹3 Lakhs/yr)",
+        "issuing_authority": "Revenue Dept / SDM / Tehsildar",
+        "status": "Required for Physical Verification"
+      },
+      {
+        "document_name": "Aadhaar Card",
+        "issuing_authority": "UIDAI / Bank",
+        "status": "Required for Physical Verification"
+      },
+      {
+        "document_name": "Bank Passbook (Individual or SHG)",
+        "issuing_authority": "UIDAI / Bank",
+        "status": "Required for Physical Verification"
+      },
+      {
+        "document_name": "Project Cost Quotation",
+        "issuing_authority": "Merchant / CA",
+        "status": "Required for Physical Verification"
+      }
+    ],
+    "next_steps_en": "Visit Delhi SC/ST/OBC/Minorities Development & Finance Corp (DSFDC) within 15 working days with your Reference Slip and original documents for physical KYC verification.",
+    "next_steps_hi": "15 कार्य दिवसों के भीतर अपनी संदर्भ पर्ची और मूल दस्तावेजों के साथ भौतिक सत्यापन हेतु Delhi SC/ST/OBC/Minorities Development & Finance Corp (DSFDC) में संपर्क करें।"
+  },
+  {
+    "registration_id": "MoSJE-NSFDC-2026-856293",
+    "applicant_user_id": "USR-2026-967382",
+    "submission_timestamp": "2026-09-10 13:21:37",
+    "status": "PROVISIONALLY_APPROVED_ROUTED_TO_CHANNEL_PARTNER",
+    "status_label_en": "Provisionally Approved • Routed to Channel Partner",
+    "status_label_hi": "अनंतिम स्वीकृत • चैनल पार्टनर को प्रेषित",
+    "applicant": {
+      "name": "Pooja Bharti",
+      "phone": "9812345678",
+      "email": "pooja@example.gov.in",
+      "aadhaar_last_four": "4455",
+      "caste_category": "SC",
+      "caste_cert_number": "",
+      "annual_income": 160000.0,
+      "income_cert_authority": "Revenue Dept / SDM / Tehsildar",
+      "gender": "Female",
+      "state": "Delhi",
+      "district": "North Delhi"
+    },
+    "scheme": {
+      "id": "nsfdc_msy",
+      "name": "Mahila Samriddhi Yojana (MSY)",
+      "name_hi": "महिला समृद्धि योजना (MSY)",
+      "category": "micro_finance",
+      "ministry": "Ministry of Social Justice and Empowerment (MoSJE)",
+      "implementing_agency": "National Scheduled Castes Finance and Development Corporation (NSFDC)"
+    },
+    "financial_summary": {
+      "project_cost": 120000.0,
+      "concessional_loan_amount": 114000.0,
+      "promoter_margin_money": 6000.0,
+      "interest_rate_beneficiary_pct": 4.0,
+      "commercial_bank_rate_pct": 12.5,
+      "annual_interest_savings_pct": 8.5,
+      "tenure_years": 3,
+      "moratorium_months": 3,
+      "repayment_frequency": "Quarterly"
+    },
+    "allocated_channel_partner": {
+      "id": "sca_dl_01",
+      "name": "Delhi SC/ST/OBC/Minorities Development & Finance Corp (DSFDC)",
+      "partner_type": "SCA",
+      "branch_name": "New Delhi",
+      "address": "2, Battery Lane, Rajpur Road, Civil Lines, Delhi - 110054",
+      "phone": "011-23912384",
+      "email": "contact@dsfdc.delhi.gov.in",
+      "npa_ratio_pct": 2.8
+    },
+    "document_checklist": [
+      {
+        "document_name": "SC Caste Certificate (Self)",
+        "issuing_authority": "Revenue Dept / SDM / Tehsildar",
+        "status": "Required for Physical Verification"
+      },
+      {
+        "document_name": "Income Certificate (< ₹3 Lakhs/yr)",
+        "issuing_authority": "Revenue Dept / SDM / Tehsildar",
+        "status": "Required for Physical Verification"
+      },
+      {
+        "document_name": "Aadhaar Card",
+        "issuing_authority": "UIDAI / Bank",
+        "status": "Required for Physical Verification"
+      },
+      {
+        "document_name": "Bank Passbook (Individual or SHG)",
+        "issuing_authority": "UIDAI / Bank",
+        "status": "Required for Physical Verification"
+      },
+      {
+        "document_name": "Project Cost Quotation",
+        "issuing_authority": "Merchant / CA",
+        "status": "Required for Physical Verification"
+      }
+    ],
+    "next_steps_en": "Visit Delhi SC/ST/OBC/Minorities Development & Finance Corp (DSFDC) within 15 working days with your Reference Slip and original documents for physical KYC verification.",
+    "next_steps_hi": "15 कार्य दिवसों के भीतर अपनी संदर्भ पर्ची और मूल दस्तावेजों के साथ भौतिक सत्यापन हेतु Delhi SC/ST/OBC/Minorities Development & Finance Corp (DSFDC) में संपर्क करें।"
+  },
+  {
+    "registration_id": "MoSJE-NSFDC-2026-286629",
+    "applicant_user_id": null,
+    "submission_timestamp": "2026-09-10 13:14:20",
+    "status": "PROVISIONALLY_APPROVED_ROUTED_TO_CHANNEL_PARTNER",
+    "status_label_en": "Provisionally Approved • Routed to Channel Partner",
+    "status_label_hi": "अनंतिम स्वीकृत • चैनल पार्टनर को प्रेषित",
+    "applicant": {
+      "name": "Pooja Rani",
+      "phone": "9876543210",
+      "email": "pooja@example.com",
+      "aadhaar_last_four": "8842",
+      "caste_category": "SC",
+      "caste_cert_number": "DL/SC/12345",
+      "annual_income": 150000.0,
+      "income_cert_authority": "Revenue Dept / SDM / Tehsildar",
+      "gender": "Female",
+      "state": "Delhi",
+      "district": "Central Delhi"
+    },
+    "scheme": {
+      "id": "nsfdc_msy",
+      "name": "Mahila Samriddhi Yojana (MSY)",
+      "name_hi": "महिला समृद्धि योजना (MSY)",
+      "category": "micro_finance",
+      "ministry": "Ministry of Social Justice and Empowerment (MoSJE)",
+      "implementing_agency": "National Scheduled Castes Finance and Development Corporation (NSFDC)"
+    },
+    "financial_summary": {
+      "project_cost": 120000.0,
+      "concessional_loan_amount": 114000.0,
+      "promoter_margin_money": 6000.0,
+      "interest_rate_beneficiary_pct": 4.0,
+      "commercial_bank_rate_pct": 12.5,
+      "annual_interest_savings_pct": 8.5,
+      "tenure_years": 3,
+      "moratorium_months": 3,
+      "repayment_frequency": "Quarterly"
+    },
+    "allocated_channel_partner": {
+      "id": "sca_dl_01",
+      "name": "Delhi SC/ST/OBC/Minorities Development & Finance Corp (DSFDC)",
+      "partner_type": "SCA",
+      "branch_name": "New Delhi",
+      "address": "2, Battery Lane, Rajpur Road, Civil Lines, Delhi - 110054",
+      "phone": "011-23912384",
+      "email": "contact@dsfdc.delhi.gov.in",
+      "npa_ratio_pct": 2.8
+    },
+    "document_checklist": [
+      {
+        "document_name": "SC Caste Certificate (Self)",
+        "issuing_authority": "Revenue Dept / SDM / Tehsildar",
+        "status": "Required for Physical Verification"
+      },
+      {
+        "document_name": "Income Certificate (< ₹3 Lakhs/yr)",
+        "issuing_authority": "Revenue Dept / SDM / Tehsildar",
+        "status": "Required for Physical Verification"
+      },
+      {
+        "document_name": "Aadhaar Card",
+        "issuing_authority": "UIDAI / Bank",
+        "status": "Required for Physical Verification"
+      },
+      {
+        "document_name": "Bank Passbook (Individual or SHG)",
+        "issuing_authority": "UIDAI / Bank",
+        "status": "Required for Physical Verification"
+      },
+      {
+        "document_name": "Project Cost Quotation",
+        "issuing_authority": "Merchant / CA",
+        "status": "Required for Physical Verification"
+      }
+    ],
+    "next_steps_en": "Visit Delhi SC/ST/OBC/Minorities Development & Finance Corp (DSFDC) within 15 working days with your Reference Slip and original documents for physical KYC verification.",
+    "next_steps_hi": "15 कार्य दिवसों के भीतर अपनी संदर्भ पर्ची और मूल दस्तावेजों के साथ भौतिक सत्यापन हेतु Delhi SC/ST/OBC/Minorities Development & Finance Corp (DSFDC) में संपर्क करें।"
+  },
+  {
+    "registration_id": "MoSJE-NSFDC-2026-894369",
+    "applicant_user_id": "USR-2026-468217",
+    "submission_timestamp": "2026-09-10 13:14:15",
+    "status": "PROVISIONALLY_APPROVED_ROUTED_TO_CHANNEL_PARTNER",
+    "status_label_en": "Provisionally Approved • Routed to Channel Partner",
+    "status_label_hi": "अनंतिम स्वीकृत • चैनल पार्टनर को प्रेषित",
+    "applicant": {
+      "name": "Pooja Bharti",
+      "phone": "9812345678",
+      "email": "pooja@example.gov.in",
+      "aadhaar_last_four": "4455",
+      "caste_category": "SC",
+      "caste_cert_number": "",
+      "annual_income": 160000.0,
+      "income_cert_authority": "Revenue Dept / SDM / Tehsildar",
+      "gender": "Female",
+      "state": "Delhi",
+      "district": "North Delhi"
+    },
+    "scheme": {
+      "id": "nsfdc_msy",
+      "name": "Mahila Samriddhi Yojana (MSY)",
+      "name_hi": "महिला समृद्धि योजना (MSY)",
+      "category": "micro_finance",
+      "ministry": "Ministry of Social Justice and Empowerment (MoSJE)",
+      "implementing_agency": "National Scheduled Castes Finance and Development Corporation (NSFDC)"
+    },
+    "financial_summary": {
+      "project_cost": 120000.0,
+      "concessional_loan_amount": 114000.0,
+      "promoter_margin_money": 6000.0,
+      "interest_rate_beneficiary_pct": 4.0,
+      "commercial_bank_rate_pct": 12.5,
+      "annual_interest_savings_pct": 8.5,
+      "tenure_years": 3,
+      "moratorium_months": 3,
+      "repayment_frequency": "Quarterly"
+    },
+    "allocated_channel_partner": {
+      "id": "sca_dl_01",
+      "name": "Delhi SC/ST/OBC/Minorities Development & Finance Corp (DSFDC)",
+      "partner_type": "SCA",
+      "branch_name": "New Delhi",
+      "address": "2, Battery Lane, Rajpur Road, Civil Lines, Delhi - 110054",
+      "phone": "011-23912384",
+      "email": "contact@dsfdc.delhi.gov.in",
+      "npa_ratio_pct": 2.8
+    },
+    "document_checklist": [
+      {
+        "document_name": "SC Caste Certificate (Self)",
+        "issuing_authority": "Revenue Dept / SDM / Tehsildar",
+        "status": "Required for Physical Verification"
+      },
+      {
+        "document_name": "Income Certificate (< ₹3 Lakhs/yr)",
+        "issuing_authority": "Revenue Dept / SDM / Tehsildar",
+        "status": "Required for Physical Verification"
+      },
+      {
+        "document_name": "Aadhaar Card",
+        "issuing_authority": "UIDAI / Bank",
+        "status": "Required for Physical Verification"
+      },
+      {
+        "document_name": "Bank Passbook (Individual or SHG)",
+        "issuing_authority": "UIDAI / Bank",
+        "status": "Required for Physical Verification"
+      },
+      {
+        "document_name": "Project Cost Quotation",
+        "issuing_authority": "Merchant / CA",
+        "status": "Required for Physical Verification"
+      }
+    ],
+    "next_steps_en": "Visit Delhi SC/ST/OBC/Minorities Development & Finance Corp (DSFDC) within 15 working days with your Reference Slip and original documents for physical KYC verification.",
+    "next_steps_hi": "15 कार्य दिवसों के भीतर अपनी संदर्भ पर्ची और मूल दस्तावेजों के साथ भौतिक सत्यापन हेतु Delhi SC/ST/OBC/Minorities Development & Finance Corp (DSFDC) में संपर्क करें।"
+  },
+  {
+    "registration_id": "MoSJE-NSFDC-2026-572036",
+    "applicant_user_id": null,
+    "submission_timestamp": "2026-09-10 12:56:12",
+    "status": "PROVISIONALLY_APPROVED_ROUTED_TO_CHANNEL_PARTNER",
+    "status_label_en": "Provisionally Approved • Routed to Channel Partner",
+    "status_label_hi": "अनंतिम स्वीकृत • चैनल पार्टनर को प्रेषित",
+    "applicant": {
+      "name": "Pooja Rani",
+      "phone": "9876543210",
+      "email": "pooja@example.com",
+      "aadhaar_last_four": "8842",
+      "caste_category": "SC",
+      "caste_cert_number": "DL/SC/12345",
+      "annual_income": 150000.0,
+      "income_cert_authority": "Revenue Dept / SDM / Tehsildar",
+      "gender": "Female",
+      "state": "Delhi",
+      "district": "Central Delhi"
+    },
+    "scheme": {
+      "id": "nsfdc_msy",
+      "name": "Mahila Samriddhi Yojana (MSY)",
+      "name_hi": "महिला समृद्धि योजना (MSY)",
+      "category": "micro_finance",
+      "ministry": "Ministry of Social Justice and Empowerment (MoSJE)",
+      "implementing_agency": "National Scheduled Castes Finance and Development Corporation (NSFDC)"
+    },
+    "financial_summary": {
+      "project_cost": 120000.0,
+      "concessional_loan_amount": 114000.0,
+      "promoter_margin_money": 6000.0,
+      "interest_rate_beneficiary_pct": 4.0,
+      "commercial_bank_rate_pct": 12.5,
+      "annual_interest_savings_pct": 8.5,
+      "tenure_years": 3,
+      "moratorium_months": 3,
+      "repayment_frequency": "Quarterly"
+    },
+    "allocated_channel_partner": {
+      "id": "sca_dl_01",
+      "name": "Delhi SC/ST/OBC/Minorities Development & Finance Corp (DSFDC)",
+      "partner_type": "SCA",
+      "branch_name": "New Delhi",
+      "address": "2, Battery Lane, Rajpur Road, Civil Lines, Delhi - 110054",
+      "phone": "011-23912384",
+      "email": "contact@dsfdc.delhi.gov.in",
+      "npa_ratio_pct": 2.8
+    },
+    "document_checklist": [
+      {
+        "document_name": "SC Caste Certificate (Self)",
+        "issuing_authority": "Revenue Dept / SDM / Tehsildar",
+        "status": "Required for Physical Verification"
+      },
+      {
+        "document_name": "Income Certificate (< ₹3 Lakhs/yr)",
+        "issuing_authority": "Revenue Dept / SDM / Tehsildar",
+        "status": "Required for Physical Verification"
+      },
+      {
+        "document_name": "Aadhaar Card",
+        "issuing_authority": "UIDAI / Bank",
+        "status": "Required for Physical Verification"
+      },
+      {
+        "document_name": "Bank Passbook (Individual or SHG)",
+        "issuing_authority": "UIDAI / Bank",
+        "status": "Required for Physical Verification"
+      },
+      {
+        "document_name": "Project Cost Quotation",
+        "issuing_authority": "Merchant / CA",
+        "status": "Required for Physical Verification"
+      }
+    ],
+    "next_steps_en": "Visit Delhi SC/ST/OBC/Minorities Development & Finance Corp (DSFDC) within 15 working days with your Reference Slip and original documents for physical KYC verification.",
+    "next_steps_hi": "15 कार्य दिवसों के भीतर अपनी संदर्भ पर्ची और मूल दस्तावेजों के साथ भौतिक सत्यापन हेतु Delhi SC/ST/OBC/Minorities Development & Finance Corp (DSFDC) में संपर्क करें।"
+  },
+  {
+    "registration_id": "MoSJE-NSFDC-2026-565293",
+    "applicant_user_id": "USR-2026-603775",
+    "submission_timestamp": "2026-09-10 12:56:10",
+    "status": "PROVISIONALLY_APPROVED_ROUTED_TO_CHANNEL_PARTNER",
+    "status_label_en": "Provisionally Approved • Routed to Channel Partner",
+    "status_label_hi": "अनंतिम स्वीकृत • चैनल पार्टनर को प्रेषित",
+    "applicant": {
+      "name": "Pooja Bharti",
+      "phone": "9812345678",
+      "email": "pooja@example.gov.in",
+      "aadhaar_last_four": "4455",
+      "caste_category": "SC",
+      "caste_cert_number": "",
+      "annual_income": 160000.0,
+      "income_cert_authority": "Revenue Dept / SDM / Tehsildar",
+      "gender": "Female",
+      "state": "Delhi",
+      "district": "North Delhi"
+    },
+    "scheme": {
+      "id": "nsfdc_msy",
+      "name": "Mahila Samriddhi Yojana (MSY)",
+      "name_hi": "महिला समृद्धि योजना (MSY)",
+      "category": "micro_finance",
+      "ministry": "Ministry of Social Justice and Empowerment (MoSJE)",
+      "implementing_agency": "National Scheduled Castes Finance and Development Corporation (NSFDC)"
+    },
+    "financial_summary": {
+      "project_cost": 120000.0,
+      "concessional_loan_amount": 114000.0,
+      "promoter_margin_money": 6000.0,
+      "interest_rate_beneficiary_pct": 4.0,
+      "commercial_bank_rate_pct": 12.5,
+      "annual_interest_savings_pct": 8.5,
+      "tenure_years": 3,
+      "moratorium_months": 3,
+      "repayment_frequency": "Quarterly"
+    },
+    "allocated_channel_partner": {
+      "id": "sca_dl_01",
+      "name": "Delhi SC/ST/OBC/Minorities Development & Finance Corp (DSFDC)",
+      "partner_type": "SCA",
+      "branch_name": "New Delhi",
+      "address": "2, Battery Lane, Rajpur Road, Civil Lines, Delhi - 110054",
+      "phone": "011-23912384",
+      "email": "contact@dsfdc.delhi.gov.in",
+      "npa_ratio_pct": 2.8
+    },
+    "document_checklist": [
+      {
+        "document_name": "SC Caste Certificate (Self)",
+        "issuing_authority": "Revenue Dept / SDM / Tehsildar",
+        "status": "Required for Physical Verification"
+      },
+      {
+        "document_name": "Income Certificate (< ₹3 Lakhs/yr)",
+        "issuing_authority": "Revenue Dept / SDM / Tehsildar",
+        "status": "Required for Physical Verification"
+      },
+      {
+        "document_name": "Aadhaar Card",
+        "issuing_authority": "UIDAI / Bank",
+        "status": "Required for Physical Verification"
+      },
+      {
+        "document_name": "Bank Passbook (Individual or SHG)",
+        "issuing_authority": "UIDAI / Bank",
+        "status": "Required for Physical Verification"
+      },
+      {
+        "document_name": "Project Cost Quotation",
+        "issuing_authority": "Merchant / CA",
+        "status": "Required for Physical Verification"
+      }
+    ],
+    "next_steps_en": "Visit Delhi SC/ST/OBC/Minorities Development & Finance Corp (DSFDC) within 15 working days with your Reference Slip and original documents for physical KYC verification.",
+    "next_steps_hi": "15 कार्य दिवसों के भीतर अपनी संदर्भ पर्ची और मूल दस्तावेजों के साथ भौतिक सत्यापन हेतु Delhi SC/ST/OBC/Minorities Development & Finance Corp (DSFDC) में संपर्क करें।"
+  },
+  {
+    "registration_id": "MoSJE-NSFDC-2026-774711",
+    "applicant_user_id": "USR-2026-720036",
+    "submission_timestamp": "2026-09-10 12:56:03",
+    "status": "PROVISIONALLY_APPROVED_ROUTED_TO_CHANNEL_PARTNER",
+    "status_label_en": "Provisionally Approved • Routed to Channel Partner",
+    "status_label_hi": "अनंतिम स्वीकृत • चैनल पार्टनर को प्रेषित",
+    "applicant": {
+      "name": "Pooja Bharti",
+      "phone": "9812345678",
+      "email": "pooja@example.gov.in",
+      "aadhaar_last_four": "4455",
+      "caste_category": "SC",
+      "caste_cert_number": "",
+      "annual_income": 160000.0,
+      "income_cert_authority": "Revenue Dept / SDM / Tehsildar",
+      "gender": "Female",
+      "state": "Delhi",
+      "district": "North Delhi"
+    },
+    "scheme": {
+      "id": "nsfdc_msy",
+      "name": "Mahila Samriddhi Yojana (MSY)",
+      "name_hi": "महिला समृद्धि योजना (MSY)",
+      "category": "micro_finance",
+      "ministry": "Ministry of Social Justice and Empowerment (MoSJE)",
+      "implementing_agency": "National Scheduled Castes Finance and Development Corporation (NSFDC)"
+    },
+    "financial_summary": {
+      "project_cost": 120000.0,
+      "concessional_loan_amount": 114000.0,
+      "promoter_margin_money": 6000.0,
+      "interest_rate_beneficiary_pct": 4.0,
+      "commercial_bank_rate_pct": 12.5,
+      "annual_interest_savings_pct": 8.5,
+      "tenure_years": 3,
+      "moratorium_months": 3,
+      "repayment_frequency": "Quarterly"
+    },
+    "allocated_channel_partner": {
+      "id": "sca_dl_01",
+      "name": "Delhi SC/ST/OBC/Minorities Development & Finance Corp (DSFDC)",
+      "partner_type": "SCA",
+      "branch_name": "New Delhi",
+      "address": "2, Battery Lane, Rajpur Road, Civil Lines, Delhi - 110054",
+      "phone": "011-23912384",
+      "email": "contact@dsfdc.delhi.gov.in",
+      "npa_ratio_pct": 2.8
+    },
+    "document_checklist": [
+      {
+        "document_name": "SC Caste Certificate (Self)",
+        "issuing_authority": "Revenue Dept / SDM / Tehsildar",
+        "status": "Required for Physical Verification"
+      },
+      {
+        "document_name": "Income Certificate (< ₹3 Lakhs/yr)",
+        "issuing_authority": "Revenue Dept / SDM / Tehsildar",
+        "status": "Required for Physical Verification"
+      },
+      {
+        "document_name": "Aadhaar Card",
+        "issuing_authority": "UIDAI / Bank",
+        "status": "Required for Physical Verification"
+      },
+      {
+        "document_name": "Bank Passbook (Individual or SHG)",
+        "issuing_authority": "UIDAI / Bank",
+        "status": "Required for Physical Verification"
+      },
+      {
+        "document_name": "Project Cost Quotation",
+        "issuing_authority": "Merchant / CA",
+        "status": "Required for Physical Verification"
+      }
+    ],
+    "next_steps_en": "Visit Delhi SC/ST/OBC/Minorities Development & Finance Corp (DSFDC) within 15 working days with your Reference Slip and original documents for physical KYC verification.",
+    "next_steps_hi": "15 कार्य दिवसों के भीतर अपनी संदर्भ पर्ची और मूल दस्तावेजों के साथ भौतिक सत्यापन हेतु Delhi SC/ST/OBC/Minorities Development & Finance Corp (DSFDC) में संपर्क करें।"
+  },
+  {
+    "registration_id": "MoSJE-NSFDC-2026-186045",
+    "applicant_user_id": null,
+    "submission_timestamp": "2026-09-10 12:55:46",
+    "status": "PROVISIONALLY_APPROVED_ROUTED_TO_CHANNEL_PARTNER",
+    "status_label_en": "Provisionally Approved • Routed to Channel Partner",
+    "status_label_hi": "अनंतिम स्वीकृत • चैनल पार्टनर को प्रेषित",
+    "applicant": {
+      "name": "Pooja Rani",
+      "phone": "9876543210",
+      "email": "pooja@example.com",
+      "aadhaar_last_four": "8842",
+      "caste_category": "SC",
+      "caste_cert_number": "DL/SC/12345",
+      "annual_income": 150000.0,
+      "income_cert_authority": "Revenue Dept / SDM / Tehsildar",
+      "gender": "Female",
+      "state": "Delhi",
+      "district": "Central Delhi"
+    },
+    "scheme": {
+      "id": "nsfdc_msy",
+      "name": "Mahila Samriddhi Yojana (MSY)",
+      "name_hi": "महिला समृद्धि योजना (MSY)",
+      "category": "micro_finance",
+      "ministry": "Ministry of Social Justice and Empowerment (MoSJE)",
+      "implementing_agency": "National Scheduled Castes Finance and Development Corporation (NSFDC)"
+    },
+    "financial_summary": {
+      "project_cost": 120000.0,
+      "concessional_loan_amount": 114000.0,
+      "promoter_margin_money": 6000.0,
+      "interest_rate_beneficiary_pct": 4.0,
+      "commercial_bank_rate_pct": 12.5,
+      "annual_interest_savings_pct": 8.5,
+      "tenure_years": 3,
+      "moratorium_months": 3,
+      "repayment_frequency": "Quarterly"
+    },
+    "allocated_channel_partner": {
+      "id": "sca_dl_01",
+      "name": "Delhi SC/ST/OBC/Minorities Development & Finance Corp (DSFDC)",
+      "partner_type": "SCA",
+      "branch_name": "New Delhi",
+      "address": "2, Battery Lane, Rajpur Road, Civil Lines, Delhi - 110054",
+      "phone": "011-23912384",
+      "email": "contact@dsfdc.delhi.gov.in",
+      "npa_ratio_pct": 2.8
+    },
+    "document_checklist": [
+      {
+        "document_name": "SC Caste Certificate (Self)",
+        "issuing_authority": "Revenue Dept / SDM / Tehsildar",
+        "status": "Required for Physical Verification"
+      },
+      {
+        "document_name": "Income Certificate (< ₹3 Lakhs/yr)",
+        "issuing_authority": "Revenue Dept / SDM / Tehsildar",
+        "status": "Required for Physical Verification"
+      },
+      {
+        "document_name": "Aadhaar Card",
+        "issuing_authority": "UIDAI / Bank",
+        "status": "Required for Physical Verification"
+      },
+      {
+        "document_name": "Bank Passbook (Individual or SHG)",
+        "issuing_authority": "UIDAI / Bank",
+        "status": "Required for Physical Verification"
+      },
+      {
+        "document_name": "Project Cost Quotation",
+        "issuing_authority": "Merchant / CA",
+        "status": "Required for Physical Verification"
+      }
+    ],
+    "next_steps_en": "Visit Delhi SC/ST/OBC/Minorities Development & Finance Corp (DSFDC) within 15 working days with your Reference Slip and original documents for physical KYC verification.",
+    "next_steps_hi": "15 कार्य दिवसों के भीतर अपनी संदर्भ पर्ची और मूल दस्तावेजों के साथ भौतिक सत्यापन हेतु Delhi SC/ST/OBC/Minorities Development & Finance Corp (DSFDC) में संपर्क करें।"
+  },
+  {
+    "registration_id": "MoSJE-NSFDC-2026-413497",
+    "applicant_user_id": "USR-2026-221827",
+    "submission_timestamp": "2026-09-10 12:55:44",
+    "status": "PROVISIONALLY_APPROVED_ROUTED_TO_CHANNEL_PARTNER",
+    "status_label_en": "Provisionally Approved • Routed to Channel Partner",
+    "status_label_hi": "अनंतिम स्वीकृत • चैनल पार्टनर को प्रेषित",
+    "applicant": {
+      "name": "Pooja Bharti",
+      "phone": "9812345678",
+      "email": "pooja@example.gov.in",
+      "aadhaar_last_four": "4455",
+      "caste_category": "SC",
+      "caste_cert_number": "",
+      "annual_income": 160000.0,
+      "income_cert_authority": "Revenue Dept / SDM / Tehsildar",
+      "gender": "Female",
+      "state": "Delhi",
+      "district": "North Delhi"
+    },
+    "scheme": {
+      "id": "nsfdc_msy",
+      "name": "Mahila Samriddhi Yojana (MSY)",
+      "name_hi": "महिला समृद्धि योजना (MSY)",
+      "category": "micro_finance",
+      "ministry": "Ministry of Social Justice and Empowerment (MoSJE)",
+      "implementing_agency": "National Scheduled Castes Finance and Development Corporation (NSFDC)"
+    },
+    "financial_summary": {
+      "project_cost": 120000.0,
+      "concessional_loan_amount": 114000.0,
+      "promoter_margin_money": 6000.0,
+      "interest_rate_beneficiary_pct": 4.0,
+      "commercial_bank_rate_pct": 12.5,
+      "annual_interest_savings_pct": 8.5,
+      "tenure_years": 3,
+      "moratorium_months": 3,
+      "repayment_frequency": "Quarterly"
+    },
+    "allocated_channel_partner": {
+      "id": "sca_dl_01",
+      "name": "Delhi SC/ST/OBC/Minorities Development & Finance Corp (DSFDC)",
+      "partner_type": "SCA",
+      "branch_name": "New Delhi",
+      "address": "2, Battery Lane, Rajpur Road, Civil Lines, Delhi - 110054",
+      "phone": "011-23912384",
+      "email": "contact@dsfdc.delhi.gov.in",
+      "npa_ratio_pct": 2.8
+    },
+    "document_checklist": [
+      {
+        "document_name": "SC Caste Certificate (Self)",
+        "issuing_authority": "Revenue Dept / SDM / Tehsildar",
+        "status": "Required for Physical Verification"
+      },
+      {
+        "document_name": "Income Certificate (< ₹3 Lakhs/yr)",
+        "issuing_authority": "Revenue Dept / SDM / Tehsildar",
+        "status": "Required for Physical Verification"
+      },
+      {
+        "document_name": "Aadhaar Card",
+        "issuing_authority": "UIDAI / Bank",
+        "status": "Required for Physical Verification"
+      },
+      {
+        "document_name": "Bank Passbook (Individual or SHG)",
+        "issuing_authority": "UIDAI / Bank",
+        "status": "Required for Physical Verification"
+      },
+      {
+        "document_name": "Project Cost Quotation",
+        "issuing_authority": "Merchant / CA",
+        "status": "Required for Physical Verification"
+      }
+    ],
+    "next_steps_en": "Visit Delhi SC/ST/OBC/Minorities Development & Finance Corp (DSFDC) within 15 working days with your Reference Slip and original documents for physical KYC verification.",
+    "next_steps_hi": "15 कार्य दिवसों के भीतर अपनी संदर्भ पर्ची और मूल दस्तावेजों के साथ भौतिक सत्यापन हेतु Delhi SC/ST/OBC/Minorities Development & Finance Corp (DSFDC) में संपर्क करें।"
+  },
+  {
+    "registration_id": "MoSJE-NSFDC-2026-494274",
+    "applicant_user_id": null,
+    "submission_timestamp": "2026-09-10 12:55:16",
+    "status": "PROVISIONALLY_APPROVED_ROUTED_TO_CHANNEL_PARTNER",
+    "status_label_en": "Provisionally Approved • Routed to Channel Partner",
+    "status_label_hi": "अनंतिम स्वीकृत • चैनल पार्टनर को प्रेषित",
+    "applicant": {
+      "name": "Pooja Rani",
+      "phone": "9876543210",
+      "email": "pooja@example.com",
+      "aadhaar_last_four": "8842",
+      "caste_category": "SC",
+      "caste_cert_number": "DL/SC/12345",
+      "annual_income": 150000.0,
+      "income_cert_authority": "Revenue Dept / SDM / Tehsildar",
+      "gender": "Female",
+      "state": "Delhi",
+      "district": "Central Delhi"
+    },
+    "scheme": {
+      "id": "nsfdc_msy",
+      "name": "Mahila Samriddhi Yojana (MSY)",
+      "name_hi": "महिला समृद्धि योजना (MSY)",
+      "category": "micro_finance",
+      "ministry": "Ministry of Social Justice and Empowerment (MoSJE)",
+      "implementing_agency": "National Scheduled Castes Finance and Development Corporation (NSFDC)"
+    },
+    "financial_summary": {
+      "project_cost": 120000.0,
+      "concessional_loan_amount": 114000.0,
+      "promoter_margin_money": 6000.0,
+      "interest_rate_beneficiary_pct": 4.0,
+      "commercial_bank_rate_pct": 12.5,
+      "annual_interest_savings_pct": 8.5,
+      "tenure_years": 3,
+      "moratorium_months": 3,
+      "repayment_frequency": "Quarterly"
+    },
+    "allocated_channel_partner": {
+      "id": "sca_dl_01",
+      "name": "Delhi SC/ST/OBC/Minorities Development & Finance Corp (DSFDC)",
+      "partner_type": "SCA",
+      "branch_name": "New Delhi",
+      "address": "2, Battery Lane, Rajpur Road, Civil Lines, Delhi - 110054",
+      "phone": "011-23912384",
+      "email": "contact@dsfdc.delhi.gov.in",
+      "npa_ratio_pct": 2.8
+    },
+    "document_checklist": [
+      {
+        "document_name": "SC Caste Certificate (Self)",
+        "issuing_authority": "Revenue Dept / SDM / Tehsildar",
+        "status": "Required for Physical Verification"
+      },
+      {
+        "document_name": "Income Certificate (< ₹3 Lakhs/yr)",
+        "issuing_authority": "Revenue Dept / SDM / Tehsildar",
+        "status": "Required for Physical Verification"
+      },
+      {
+        "document_name": "Aadhaar Card",
+        "issuing_authority": "UIDAI / Bank",
+        "status": "Required for Physical Verification"
+      },
+      {
+        "document_name": "Bank Passbook (Individual or SHG)",
+        "issuing_authority": "UIDAI / Bank",
+        "status": "Required for Physical Verification"
+      },
+      {
+        "document_name": "Project Cost Quotation",
+        "issuing_authority": "Merchant / CA",
+        "status": "Required for Physical Verification"
+      }
+    ],
+    "next_steps_en": "Visit Delhi SC/ST/OBC/Minorities Development & Finance Corp (DSFDC) within 15 working days with your Reference Slip and original documents for physical KYC verification.",
+    "next_steps_hi": "15 कार्य दिवसों के भीतर अपनी संदर्भ पर्ची और मूल दस्तावेजों के साथ भौतिक सत्यापन हेतु Delhi SC/ST/OBC/Minorities Development & Finance Corp (DSFDC) में संपर्क करें।"
+  },
+  {
+    "registration_id": "MoSJE-NSFDC-2026-271542",
+    "applicant_user_id": "USR-2026-273820",
+    "submission_timestamp": "2026-09-10 12:55:15",
+    "status": "PROVISIONALLY_APPROVED_ROUTED_TO_CHANNEL_PARTNER",
+    "status_label_en": "Provisionally Approved • Routed to Channel Partner",
+    "status_label_hi": "अनंतिम स्वीकृत • चैनल पार्टनर को प्रेषित",
+    "applicant": {
+      "name": "Pooja Bharti",
+      "phone": "9812345678",
+      "email": "pooja@example.gov.in",
+      "aadhaar_last_four": "4455",
+      "caste_category": "SC",
+      "caste_cert_number": "",
+      "annual_income": 160000.0,
+      "income_cert_authority": "Revenue Dept / SDM / Tehsildar",
+      "gender": "Female",
+      "state": "Delhi",
+      "district": "North Delhi"
+    },
+    "scheme": {
+      "id": "nsfdc_msy",
+      "name": "Mahila Samriddhi Yojana (MSY)",
+      "name_hi": "महिला समृद्धि योजना (MSY)",
+      "category": "micro_finance",
+      "ministry": "Ministry of Social Justice and Empowerment (MoSJE)",
+      "implementing_agency": "National Scheduled Castes Finance and Development Corporation (NSFDC)"
+    },
+    "financial_summary": {
+      "project_cost": 120000.0,
+      "concessional_loan_amount": 114000.0,
+      "promoter_margin_money": 6000.0,
+      "interest_rate_beneficiary_pct": 4.0,
+      "commercial_bank_rate_pct": 12.5,
+      "annual_interest_savings_pct": 8.5,
+      "tenure_years": 3,
+      "moratorium_months": 3,
+      "repayment_frequency": "Quarterly"
+    },
+    "allocated_channel_partner": {
+      "id": "sca_dl_01",
+      "name": "Delhi SC/ST/OBC/Minorities Development & Finance Corp (DSFDC)",
+      "partner_type": "SCA",
+      "branch_name": "New Delhi",
+      "address": "2, Battery Lane, Rajpur Road, Civil Lines, Delhi - 110054",
+      "phone": "011-23912384",
+      "email": "contact@dsfdc.delhi.gov.in",
+      "npa_ratio_pct": 2.8
+    },
+    "document_checklist": [
+      {
+        "document_name": "SC Caste Certificate (Self)",
+        "issuing_authority": "Revenue Dept / SDM / Tehsildar",
+        "status": "Required for Physical Verification"
+      },
+      {
+        "document_name": "Income Certificate (< ₹3 Lakhs/yr)",
+        "issuing_authority": "Revenue Dept / SDM / Tehsildar",
+        "status": "Required for Physical Verification"
+      },
+      {
+        "document_name": "Aadhaar Card",
+        "issuing_authority": "UIDAI / Bank",
+        "status": "Required for Physical Verification"
+      },
+      {
+        "document_name": "Bank Passbook (Individual or SHG)",
+        "issuing_authority": "UIDAI / Bank",
+        "status": "Required for Physical Verification"
+      },
+      {
+        "document_name": "Project Cost Quotation",
+        "issuing_authority": "Merchant / CA",
+        "status": "Required for Physical Verification"
+      }
+    ],
+    "next_steps_en": "Visit Delhi SC/ST/OBC/Minorities Development & Finance Corp (DSFDC) within 15 working days with your Reference Slip and original documents for physical KYC verification.",
+    "next_steps_hi": "15 कार्य दिवसों के भीतर अपनी संदर्भ पर्ची और मूल दस्तावेजों के साथ भौतिक सत्यापन हेतु Delhi SC/ST/OBC/Minorities Development & Finance Corp (DSFDC) में संपर्क करें।"
+  },
+  {
+    "registration_id": "MoSJE-NSFDC-2026-616349",
+    "applicant_user_id": null,
+    "submission_timestamp": "2026-09-10 12:46:40",
+    "status": "PROVISIONALLY_APPROVED_ROUTED_TO_CHANNEL_PARTNER",
+    "status_label_en": "Provisionally Approved • Routed to Channel Partner",
+    "status_label_hi": "अनंतिम स्वीकृत • चैनल पार्टनर को प्रेषित",
+    "applicant": {
+      "name": "Pooja Rani",
+      "phone": "9876543210",
+      "email": "pooja@example.com",
+      "aadhaar_last_four": "8842",
+      "caste_category": "SC",
+      "caste_cert_number": "DL/SC/12345",
+      "annual_income": 150000.0,
+      "income_cert_authority": "Revenue Dept / SDM / Tehsildar",
+      "gender": "Female",
+      "state": "Delhi",
+      "district": "Central Delhi"
+    },
+    "scheme": {
+      "id": "nsfdc_msy",
+      "name": "Mahila Samriddhi Yojana (MSY)",
+      "name_hi": "महिला समृद्धि योजना (MSY)",
+      "category": "micro_finance",
+      "ministry": "Ministry of Social Justice and Empowerment (MoSJE)",
+      "implementing_agency": "National Scheduled Castes Finance and Development Corporation (NSFDC)"
+    },
+    "financial_summary": {
+      "project_cost": 120000.0,
+      "concessional_loan_amount": 114000.0,
+      "promoter_margin_money": 6000.0,
+      "interest_rate_beneficiary_pct": 4.0,
+      "commercial_bank_rate_pct": 12.5,
+      "annual_interest_savings_pct": 8.5,
+      "tenure_years": 3,
+      "moratorium_months": 3,
+      "repayment_frequency": "Quarterly"
+    },
+    "allocated_channel_partner": {
+      "id": "sca_dl_01",
+      "name": "Delhi SC/ST/OBC/Minorities Development & Finance Corp (DSFDC)",
+      "partner_type": "SCA",
+      "branch_name": "New Delhi",
+      "address": "2, Battery Lane, Rajpur Road, Civil Lines, Delhi - 110054",
+      "phone": "011-23912384",
+      "email": "contact@dsfdc.delhi.gov.in",
+      "npa_ratio_pct": 2.8
+    },
+    "document_checklist": [
+      {
+        "document_name": "SC Caste Certificate (Self)",
+        "issuing_authority": "Revenue Dept / SDM / Tehsildar",
+        "status": "Required for Physical Verification"
+      },
+      {
+        "document_name": "Income Certificate (< ₹3 Lakhs/yr)",
+        "issuing_authority": "Revenue Dept / SDM / Tehsildar",
+        "status": "Required for Physical Verification"
+      },
+      {
+        "document_name": "Aadhaar Card",
+        "issuing_authority": "UIDAI / Bank",
+        "status": "Required for Physical Verification"
+      },
+      {
+        "document_name": "Bank Passbook (Individual or SHG)",
+        "issuing_authority": "UIDAI / Bank",
+        "status": "Required for Physical Verification"
+      },
+      {
+        "document_name": "Project Cost Quotation",
+        "issuing_authority": "Merchant / CA",
+        "status": "Required for Physical Verification"
+      }
+    ],
+    "next_steps_en": "Visit Delhi SC/ST/OBC/Minorities Development & Finance Corp (DSFDC) within 15 working days with your Reference Slip and original documents for physical KYC verification.",
+    "next_steps_hi": "15 कार्य दिवसों के भीतर अपनी संदर्भ पर्ची और मूल दस्तावेजों के साथ भौतिक सत्यापन हेतु Delhi SC/ST/OBC/Minorities Development & Finance Corp (DSFDC) में संपर्क करें।"
+  },
+  {
+    "registration_id": "MoSJE-NSFDC-2026-660124",
+    "applicant_user_id": "USR-2026-782836",
+    "submission_timestamp": "2026-09-10 12:46:39",
+    "status": "PROVISIONALLY_APPROVED_ROUTED_TO_CHANNEL_PARTNER",
+    "status_label_en": "Provisionally Approved • Routed to Channel Partner",
+    "status_label_hi": "अनंतिम स्वीकृत • चैनल पार्टनर को प्रेषित",
+    "applicant": {
+      "name": "Pooja Bharti",
+      "phone": "9812345678",
+      "email": "pooja@example.gov.in",
+      "aadhaar_last_four": "4455",
+      "caste_category": "SC",
+      "caste_cert_number": "",
+      "annual_income": 160000.0,
+      "income_cert_authority": "Revenue Dept / SDM / Tehsildar",
+      "gender": "Female",
+      "state": "Delhi",
+      "district": "North Delhi"
+    },
+    "scheme": {
+      "id": "nsfdc_msy",
+      "name": "Mahila Samriddhi Yojana (MSY)",
+      "name_hi": "महिला समृद्धि योजना (MSY)",
+      "category": "micro_finance",
+      "ministry": "Ministry of Social Justice and Empowerment (MoSJE)",
+      "implementing_agency": "National Scheduled Castes Finance and Development Corporation (NSFDC)"
+    },
+    "financial_summary": {
+      "project_cost": 120000.0,
+      "concessional_loan_amount": 114000.0,
+      "promoter_margin_money": 6000.0,
+      "interest_rate_beneficiary_pct": 4.0,
+      "commercial_bank_rate_pct": 12.5,
+      "annual_interest_savings_pct": 8.5,
+      "tenure_years": 3,
+      "moratorium_months": 3,
+      "repayment_frequency": "Quarterly"
+    },
+    "allocated_channel_partner": {
+      "id": "sca_dl_01",
+      "name": "Delhi SC/ST/OBC/Minorities Development & Finance Corp (DSFDC)",
+      "partner_type": "SCA",
+      "branch_name": "New Delhi",
+      "address": "2, Battery Lane, Rajpur Road, Civil Lines, Delhi - 110054",
+      "phone": "011-23912384",
+      "email": "contact@dsfdc.delhi.gov.in",
+      "npa_ratio_pct": 2.8
+    },
+    "document_checklist": [
+      {
+        "document_name": "SC Caste Certificate (Self)",
+        "issuing_authority": "Revenue Dept / SDM / Tehsildar",
+        "status": "Required for Physical Verification"
+      },
+      {
+        "document_name": "Income Certificate (< ₹3 Lakhs/yr)",
+        "issuing_authority": "Revenue Dept / SDM / Tehsildar",
+        "status": "Required for Physical Verification"
+      },
+      {
+        "document_name": "Aadhaar Card",
+        "issuing_authority": "UIDAI / Bank",
+        "status": "Required for Physical Verification"
+      },
+      {
+        "document_name": "Bank Passbook (Individual or SHG)",
+        "issuing_authority": "UIDAI / Bank",
+        "status": "Required for Physical Verification"
+      },
+      {
+        "document_name": "Project Cost Quotation",
+        "issuing_authority": "Merchant / CA",
+        "status": "Required for Physical Verification"
+      }
+    ],
+    "next_steps_en": "Visit Delhi SC/ST/OBC/Minorities Development & Finance Corp (DSFDC) within 15 working days with your Reference Slip and original documents for physical KYC verification.",
+    "next_steps_hi": "15 कार्य दिवसों के भीतर अपनी संदर्भ पर्ची और मूल दस्तावेजों के साथ भौतिक सत्यापन हेतु Delhi SC/ST/OBC/Minorities Development & Finance Corp (DSFDC) में संपर्क करें।"
+  },
+  {
+    "registration_id": "MoSJE-NSFDC-2026-612415",
+    "applicant_user_id": null,
+    "submission_timestamp": "2026-09-10 12:42:05",
+    "status": "PROVISIONALLY_APPROVED_ROUTED_TO_CHANNEL_PARTNER",
+    "status_label_en": "Provisionally Approved • Routed to Channel Partner",
+    "status_label_hi": "अनंतिम स्वीकृत • चैनल पार्टनर को प्रेषित",
+    "applicant": {
+      "name": "Pooja Rani",
+      "phone": "9876543210",
+      "email": "pooja@example.com",
+      "aadhaar_last_four": "8842",
+      "caste_category": "SC",
+      "caste_cert_number": "DL/SC/12345",
+      "annual_income": 150000.0,
+      "income_cert_authority": "Revenue Dept / SDM / Tehsildar",
+      "gender": "Female",
+      "state": "Delhi",
+      "district": "Central Delhi"
+    },
+    "scheme": {
+      "id": "nsfdc_msy",
+      "name": "Mahila Samriddhi Yojana (MSY)",
+      "name_hi": "महिला समृद्धि योजना (MSY)",
+      "category": "micro_finance",
+      "ministry": "Ministry of Social Justice and Empowerment (MoSJE)",
+      "implementing_agency": "National Scheduled Castes Finance and Development Corporation (NSFDC)"
+    },
+    "financial_summary": {
+      "project_cost": 120000.0,
+      "concessional_loan_amount": 114000.0,
+      "promoter_margin_money": 6000.0,
+      "interest_rate_beneficiary_pct": 4.0,
+      "commercial_bank_rate_pct": 12.5,
+      "annual_interest_savings_pct": 8.5,
+      "tenure_years": 3,
+      "moratorium_months": 3,
+      "repayment_frequency": "Quarterly"
+    },
+    "allocated_channel_partner": {
+      "id": "sca_dl_01",
+      "name": "Delhi SC/ST/OBC/Minorities Development & Finance Corp (DSFDC)",
+      "partner_type": "SCA",
+      "branch_name": "New Delhi",
+      "address": "2, Battery Lane, Rajpur Road, Civil Lines, Delhi - 110054",
+      "phone": "011-23912384",
+      "email": "contact@dsfdc.delhi.gov.in",
+      "npa_ratio_pct": 2.8
+    },
+    "document_checklist": [
+      {
+        "document_name": "SC Caste Certificate (Self)",
+        "issuing_authority": "Revenue Dept / SDM / Tehsildar",
+        "status": "Required for Physical Verification"
+      },
+      {
+        "document_name": "Income Certificate (< ₹3 Lakhs/yr)",
+        "issuing_authority": "Revenue Dept / SDM / Tehsildar",
+        "status": "Required for Physical Verification"
+      },
+      {
+        "document_name": "Aadhaar Card",
+        "issuing_authority": "UIDAI / Bank",
+        "status": "Required for Physical Verification"
+      },
+      {
+        "document_name": "Bank Passbook (Individual or SHG)",
+        "issuing_authority": "UIDAI / Bank",
+        "status": "Required for Physical Verification"
+      },
+      {
+        "document_name": "Project Cost Quotation",
+        "issuing_authority": "Merchant / CA",
+        "status": "Required for Physical Verification"
+      }
+    ],
+    "next_steps_en": "Visit Delhi SC/ST/OBC/Minorities Development & Finance Corp (DSFDC) within 15 working days with your Reference Slip and original documents for physical KYC verification.",
+    "next_steps_hi": "15 कार्य दिवसों के भीतर अपनी संदर्भ पर्ची और मूल दस्तावेजों के साथ भौतिक सत्यापन हेतु Delhi SC/ST/OBC/Minorities Development & Finance Corp (DSFDC) में संपर्क करें।"
+  },
+  {
+    "registration_id": "MoSJE-NSFDC-2026-124178",
+    "applicant_user_id": "USR-2026-752724",
+    "submission_timestamp": "2026-09-10 12:42:04",
+    "status": "PROVISIONALLY_APPROVED_ROUTED_TO_CHANNEL_PARTNER",
+    "status_label_en": "Provisionally Approved • Routed to Channel Partner",
+    "status_label_hi": "अनंतिम स्वीकृत • चैनल पार्टनर को प्रेषित",
+    "applicant": {
+      "name": "Pooja Bharti",
+      "phone": "9812345678",
+      "email": "pooja@example.gov.in",
+      "aadhaar_last_four": "4455",
+      "caste_category": "SC",
+      "caste_cert_number": "",
+      "annual_income": 160000.0,
+      "income_cert_authority": "Revenue Dept / SDM / Tehsildar",
+      "gender": "Female",
+      "state": "Delhi",
+      "district": "North Delhi"
+    },
+    "scheme": {
+      "id": "nsfdc_msy",
+      "name": "Mahila Samriddhi Yojana (MSY)",
+      "name_hi": "महिला समृद्धि योजना (MSY)",
+      "category": "micro_finance",
+      "ministry": "Ministry of Social Justice and Empowerment (MoSJE)",
+      "implementing_agency": "National Scheduled Castes Finance and Development Corporation (NSFDC)"
+    },
+    "financial_summary": {
+      "project_cost": 120000.0,
+      "concessional_loan_amount": 114000.0,
+      "promoter_margin_money": 6000.0,
+      "interest_rate_beneficiary_pct": 4.0,
+      "commercial_bank_rate_pct": 12.5,
+      "annual_interest_savings_pct": 8.5,
+      "tenure_years": 3,
+      "moratorium_months": 3,
+      "repayment_frequency": "Quarterly"
+    },
+    "allocated_channel_partner": {
+      "id": "sca_dl_01",
+      "name": "Delhi SC/ST/OBC/Minorities Development & Finance Corp (DSFDC)",
+      "partner_type": "SCA",
+      "branch_name": "New Delhi",
+      "address": "2, Battery Lane, Rajpur Road, Civil Lines, Delhi - 110054",
+      "phone": "011-23912384",
+      "email": "contact@dsfdc.delhi.gov.in",
+      "npa_ratio_pct": 2.8
+    },
+    "document_checklist": [
+      {
+        "document_name": "SC Caste Certificate (Self)",
+        "issuing_authority": "Revenue Dept / SDM / Tehsildar",
+        "status": "Required for Physical Verification"
+      },
+      {
+        "document_name": "Income Certificate (< ₹3 Lakhs/yr)",
+        "issuing_authority": "Revenue Dept / SDM / Tehsildar",
+        "status": "Required for Physical Verification"
+      },
+      {
+        "document_name": "Aadhaar Card",
+        "issuing_authority": "UIDAI / Bank",
+        "status": "Required for Physical Verification"
+      },
+      {
+        "document_name": "Bank Passbook (Individual or SHG)",
+        "issuing_authority": "UIDAI / Bank",
+        "status": "Required for Physical Verification"
+      },
+      {
+        "document_name": "Project Cost Quotation",
+        "issuing_authority": "Merchant / CA",
+        "status": "Required for Physical Verification"
+      }
+    ],
+    "next_steps_en": "Visit Delhi SC/ST/OBC/Minorities Development & Finance Corp (DSFDC) within 15 working days with your Reference Slip and original documents for physical KYC verification.",
+    "next_steps_hi": "15 कार्य दिवसों के भीतर अपनी संदर्भ पर्ची और मूल दस्तावेजों के साथ भौतिक सत्यापन हेतु Delhi SC/ST/OBC/Minorities Development & Finance Corp (DSFDC) में संपर्क करें।"
+  },
+  {
+    "registration_id": "MoSJE-NSFDC-2026-892217",
+    "applicant_user_id": "USR-2026-886804",
+    "submission_timestamp": "2026-09-10 12:41:59",
+    "status": "PROVISIONALLY_APPROVED_ROUTED_TO_CHANNEL_PARTNER",
+    "status_label_en": "Provisionally Approved • Routed to Channel Partner",
+    "status_label_hi": "अनंतिम स्वीकृत • चैनल पार्टनर को प्रेषित",
+    "applicant": {
+      "name": "Pooja Bharti",
+      "phone": "9812345678",
+      "email": "pooja@example.gov.in",
+      "aadhaar_last_four": "4455",
+      "caste_category": "SC",
+      "caste_cert_number": "",
+      "annual_income": 160000.0,
+      "income_cert_authority": "Revenue Dept / SDM / Tehsildar",
+      "gender": "Female",
+      "state": "Delhi",
+      "district": "North Delhi"
+    },
+    "scheme": {
+      "id": "nsfdc_msy",
+      "name": "Mahila Samriddhi Yojana (MSY)",
+      "name_hi": "महिला समृद्धि योजना (MSY)",
+      "category": "micro_finance",
+      "ministry": "Ministry of Social Justice and Empowerment (MoSJE)",
+      "implementing_agency": "National Scheduled Castes Finance and Development Corporation (NSFDC)"
+    },
+    "financial_summary": {
+      "project_cost": 120000.0,
+      "concessional_loan_amount": 114000.0,
+      "promoter_margin_money": 6000.0,
+      "interest_rate_beneficiary_pct": 4.0,
+      "commercial_bank_rate_pct": 12.5,
+      "annual_interest_savings_pct": 8.5,
+      "tenure_years": 3,
+      "moratorium_months": 3,
+      "repayment_frequency": "Quarterly"
+    },
+    "allocated_channel_partner": {
+      "id": "sca_dl_01",
+      "name": "Delhi SC/ST/OBC/Minorities Development & Finance Corp (DSFDC)",
+      "partner_type": "SCA",
+      "branch_name": "New Delhi",
+      "address": "2, Battery Lane, Rajpur Road, Civil Lines, Delhi - 110054",
+      "phone": "011-23912384",
+      "email": "contact@dsfdc.delhi.gov.in",
+      "npa_ratio_pct": 2.8
+    },
+    "document_checklist": [
+      {
+        "document_name": "SC Caste Certificate (Self)",
+        "issuing_authority": "Revenue Dept / SDM / Tehsildar",
+        "status": "Required for Physical Verification"
+      },
+      {
+        "document_name": "Income Certificate (< ₹3 Lakhs/yr)",
+        "issuing_authority": "Revenue Dept / SDM / Tehsildar",
+        "status": "Required for Physical Verification"
+      },
+      {
+        "document_name": "Aadhaar Card",
+        "issuing_authority": "UIDAI / Bank",
+        "status": "Required for Physical Verification"
+      },
+      {
+        "document_name": "Bank Passbook (Individual or SHG)",
+        "issuing_authority": "UIDAI / Bank",
+        "status": "Required for Physical Verification"
+      },
+      {
+        "document_name": "Project Cost Quotation",
+        "issuing_authority": "Merchant / CA",
+        "status": "Required for Physical Verification"
+      }
+    ],
+    "next_steps_en": "Visit Delhi SC/ST/OBC/Minorities Development & Finance Corp (DSFDC) within 15 working days with your Reference Slip and original documents for physical KYC verification.",
+    "next_steps_hi": "15 कार्य दिवसों के भीतर अपनी संदर्भ पर्ची और मूल दस्तावेजों के साथ भौतिक सत्यापन हेतु Delhi SC/ST/OBC/Minorities Development & Finance Corp (DSFDC) में संपर्क करें।"
+  },
+  {
+    "registration_id": "MoSJE-NSFDC-2026-753893",
+    "applicant_user_id": "USR-2026-768283",
+    "submission_timestamp": "2026-09-10 12:32:48",
+    "status": "PROVISIONALLY_APPROVED_ROUTED_TO_CHANNEL_PARTNER",
+    "status_label_en": "Provisionally Approved • Routed to Channel Partner",
+    "status_label_hi": "अनंतिम स्वीकृत • चैनल पार्टनर को प्रेषित",
+    "applicant": {
+      "name": "Santosh Ravidas",
+      "phone": "9876501234",
+      "email": "santosh@example.gov.in",
+      "aadhaar_last_four": "7788",
+      "caste_category": "SC",
+      "caste_cert_number": "",
+      "annual_income": 180000.0,
+      "income_cert_authority": "Revenue Dept / SDM / Tehsildar",
+      "gender": "Male",
+      "state": "Delhi",
+      "district": "Central Delhi"
+    },
+    "scheme": {
+      "id": "nsfdc_gbs",
+      "name": "Green Business Scheme (GBS)",
+      "name_hi": "हरित व्यवसाय योजना (Green Business Scheme)",
+      "category": "green_energy",
+      "ministry": "Ministry of Social Justice and Empowerment (MoSJE)",
+      "implementing_agency": "National Scheduled Castes Finance and Development Corporation (NSFDC)"
+    },
+    "financial_summary": {
+      "project_cost": 280000.0,
+      "concessional_loan_amount": 252000.0,
+      "promoter_margin_money": 28000.0,
+      "interest_rate_beneficiary_pct": 4.0,
+      "commercial_bank_rate_pct": 12.0,
+      "annual_interest_savings_pct": 8.0,
+      "tenure_years": 10,
+      "moratorium_months": 6,
+      "repayment_frequency": "Quarterly"
+    },
+    "allocated_channel_partner": {
+      "id": "sca_dl_01",
+      "name": "Delhi SC/ST/OBC/Minorities Development & Finance Corp (DSFDC)",
+      "partner_type": "SCA",
+      "branch_name": "New Delhi",
+      "address": "2, Battery Lane, Rajpur Road, Civil Lines, Delhi - 110054",
+      "phone": "011-23912384",
+      "email": "contact@dsfdc.delhi.gov.in",
+      "npa_ratio_pct": 2.8
+    },
+    "document_checklist": [
+      {
+        "document_name": "SC Caste Certificate",
+        "issuing_authority": "Revenue Dept / SDM / Tehsildar",
+        "status": "Required for Physical Verification"
+      },
+      {
+        "document_name": "Income Certificate (< ₹3 Lakhs/yr)",
+        "issuing_authority": "Revenue Dept / SDM / Tehsildar",
+        "status": "Required for Physical Verification"
+      },
+      {
+        "document_name": "EV / Solar Equipment Quotation",
+        "issuing_authority": "Merchant / CA",
+        "status": "Required for Physical Verification"
+      },
+      {
+        "document_name": "Driving license / Transport permit (for EV)",
+        "issuing_authority": "Merchant / CA",
+        "status": "Required for Physical Verification"
+      },
+      {
+        "document_name": "Aadhaar and PAN",
+        "issuing_authority": "UIDAI / Bank",
+        "status": "Required for Physical Verification"
+      },
+      {
+        "document_name": "Electricity bill / Land record",
+        "issuing_authority": "Merchant / CA",
+        "status": "Required for Physical Verification"
+      }
+    ],
+    "next_steps_en": "Visit Delhi SC/ST/OBC/Minorities Development & Finance Corp (DSFDC) within 15 working days with your Reference Slip and original documents for physical KYC verification.",
+    "next_steps_hi": "15 कार्य दिवसों के भीतर अपनी संदर्भ पर्ची और मूल दस्तावेजों के साथ भौतिक सत्यापन हेतु Delhi SC/ST/OBC/Minorities Development & Finance Corp (DSFDC) में संपर्क करें।"
+  },
+  {
+    "registration_id": "MoSJE-NSFDC-2026-143654",
+    "applicant_user_id": null,
+    "submission_timestamp": "2026-09-10 12:32:29",
+    "status": "PROVISIONALLY_APPROVED_ROUTED_TO_CHANNEL_PARTNER",
+    "status_label_en": "Provisionally Approved • Routed to Channel Partner",
+    "status_label_hi": "अनंतिम स्वीकृत • चैनल पार्टनर को प्रेषित",
+    "applicant": {
+      "name": "Pooja Rani",
+      "phone": "9876543210",
+      "email": "pooja@example.com",
+      "aadhaar_last_four": "8842",
+      "caste_category": "SC",
+      "caste_cert_number": "DL/SC/12345",
+      "annual_income": 150000.0,
+      "income_cert_authority": "Revenue Dept / SDM / Tehsildar",
+      "gender": "Female",
+      "state": "Delhi",
+      "district": "Central Delhi"
+    },
+    "scheme": {
+      "id": "nsfdc_msy",
+      "name": "Mahila Samriddhi Yojana (MSY)",
+      "name_hi": "महिला समृद्धि योजना (MSY)",
+      "category": "micro_finance",
+      "ministry": "Ministry of Social Justice and Empowerment (MoSJE)",
+      "implementing_agency": "National Scheduled Castes Finance and Development Corporation (NSFDC)"
+    },
+    "financial_summary": {
+      "project_cost": 120000.0,
+      "concessional_loan_amount": 114000.0,
+      "promoter_margin_money": 6000.0,
+      "interest_rate_beneficiary_pct": 4.0,
+      "commercial_bank_rate_pct": 12.5,
+      "annual_interest_savings_pct": 8.5,
+      "tenure_years": 3,
+      "moratorium_months": 3,
+      "repayment_frequency": "Quarterly"
+    },
+    "allocated_channel_partner": {
+      "id": "sca_dl_01",
+      "name": "Delhi SC/ST/OBC/Minorities Development & Finance Corp (DSFDC)",
+      "partner_type": "SCA",
+      "branch_name": "New Delhi",
+      "address": "2, Battery Lane, Rajpur Road, Civil Lines, Delhi - 110054",
+      "phone": "011-23912384",
+      "email": "contact@dsfdc.delhi.gov.in",
+      "npa_ratio_pct": 2.8
+    },
+    "document_checklist": [
+      {
+        "document_name": "SC Caste Certificate (Self)",
+        "issuing_authority": "Revenue Dept / SDM / Tehsildar",
+        "status": "Required for Physical Verification"
+      },
+      {
+        "document_name": "Income Certificate (< ₹3 Lakhs/yr)",
+        "issuing_authority": "Revenue Dept / SDM / Tehsildar",
+        "status": "Required for Physical Verification"
+      },
+      {
+        "document_name": "Aadhaar Card",
+        "issuing_authority": "UIDAI / Bank",
+        "status": "Required for Physical Verification"
+      },
+      {
+        "document_name": "Bank Passbook (Individual or SHG)",
+        "issuing_authority": "UIDAI / Bank",
+        "status": "Required for Physical Verification"
+      },
+      {
+        "document_name": "Project Cost Quotation",
+        "issuing_authority": "Merchant / CA",
+        "status": "Required for Physical Verification"
+      }
+    ],
+    "next_steps_en": "Visit Delhi SC/ST/OBC/Minorities Development & Finance Corp (DSFDC) within 15 working days with your Reference Slip and original documents for physical KYC verification.",
+    "next_steps_hi": "15 कार्य दिवसों के भीतर अपनी संदर्भ पर्ची और मूल दस्तावेजों के साथ भौतिक सत्यापन हेतु Delhi SC/ST/OBC/Minorities Development & Finance Corp (DSFDC) में संपर्क करें।"
+  },
+  {
+    "registration_id": "MoSJE-NSFDC-2026-924136",
+    "applicant_user_id": "USR-2026-389637",
+    "submission_timestamp": "2026-09-10 12:32:28",
+    "status": "PROVISIONALLY_APPROVED_ROUTED_TO_CHANNEL_PARTNER",
+    "status_label_en": "Provisionally Approved • Routed to Channel Partner",
+    "status_label_hi": "अनंतिम स्वीकृत • चैनल पार्टनर को प्रेषित",
+    "applicant": {
+      "name": "Pooja Bharti",
+      "phone": "9812345678",
+      "email": "pooja@example.gov.in",
+      "aadhaar_last_four": "4455",
+      "caste_category": "SC",
+      "caste_cert_number": "",
+      "annual_income": 160000.0,
+      "income_cert_authority": "Revenue Dept / SDM / Tehsildar",
+      "gender": "Female",
+      "state": "Delhi",
+      "district": "North Delhi"
+    },
+    "scheme": {
+      "id": "nsfdc_msy",
+      "name": "Mahila Samriddhi Yojana (MSY)",
+      "name_hi": "महिला समृद्धि योजना (MSY)",
+      "category": "micro_finance",
+      "ministry": "Ministry of Social Justice and Empowerment (MoSJE)",
+      "implementing_agency": "National Scheduled Castes Finance and Development Corporation (NSFDC)"
+    },
+    "financial_summary": {
+      "project_cost": 120000.0,
+      "concessional_loan_amount": 114000.0,
+      "promoter_margin_money": 6000.0,
+      "interest_rate_beneficiary_pct": 4.0,
+      "commercial_bank_rate_pct": 12.5,
+      "annual_interest_savings_pct": 8.5,
+      "tenure_years": 3,
+      "moratorium_months": 3,
+      "repayment_frequency": "Quarterly"
+    },
+    "allocated_channel_partner": {
+      "id": "sca_dl_01",
+      "name": "Delhi SC/ST/OBC/Minorities Development & Finance Corp (DSFDC)",
+      "partner_type": "SCA",
+      "branch_name": "New Delhi",
+      "address": "2, Battery Lane, Rajpur Road, Civil Lines, Delhi - 110054",
+      "phone": "011-23912384",
+      "email": "contact@dsfdc.delhi.gov.in",
+      "npa_ratio_pct": 2.8
+    },
+    "document_checklist": [
+      {
+        "document_name": "SC Caste Certificate (Self)",
+        "issuing_authority": "Revenue Dept / SDM / Tehsildar",
+        "status": "Required for Physical Verification"
+      },
+      {
+        "document_name": "Income Certificate (< ₹3 Lakhs/yr)",
+        "issuing_authority": "Revenue Dept / SDM / Tehsildar",
+        "status": "Required for Physical Verification"
+      },
+      {
+        "document_name": "Aadhaar Card",
+        "issuing_authority": "UIDAI / Bank",
+        "status": "Required for Physical Verification"
+      },
+      {
+        "document_name": "Bank Passbook (Individual or SHG)",
+        "issuing_authority": "UIDAI / Bank",
+        "status": "Required for Physical Verification"
+      },
+      {
+        "document_name": "Project Cost Quotation",
+        "issuing_authority": "Merchant / CA",
+        "status": "Required for Physical Verification"
+      }
+    ],
+    "next_steps_en": "Visit Delhi SC/ST/OBC/Minorities Development & Finance Corp (DSFDC) within 15 working days with your Reference Slip and original documents for physical KYC verification.",
+    "next_steps_hi": "15 कार्य दिवसों के भीतर अपनी संदर्भ पर्ची और मूल दस्तावेजों के साथ भौतिक सत्यापन हेतु Delhi SC/ST/OBC/Minorities Development & Finance Corp (DSFDC) में संपर्क करें।"
+  },
+  {
+    "registration_id": "MoSJE-NSFDC-2026-235054",
+    "applicant_user_id": null,
+    "submission_timestamp": "2026-09-10 12:28:18",
+    "status": "PROVISIONALLY_APPROVED_ROUTED_TO_CHANNEL_PARTNER",
+    "status_label_en": "Provisionally Approved • Routed to Channel Partner",
+    "status_label_hi": "अनंतिम स्वीकृत • चैनल पार्टनर को प्रेषित",
+    "applicant": {
+      "name": "Pooja Rani",
+      "phone": "9876543210",
+      "email": "pooja@example.com",
+      "aadhaar_last_four": "8842",
+      "caste_category": "SC",
+      "caste_cert_number": "DL/SC/12345",
+      "annual_income": 150000.0,
+      "income_cert_authority": "Revenue Dept / SDM / Tehsildar",
+      "gender": "Female",
+      "state": "Delhi",
+      "district": "Central Delhi"
+    },
+    "scheme": {
+      "id": "nsfdc_msy",
+      "name": "Mahila Samriddhi Yojana (MSY)",
+      "name_hi": "महिला समृद्धि योजना (MSY)",
+      "category": "micro_finance",
+      "ministry": "Ministry of Social Justice and Empowerment (MoSJE)",
+      "implementing_agency": "National Scheduled Castes Finance and Development Corporation (NSFDC)"
+    },
+    "financial_summary": {
+      "project_cost": 120000.0,
+      "concessional_loan_amount": 114000.0,
+      "promoter_margin_money": 6000.0,
+      "interest_rate_beneficiary_pct": 4.0,
+      "commercial_bank_rate_pct": 12.5,
+      "annual_interest_savings_pct": 8.5,
+      "tenure_years": 3,
+      "moratorium_months": 3,
+      "repayment_frequency": "Quarterly"
+    },
+    "allocated_channel_partner": {
+      "id": "sca_dl_01",
+      "name": "Delhi SC/ST/OBC/Minorities Development & Finance Corp (DSFDC)",
+      "partner_type": "SCA",
+      "branch_name": "New Delhi",
+      "address": "2, Battery Lane, Rajpur Road, Civil Lines, Delhi - 110054",
+      "phone": "011-23912384",
+      "email": "contact@dsfdc.delhi.gov.in",
+      "npa_ratio_pct": 2.8
+    },
+    "document_checklist": [
+      {
+        "document_name": "SC Caste Certificate (Self)",
+        "issuing_authority": "Revenue Dept / SDM / Tehsildar",
+        "status": "Required for Physical Verification"
+      },
+      {
+        "document_name": "Income Certificate (< ₹3 Lakhs/yr)",
+        "issuing_authority": "Revenue Dept / SDM / Tehsildar",
+        "status": "Required for Physical Verification"
+      },
+      {
+        "document_name": "Aadhaar Card",
+        "issuing_authority": "UIDAI / Bank",
+        "status": "Required for Physical Verification"
+      },
+      {
+        "document_name": "Bank Passbook (Individual or SHG)",
+        "issuing_authority": "UIDAI / Bank",
+        "status": "Required for Physical Verification"
+      },
+      {
+        "document_name": "Project Cost Quotation",
+        "issuing_authority": "Merchant / CA",
+        "status": "Required for Physical Verification"
+      }
+    ],
+    "next_steps_en": "Visit Delhi SC/ST/OBC/Minorities Development & Finance Corp (DSFDC) within 15 working days with your Reference Slip and original documents for physical KYC verification.",
+    "next_steps_hi": "15 कार्य दिवसों के भीतर अपनी संदर्भ पर्ची और मूल दस्तावेजों के साथ भौतिक सत्यापन हेतु Delhi SC/ST/OBC/Minorities Development & Finance Corp (DSFDC) में संपर्क करें।"
+  },
+  {
+    "registration_id": "MoSJE-NSFDC-2026-943495",
+    "applicant_user_id": "USR-2026-845020",
+    "submission_timestamp": "2026-09-10 12:28:17",
+    "status": "PROVISIONALLY_APPROVED_ROUTED_TO_CHANNEL_PARTNER",
+    "status_label_en": "Provisionally Approved • Routed to Channel Partner",
+    "status_label_hi": "अनंतिम स्वीकृत • चैनल पार्टनर को प्रेषित",
+    "applicant": {
+      "name": "Pooja Bharti",
+      "phone": "9812345678",
+      "email": "pooja@example.gov.in",
+      "aadhaar_last_four": "4455",
+      "caste_category": "SC",
+      "caste_cert_number": "",
+      "annual_income": 160000.0,
+      "income_cert_authority": "Revenue Dept / SDM / Tehsildar",
+      "gender": "Female",
+      "state": "Delhi",
+      "district": "North Delhi"
+    },
+    "scheme": {
+      "id": "nsfdc_msy",
+      "name": "Mahila Samriddhi Yojana (MSY)",
+      "name_hi": "महिला समृद्धि योजना (MSY)",
+      "category": "micro_finance",
+      "ministry": "Ministry of Social Justice and Empowerment (MoSJE)",
+      "implementing_agency": "National Scheduled Castes Finance and Development Corporation (NSFDC)"
+    },
+    "financial_summary": {
+      "project_cost": 120000.0,
+      "concessional_loan_amount": 114000.0,
+      "promoter_margin_money": 6000.0,
+      "interest_rate_beneficiary_pct": 4.0,
+      "commercial_bank_rate_pct": 12.5,
+      "annual_interest_savings_pct": 8.5,
+      "tenure_years": 3,
+      "moratorium_months": 3,
+      "repayment_frequency": "Quarterly"
+    },
+    "allocated_channel_partner": {
+      "id": "sca_dl_01",
+      "name": "Delhi SC/ST/OBC/Minorities Development & Finance Corp (DSFDC)",
+      "partner_type": "SCA",
+      "branch_name": "New Delhi",
+      "address": "2, Battery Lane, Rajpur Road, Civil Lines, Delhi - 110054",
+      "phone": "011-23912384",
+      "email": "contact@dsfdc.delhi.gov.in",
+      "npa_ratio_pct": 2.8
+    },
+    "document_checklist": [
+      {
+        "document_name": "SC Caste Certificate (Self)",
+        "issuing_authority": "Revenue Dept / SDM / Tehsildar",
+        "status": "Required for Physical Verification"
+      },
+      {
+        "document_name": "Income Certificate (< ₹3 Lakhs/yr)",
+        "issuing_authority": "Revenue Dept / SDM / Tehsildar",
+        "status": "Required for Physical Verification"
+      },
+      {
+        "document_name": "Aadhaar Card",
+        "issuing_authority": "UIDAI / Bank",
+        "status": "Required for Physical Verification"
+      },
+      {
+        "document_name": "Bank Passbook (Individual or SHG)",
+        "issuing_authority": "UIDAI / Bank",
+        "status": "Required for Physical Verification"
+      },
+      {
+        "document_name": "Project Cost Quotation",
+        "issuing_authority": "Merchant / CA",
+        "status": "Required for Physical Verification"
+      }
+    ],
+    "next_steps_en": "Visit Delhi SC/ST/OBC/Minorities Development & Finance Corp (DSFDC) within 15 working days with your Reference Slip and original documents for physical KYC verification.",
+    "next_steps_hi": "15 कार्य दिवसों के भीतर अपनी संदर्भ पर्ची और मूल दस्तावेजों के साथ भौतिक सत्यापन हेतु Delhi SC/ST/OBC/Minorities Development & Finance Corp (DSFDC) में संपर्क करें।"
+  },
+  {
+    "registration_id": "MoSJE-NSFDC-2026-832827",
+    "applicant_user_id": "USR-2026-181348",
+    "submission_timestamp": "2026-09-10 12:28:11",
+    "status": "PROVISIONALLY_APPROVED_ROUTED_TO_CHANNEL_PARTNER",
+    "status_label_en": "Provisionally Approved • Routed to Channel Partner",
+    "status_label_hi": "अनंतिम स्वीकृत • चैनल पार्टनर को प्रेषित",
+    "applicant": {
+      "name": "Pooja Bharti",
+      "phone": "9812345678",
+      "email": "pooja@example.gov.in",
+      "aadhaar_last_four": "4455",
+      "caste_category": "SC",
+      "caste_cert_number": "",
+      "annual_income": 160000.0,
+      "income_cert_authority": "Revenue Dept / SDM / Tehsildar",
+      "gender": "Female",
+      "state": "Delhi",
+      "district": "North Delhi"
+    },
+    "scheme": {
+      "id": "nsfdc_msy",
+      "name": "Mahila Samriddhi Yojana (MSY)",
+      "name_hi": "महिला समृद्धि योजना (MSY)",
+      "category": "micro_finance",
+      "ministry": "Ministry of Social Justice and Empowerment (MoSJE)",
+      "implementing_agency": "National Scheduled Castes Finance and Development Corporation (NSFDC)"
+    },
+    "financial_summary": {
+      "project_cost": 120000.0,
+      "concessional_loan_amount": 114000.0,
+      "promoter_margin_money": 6000.0,
+      "interest_rate_beneficiary_pct": 4.0,
+      "commercial_bank_rate_pct": 12.5,
+      "annual_interest_savings_pct": 8.5,
+      "tenure_years": 3,
+      "moratorium_months": 3,
+      "repayment_frequency": "Quarterly"
+    },
+    "allocated_channel_partner": {
+      "id": "sca_dl_01",
+      "name": "Delhi SC/ST/OBC/Minorities Development & Finance Corp (DSFDC)",
+      "partner_type": "SCA",
+      "branch_name": "New Delhi",
+      "address": "2, Battery Lane, Rajpur Road, Civil Lines, Delhi - 110054",
+      "phone": "011-23912384",
+      "email": "contact@dsfdc.delhi.gov.in",
+      "npa_ratio_pct": 2.8
+    },
+    "document_checklist": [
+      {
+        "document_name": "SC Caste Certificate (Self)",
+        "issuing_authority": "Revenue Dept / SDM / Tehsildar",
+        "status": "Required for Physical Verification"
+      },
+      {
+        "document_name": "Income Certificate (< ₹3 Lakhs/yr)",
+        "issuing_authority": "Revenue Dept / SDM / Tehsildar",
+        "status": "Required for Physical Verification"
+      },
+      {
+        "document_name": "Aadhaar Card",
+        "issuing_authority": "UIDAI / Bank",
+        "status": "Required for Physical Verification"
+      },
+      {
+        "document_name": "Bank Passbook (Individual or SHG)",
+        "issuing_authority": "UIDAI / Bank",
+        "status": "Required for Physical Verification"
+      },
+      {
+        "document_name": "Project Cost Quotation",
+        "issuing_authority": "Merchant / CA",
+        "status": "Required for Physical Verification"
+      }
+    ],
+    "next_steps_en": "Visit Delhi SC/ST/OBC/Minorities Development & Finance Corp (DSFDC) within 15 working days with your Reference Slip and original documents for physical KYC verification.",
+    "next_steps_hi": "15 कार्य दिवसों के भीतर अपनी संदर्भ पर्ची और मूल दस्तावेजों के साथ भौतिक सत्यापन हेतु Delhi SC/ST/OBC/Minorities Development & Finance Corp (DSFDC) में संपर्क करें।"
+  },
+  {
+    "registration_id": "MoSJE-NSFDC-2026-465211",
+    "submission_timestamp": "2026-09-10 12:23:06",
+    "status": "PROVISIONALLY_APPROVED_ROUTED_TO_CHANNEL_PARTNER",
+    "status_label_en": "Provisionally Approved • Routed to Channel Partner",
+    "status_label_hi": "अनंतिम स्वीकृत • चैनल पार्टनर को प्रेषित",
+    "applicant": {
+      "name": "Aakash Kumar",
+      "phone": "9876543210",
+      "email": "applicant@example.gov.in",
+      "aadhaar_last_four": "8842",
+      "caste_category": "SC",
+      "caste_cert_number": "DL/REV/SC/77291",
+      "annual_income": 180000.0,
+      "income_cert_authority": "Revenue Dept / SDM",
+      "gender": "Female",
+      "state": "Delhi",
+      "district": "New Delhi"
+    },
+    "scheme": {
+      "id": "nsfdc_msy",
+      "name": "Mahila Samriddhi Yojana (MSY)",
+      "name_hi": "महिला समृद्धि योजना (MSY)",
+      "category": "micro_finance",
+      "ministry": "Ministry of Social Justice and Empowerment (MoSJE)",
+      "implementing_agency": "National Scheduled Castes Finance and Development Corporation (NSFDC)"
+    },
+    "financial_summary": {
+      "project_cost": 120000.0,
+      "concessional_loan_amount": 114000.0,
+      "promoter_margin_money": 6000.0,
+      "interest_rate_beneficiary_pct": 4.0,
+      "commercial_bank_rate_pct": 12.5,
+      "annual_interest_savings_pct": 8.5,
+      "tenure_years": 3,
+      "moratorium_months": 3,
+      "repayment_frequency": "Quarterly"
+    },
+    "allocated_channel_partner": {
+      "id": "sca_dl_01",
+      "name": "Delhi SC/ST/OBC/Minorities Development & Finance Corp (DSFDC)",
+      "partner_type": "SCA",
+      "branch_name": "New Delhi",
+      "address": "2, Battery Lane, Rajpur Road, Civil Lines, Delhi - 110054",
+      "phone": "011-23912384",
+      "email": "contact@dsfdc.delhi.gov.in",
+      "npa_ratio_pct": 2.8
+    },
+    "document_checklist": [
+      {
+        "document_name": "SC Caste Certificate (Self)",
+        "issuing_authority": "Revenue Dept / SDM / Tehsildar",
+        "status": "Required for Physical Verification"
+      },
+      {
+        "document_name": "Income Certificate (< ₹3 Lakhs/yr)",
+        "issuing_authority": "Revenue Dept / SDM / Tehsildar",
+        "status": "Required for Physical Verification"
+      },
+      {
+        "document_name": "Aadhaar Card",
+        "issuing_authority": "UIDAI / Bank",
+        "status": "Required for Physical Verification"
+      },
+      {
+        "document_name": "Bank Passbook (Individual or SHG)",
+        "issuing_authority": "UIDAI / Bank",
+        "status": "Required for Physical Verification"
+      },
+      {
+        "document_name": "Project Cost Quotation",
+        "issuing_authority": "Merchant / CA",
+        "status": "Required for Physical Verification"
+      }
+    ],
+    "next_steps_en": "Visit Delhi SC/ST/OBC/Minorities Development & Finance Corp (DSFDC) within 15 working days with your Reference Slip and original documents for physical KYC verification.",
+    "next_steps_hi": "15 कार्य दिवसों के भीतर अपनी संदर्भ पर्ची और मूल दस्तावेजों के साथ भौतिक सत्यापन हेतु Delhi SC/ST/OBC/Minorities Development & Finance Corp (DSFDC) में संपर्क करें।"
+  },
+  {
+    "registration_id": "MoSJE-NSFDC-2026-287573",
+    "submission_timestamp": "2026-09-10 12:21:16",
+    "status": "PROVISIONALLY_APPROVED_ROUTED_TO_CHANNEL_PARTNER",
+    "status_label_en": "Provisionally Approved • Routed to Channel Partner",
+    "status_label_hi": "अनंतिम स्वीकृत • चैनल पार्टनर को प्रेषित",
+    "applicant": {
+      "name": "Meena Kumari",
+      "phone": "9876543210",
+      "email": "meena@example.gov.in",
+      "aadhaar_last_four": "4321",
+      "caste_category": "SC",
+      "caste_cert_number": "DL/SC/88219",
+      "annual_income": 160000.0,
+      "income_cert_authority": "SDM Delhi",
+      "gender": "Female",
+      "state": "Delhi",
+      "district": "Central Delhi"
+    },
+    "scheme": {
+      "id": "nsfdc_msy",
+      "name": "Mahila Samriddhi Yojana (MSY)",
+      "name_hi": "महिला समृद्धि योजना (MSY)",
+      "category": "micro_finance",
+      "ministry": "Ministry of Social Justice and Empowerment (MoSJE)",
+      "implementing_agency": "National Scheduled Castes Finance and Development Corporation (NSFDC)"
+    },
+    "financial_summary": {
+      "project_cost": 120000.0,
+      "concessional_loan_amount": 114000.0,
+      "promoter_margin_money": 6000.0,
+      "interest_rate_beneficiary_pct": 4.0,
+      "commercial_bank_rate_pct": 12.5,
+      "annual_interest_savings_pct": 8.5,
+      "tenure_years": 3,
+      "moratorium_months": 3,
+      "repayment_frequency": "Quarterly"
+    },
+    "allocated_channel_partner": {
+      "id": "sca_dl_01",
+      "name": "Delhi SC/ST/OBC/Minorities Development & Finance Corp (DSFDC)",
+      "partner_type": "SCA",
+      "branch_name": "New Delhi",
+      "address": "2, Battery Lane, Rajpur Road, Civil Lines, Delhi - 110054",
+      "phone": "011-23912384",
+      "email": "contact@dsfdc.delhi.gov.in",
+      "npa_ratio_pct": 2.8
+    },
+    "document_checklist": [
+      {
+        "document_name": "SC Caste Certificate (Self)",
+        "issuing_authority": "Revenue Dept / SDM / Tehsildar",
+        "status": "Required for Physical Verification"
+      },
+      {
+        "document_name": "Income Certificate (< ₹3 Lakhs/yr)",
+        "issuing_authority": "Revenue Dept / SDM / Tehsildar",
+        "status": "Required for Physical Verification"
+      },
+      {
+        "document_name": "Aadhaar Card",
+        "issuing_authority": "UIDAI / Bank",
+        "status": "Required for Physical Verification"
+      },
+      {
+        "document_name": "Bank Passbook (Individual or SHG)",
+        "issuing_authority": "UIDAI / Bank",
+        "status": "Required for Physical Verification"
+      },
+      {
+        "document_name": "Project Cost Quotation",
+        "issuing_authority": "Merchant / CA",
+        "status": "Required for Physical Verification"
+      }
+    ],
+    "next_steps_en": "Visit Delhi SC/ST/OBC/Minorities Development & Finance Corp (DSFDC) within 15 working days with your Reference Slip and original documents for physical KYC verification.",
+    "next_steps_hi": "15 कार्य दिवसों के भीतर अपनी संदर्भ पर्ची और मूल दस्तावेजों के साथ भौतिक सत्यापन हेतु Delhi SC/ST/OBC/Minorities Development & Finance Corp (DSFDC) में संपर्क करें।"
+  }
+]
