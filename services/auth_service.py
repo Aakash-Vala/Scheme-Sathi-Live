@@ -29,13 +29,19 @@ class AuthService:
         self.aadhaar_registry_file = os.path.join(self.base_dir, "data", "aadhaar_registry.json")
         self.active_aadhaar_otps: Dict[str, Dict[str, Any]] = {}
         
-        if not os.path.exists(self.users_file):
-            with open(self.users_file, "w", encoding="utf-8") as f:
-                json.dump([], f, indent=2)
+        try:
+            if not os.path.exists(self.users_file):
+                with open(self.users_file, "w", encoding="utf-8") as f:
+                    json.dump([], f, indent=2)
+        except Exception:
+            pass
 
-        if not os.path.exists(self.aadhaar_registry_file):
-            with open(self.aadhaar_registry_file, "w", encoding="utf-8") as f:
-                json.dump([], f, indent=2)
+        try:
+            if not os.path.exists(self.aadhaar_registry_file):
+                with open(self.aadhaar_registry_file, "w", encoding="utf-8") as f:
+                    json.dump([], f, indent=2)
+        except Exception:
+            pass
 
     def _load_users(self) -> List[Dict[str, Any]]:
         from services.db import db_service, mongo_to_dict
@@ -101,8 +107,11 @@ class AuthService:
                         db_service.users.update_one(query, {"$set": mongo_to_dict(u)}, upsert=True)
             except Exception as e:
                 pass
-        with open(self.users_file, "w", encoding="utf-8") as f:
-            json.dump([mongo_to_dict(u) for u in users], f, indent=2, ensure_ascii=False)
+        try:
+            with open(self.users_file, "w", encoding="utf-8") as f:
+                json.dump([mongo_to_dict(u) for u in users], f, indent=2, ensure_ascii=False)
+        except Exception:
+            pass
 
     def _load_aadhaar_registry(self) -> List[Dict[str, Any]]:
         from services.db import db_service, mongo_to_dict
@@ -131,8 +140,11 @@ class AuthService:
                         db_service.aadhaar_registry.update_one({"aadhaar_number": a_num}, {"$set": mongo_to_dict(rec)}, upsert=True)
             except Exception as e:
                 pass
-        with open(self.aadhaar_registry_file, "w", encoding="utf-8") as f:
-            json.dump([mongo_to_dict(r) for r in records], f, indent=2, ensure_ascii=False)
+        try:
+            with open(self.aadhaar_registry_file, "w", encoding="utf-8") as f:
+                json.dump([mongo_to_dict(r) for r in records], f, indent=2, ensure_ascii=False)
+        except Exception:
+            pass
 
     def _get_or_create_aadhaar_citizen(self, aadhaar_number: str) -> Dict[str, Any]:
         """
@@ -361,7 +373,7 @@ class AuthService:
 
         # Update last login timestamp
         matched_user["last_login"] = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-        self._save_users(users)
+        self._save_single_user(matched_user)
 
         token = self._generate_token(matched_user["user_id"], matched_user["phone_number"])
         safe_user = self._sanitize_user(matched_user)
@@ -424,7 +436,7 @@ class AuthService:
                 else:
                     target[field] = update_data[field]
 
-        self._save_users(users)
+        self._save_single_user(target)
         return self._sanitize_user(target)
 
     def send_aadhaar_otp(self, aadhaar_number: str) -> Dict[str, Any]:
@@ -573,7 +585,7 @@ class AuthService:
             }
             users.append(user_record)
 
-        self._save_users(users)
+        self._save_single_user(user_record)
 
         token = self._generate_token(user_record["user_id"], user_record["phone_number"])
         safe_user = self._sanitize_user(user_record)
@@ -588,8 +600,51 @@ class AuthService:
     def get_user_applications(self, user: Dict[str, Any]) -> List[Dict[str, Any]]:
         """
         Fetches all scheme registration applications associated with this user.
-        Matches either on explicit applicant_user_id or on phone number / Aadhaar.
+        Queries live MongoDB Atlas collection with match criteria (user_id, phone, or Aadhaar).
+        Falls back to local JSON registry if database is unavailable.
         """
+        from services.db import db_service, mongo_to_dict
+
+        user_id = user.get("user_id")
+        user_phone = user.get("phone_number")
+        user_aadhaar = user.get("aadhaar_last_four")
+        user_aadhaar_full = user.get("aadhaar_number")
+
+        # 1. Primary: Query Live MongoDB Atlas
+        if db_service.check_connection() and db_service.applications is not None:
+            try:
+                query_or = []
+                if user_id:
+                    query_or.append({"applicant_user_id": user_id})
+                if user_phone:
+                    clean_phone = "".join(filter(str.isdigit, str(user_phone)))[-10:]
+                    query_or.append({"applicant.phone": user_phone})
+                    if clean_phone:
+                        query_or.append({"applicant.phone": clean_phone})
+                        query_or.append({"applicant.phone": f"+91 {clean_phone}"})
+                        query_or.append({"applicant.phone": f"+91{clean_phone}"})
+                if user_aadhaar and str(user_aadhaar) not in ["XXXX", "0000", ""]:
+                    query_or.append({"applicant.aadhaar_last_four": str(user_aadhaar)[-4:]})
+                if user_aadhaar_full and len(str(user_aadhaar_full)) >= 4:
+                    query_or.append({"applicant.aadhaar_last_four": str(user_aadhaar_full)[-4:]})
+                if user.get("email"):
+                    query_or.append({"applicant.email": user.get("email").strip()})
+                
+                if query_or:
+                    db_apps = list(db_service.applications.find({"$or": query_or}, {"_id": 0}).sort("submission_timestamp", -1))
+                    if db_apps:
+                        seen = set()
+                        unique = []
+                        for a in db_apps:
+                            rid = a.get("registration_id")
+                            if rid and rid not in seen:
+                                seen.add(rid)
+                                unique.append(mongo_to_dict(a))
+                        return unique
+            except Exception as e:
+                pass
+
+        # 2. Fallback: Local JSON datastore
         if not os.path.exists(self.registrations_file):
             return []
         try:
@@ -598,18 +653,13 @@ class AuthService:
         except Exception:
             return []
 
-        user_id = user.get("user_id")
-        user_phone = user.get("phone_number")
-        user_aadhaar = user.get("aadhaar_last_four")
-        user_aadhaar_full = user.get("aadhaar_number")
-
         matched = []
         for r in all_regs:
             app_uid = r.get("applicant_user_id")
             app_phone = r.get("applicant", {}).get("phone")
             app_aadhaar = r.get("applicant", {}).get("aadhaar_last_four")
 
-            if (app_uid and app_uid == user_id) or (app_phone and app_phone == user_phone) or (app_aadhaar and (app_aadhaar == user_aadhaar or (user_aadhaar_full and (app_aadhaar == user_aadhaar_full or app_aadhaar == user_aadhaar_full[-4:])))):
+            if (app_uid and app_uid == user_id) or (app_phone and app_phone == user_phone) or (app_aadhaar and (app_aadhaar == user_aadhaar or (user_aadhaar_full and (app_aadhaar == user_aadhaar_full or app_aadhaar == str(user_aadhaar_full)[-4:])))):
                 matched.append(r)
 
         return matched

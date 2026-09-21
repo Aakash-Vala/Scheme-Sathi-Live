@@ -18,7 +18,7 @@ const i18n = {
     "nav_logout": "Sign Out",
     "gov_ribbon_text": "Ministry of Social Justice and Empowerment (MoSJE) • National Scheduled Castes Finance & Development Corp",
     "sih_tag": "Smart India Hackathon • Problem Statement: ",
-    "portal_subtitle": "AI Channel Finance Recommender & Concessional Lending Portal",
+    "portal_subtitle": "MoSJE • Concessional Credit Portal",
     "theme_dark": "Dark",
     "theme_light": "Light",
     "hero_badge": "Smart Automation Platform • Department of Social Justice",
@@ -246,7 +246,7 @@ const i18n = {
     "nav_logout": "लॉग आउट",
     "gov_ribbon_text": "सामाजिक न्याय एवं अधिकारिता मंत्रालय (MoSJE) • राष्ट्रीय अनुसूचित जाति वित्त एवं विकास निगम",
     "sih_tag": "स्मार्ट इंडिया हैकाथॉन • समस्या विवरण: ",
-    "portal_subtitle": "एआई चैनल फाइनेंस अनुशंसा एवं रियायती ऋण सहायता पोर्टल",
+    "portal_subtitle": "सामाजिक न्याय मंत्रालय • रियायती ऋण पोर्टल",
     "theme_dark": "डार्क",
     "theme_light": "लाइट",
     "hero_badge": "स्मार्ट ऑटोमेशन प्लेटफॉर्म • सामाजिक न्याय विभाग",
@@ -474,7 +474,7 @@ const i18n = {
     "nav_logout": "लॉग आउट",
     "gov_ribbon_text": "सामाजिक न्याय आणि सक्षमीकरण मंत्रालय (MoSJE) • राष्ट्रीय अनुसूचित जाती वित्त व विकास महामंडळ",
     "sih_tag": "स्मार्ट इंडिया हॅकाथॉन • समस्या क्रमांक: ",
-    "portal_subtitle": "एआय चॅनेल फायनान्स शिफारस व सवलतीचे कर्ज सहाय्य पोर्टल",
+    "portal_subtitle": "सामाजिक न्याय मंत्रालय • सवलतीचे कर्ज पोर्टल",
     "theme_dark": "डार्क",
     "theme_light": "लाइट",
     "hero_badge": "स्मार्ट ऑटोमेशन प्लॅटफॉर्म • सामाजिक न्याय विभाग",
@@ -702,7 +702,7 @@ const i18n = {
     "nav_logout": "வெளியேறு",
     "gov_ribbon_text": "சமூக நீதி மற்றும் அதிகாரமளித்தல் அமைச்சகம் (MoSJE) • தேசிய அட்டவணை சாதிகள் நிதி மற்றும் மேம்பாட்டுக் கழகம்",
     "sih_tag": "ஸ்மார்ட் இந்தியா ஹேக்கத்தான் • பிரச்சனை அறிக்கை: ",
-    "portal_subtitle": "ஏஐ சேனல் நிதி பரிந்துரை மற்றும் சலுகைக் கடன் தளம்",
+    "portal_subtitle": "MoSJE • சலுகைக் கடன் தளம்",
     "theme_dark": "இருண்ட",
     "theme_light": "☀️ ஒளி",
     "hero_badge": "ஸ்மார்ட் ஆட்டோமேஷன் தளம் • சமூக நீதித் துறை",
@@ -930,7 +930,7 @@ const i18n = {
     "nav_logout": "లాగ్ అవుట్",
     "gov_ribbon_text": "సామాజిక న్యాయం & సాధికారత మంత్రిత్వ శాఖ (MoSJE) • జాతీయ షెడ్యూల్డ్ కులాల ఫైనాన్స్ & డెవలప్‌మెంట్ కార్పొరేషన్",
     "sih_tag": "స్మార్ట్ ఇండియా హ్యాకథాన్ • సమస్య ప్రకటన: ",
-    "portal_subtitle": "AI ఛానెల్ ఫైనాన్స్ సిఫార్సు & రాయితీ రుణ పోర్టల్",
+    "portal_subtitle": "MoSJE • రాయితీ రుణ పోర్టల్",
     "theme_dark": "డార్క్",
     "theme_light": "లైట్",
     "hero_badge": "స్మార్ట్ ఆటోమేషన్ ప్లాట్‌ఫామ్ • సామాజిక న్యాయ శాఖ",
@@ -1158,7 +1158,7 @@ const i18n = {
     "nav_logout": "লগ আউট",
     "gov_ribbon_text": "সামাজিক ন্যায়বিচার ও ক্ষমতায়ন মন্ত্রক (MoSJE) • জাতীয় তফসিলি জাতি অর্থ ও উন্নয়ন নিগম",
     "sih_tag": "স্মার্ট ইন্ডিয়া হ্যাকাথন • সমস্যা বিবরণ: ",
-    "portal_subtitle": "এআই চ্যানেল ফিনান্স সুপারিশ ও রেয়াতি ঋণ সহায়তা পোর্টাল",
+    "portal_subtitle": "সামাজিক ন্যায়বিচার মন্ত্রক • রেয়াতি ঋণ পোর্টাল",
     "theme_dark": "ডার্ক",
     "theme_light": "লাইট",
     "hero_badge": "স্মার্ট অটোমেশন প্ল্যাটফর্ম • সামাজিক ন্যায়বিচার বিভাগ",
@@ -1383,6 +1383,11 @@ document.addEventListener('DOMContentLoaded', () => {
   initChatbotWidget();
   initAuth();
   initRegistrationModal();
+
+  const savedFont = localStorage.getItem('scheme_font_step');
+  if (savedFont !== null) {
+    changeFontSize(parseInt(savedFont, 10));
+  }
   
   const form = document.getElementById('wizard-form');
   if (form) {
@@ -2525,13 +2530,18 @@ function toggleMobileNav(e) {
 }
 
 function changeFontSize(step) {
+  const root = document.documentElement;
   if (step === 0) {
-    document.documentElement.style.fontSize = '';
+    root.style.fontSize = '';
   } else if (step === -1) {
-    document.documentElement.style.fontSize = '92%';
+    root.style.fontSize = '92%';
   } else if (step === 1) {
-    document.documentElement.style.fontSize = '108%';
+    root.style.fontSize = '106%';
   }
+  document.querySelectorAll('.font-size-btn').forEach((btn, idx) => {
+    btn.classList.toggle('active', (step === -1 && idx === 0) || (step === 0 && idx === 1) || (step === 1 && idx === 2));
+  });
+  try { localStorage.setItem('scheme_font_step', step); } catch (e) {}
 }
 
 // Global click listener for dropdowns and drawers
@@ -2622,6 +2632,7 @@ function renderAuthNav() {
         </div>
       </div>
     `;
+  } else {
     container.innerHTML = `
       <div class="auth-buttons-group">
         <a href="/login?tab=login" class="btn-auth-nav btn-auth-login" onclick="if(window.location.pathname !== '/login'){ event.preventDefault(); openAuthModal('login'); }">
@@ -3682,6 +3693,9 @@ function toggleConfirmButton(checked) {
 async function submitConfirmedRegistration() {
   if (!pendingRegistrationData) return;
   pendingRegistrationData.confirmed_by_user = true;
+  if (currentUserProfile && currentUserProfile.user_id) {
+    pendingRegistrationData.applicant_user_id = currentUserProfile.user_id;
+  }
 
   const btn = document.getElementById('reg-submit-btn');
   if (btn) {
@@ -3702,6 +3716,9 @@ async function submitConfirmedRegistration() {
 
     if (res.ok && result.status === 'success') {
       renderRegistrationAcknowledgementSlip(result.registration);
+      if (typeof loadPageMyApplications === 'function') {
+        loadPageMyApplications();
+      }
     } else {
       alert("Registration Error: " + (result.detail || result.message || "Failed to commit registration."));
       if (btn) {
@@ -3783,9 +3800,12 @@ function renderRegistrationAcknowledgementSlip(reg) {
       </div>
     </div>
 
-    <div style="display: flex; justify-content: flex-end; gap: 10px; margin-top: 14px;">
+    <div style="display: flex; justify-content: flex-end; gap: 10px; margin-top: 14px; flex-wrap: wrap;">
+      <a href="/my-applications" class="btn-primary" style="text-decoration: none; display: inline-flex; align-items: center; gap: 6px; font-size: 0.84rem; padding: 8px 16px;">
+        ${isHi ? 'मेरे आवेदन डैशबोर्ड देखें →' : 'View in My Applications Dashboard →'}
+      </a>
+      <button class="btn-secondary" onclick="window.print()">${isHi ? 'पावती पर्ची प्रिंट करें' : 'Print Slip'}</button>
       <button class="btn-secondary" onclick="closeRegistrationModal()">${isHi ? 'पूर्ण / बंद करें' : 'Close'}</button>
-      <button class="btn-primary" onclick="window.print()">${isHi ? 'पावती पर्ची प्रिंट करें' : 'Print Acknowledgement Slip'}</button>
     </div>
   `;
 }
@@ -3793,6 +3813,9 @@ function renderRegistrationAcknowledgementSlip(reg) {
 function closeRegistrationModal() {
   const modal = document.getElementById('registration-modal');
   if (modal) modal.style.display = 'none';
+  if (typeof loadPageMyApplications === 'function') {
+    loadPageMyApplications();
+  }
 }
 
 /* ==============================================================================

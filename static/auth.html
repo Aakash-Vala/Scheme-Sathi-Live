@@ -47,7 +47,7 @@
     <div class="nav-container">
       <a href="/" class="brand-wrapper" title="Scheme Sathi • MoSJE Concessional Lending Portal">
         <div class="brand-emblem-badge">
-          <svg width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <circle cx="12" cy="12" r="10" stroke="#f59e0b" stroke-width="1.8"/>
             <path d="M12 2a10 10 0 0 1 10 10M12 22a10 10 0 0 1-10-10" stroke="#10b981" stroke-width="2"/>
             <circle cx="12" cy="12" r="4" fill="#ffffff" fill-opacity="0.15"/>
@@ -56,7 +56,7 @@
         </div>
         <div class="brand-text">
           <h1>Scheme Sathi <span class="sih-badge">SIH 26092</span></h1>
-          <p data-i18n="portal_subtitle">AI Channel Finance Recommender & Concessional Lending Portal</p>
+          <p data-i18n="portal_subtitle">MoSJE • Concessional Credit Portal</p>
         </div>
       </a>
 
@@ -109,12 +109,12 @@
     <!-- Page Header -->
     <div style="margin-bottom: 24px; text-align: center;">
       <div class="gov-badge" style="margin: 0 auto 12px auto; display: inline-flex;">
-        <span>Official Beneficiary Access Portal • MoSJE & NSFDC</span>
+        <span id="auth-page-badge">Official Beneficiary Access Portal • MoSJE & NSFDC</span>
       </div>
-      <h2 style="font-size: 1.85rem; font-weight: 800; color: var(--text-pure); margin-bottom: 6px; letter-spacing: -0.3px;">
+      <h2 id="auth-page-title" style="font-size: 1.85rem; font-weight: 800; color: var(--text-pure); margin-bottom: 6px; letter-spacing: -0.3px;">
         Beneficiary Authentication & Portal Access
       </h2>
-      <p style="color: var(--text-muted); font-size: 0.92rem; max-width: 680px; margin: 0 auto;">
+      <p id="auth-page-subtitle" style="color: var(--text-muted); font-size: 0.92rem; max-width: 680px; margin: 0 auto;">
         Sign in to access your registered concessional applications, or register your profile to unlock verified MoSJE/NSFDC lending benefits.
       </p>
     </div>
@@ -124,7 +124,7 @@
       <div class="auth-page-card">
         
         <!-- Tab Navigation -->
-        <div class="auth-page-tabs">
+        <div class="auth-page-tabs" id="auth-page-tabs">
           <button type="button" id="page-tab-aadhaar" class="auth-page-tab active" onclick="selectAuthPageTab('aadhaar')">
             <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="3" y="4" width="18" height="16" rx="2"/><line x1="7" y1="8" x2="17" y2="8"/><line x1="7" y1="12" x2="17" y2="12"/><line x1="7" y1="16" x2="13" y2="16"/></svg>
             <span data-i18n="auth_tab_aadhaar">Aadhaar Card (OTP)</span>
@@ -144,7 +144,7 @@
         </div>
 
         <!-- Quick Demo Fill Helper Bar for Evaluators -->
-        <div class="auth-demo-bar">
+        <div class="auth-demo-bar" id="auth-demo-bar">
           <span style="font-size: 0.74rem; font-weight: 700; color: var(--text-muted); display: flex; align-items: center; gap: 4px;">
             <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
             Quick Evaluator Demo Fill:
@@ -391,29 +391,76 @@
 
   <script src="/static/app.js?v=3.5"></script>
   <script>
+    function updateAuthViewMode() {
+      const tabsEl = document.getElementById('auth-page-tabs');
+      const demoEl = document.getElementById('auth-demo-bar');
+      const titleEl = document.getElementById('auth-page-title');
+      const badgeEl = document.getElementById('auth-page-badge');
+      const subEl = document.getElementById('auth-page-subtitle');
+
+      if (currentUserProfile && currentUserToken) {
+        if (tabsEl) tabsEl.style.display = 'none';
+        if (demoEl) demoEl.style.display = 'none';
+        if (badgeEl) badgeEl.innerText = 'Official Beneficiary Dashboard • MoSJE & NSFDC';
+        if (titleEl) titleEl.innerText = 'Beneficiary Applications & Credit Dashboard';
+        if (subEl) subEl.innerText = 'Track your registered concessional applications, statutory approval status, and allocated channel partner branch details.';
+      } else {
+        if (tabsEl) tabsEl.style.display = 'flex';
+        if (demoEl) demoEl.style.display = 'flex';
+        if (badgeEl) badgeEl.innerText = 'Official Beneficiary Access Portal • MoSJE & NSFDC';
+        if (titleEl) titleEl.innerText = 'Beneficiary Authentication & Portal Access';
+        if (subEl) subEl.innerText = 'Sign in to access your registered concessional applications, or register your profile to unlock verified MoSJE/NSFDC lending benefits.';
+      }
+    }
+
+    function handleDashboardLogout() {
+      localStorage.removeItem('scheme_sathi_token');
+      localStorage.removeItem('scheme_sathi_user');
+      currentUserToken = null;
+      currentUserProfile = null;
+      renderAuthNav();
+      updateAuthViewMode();
+      selectAuthPageTab('login');
+      showPageNotification('You have signed out successfully.');
+    }
+
     document.addEventListener('DOMContentLoaded', () => {
+      // Re-read token/user from localStorage in case updated in another tab
+      currentUserToken = localStorage.getItem('scheme_sathi_token') || null;
+      try {
+        const savedUser = localStorage.getItem('scheme_sathi_user');
+        if (savedUser) currentUserProfile = JSON.parse(savedUser);
+      } catch (e) {
+        currentUserProfile = null;
+      }
+
+      updateAuthViewMode();
+
       // Determine initial tab from path or hash
       const path = window.location.pathname.toLowerCase();
       const hash = window.location.hash.toLowerCase();
 
-      if (path.includes('signup') || hash === '#signup') {
+      if (currentUserProfile && currentUserToken) {
+        selectAuthPageTab('myapps');
+      } else if (path.includes('signup') || hash === '#signup') {
         selectAuthPageTab('signup');
       } else if (path.includes('my-applications') || hash === '#my-applications' || hash === '#myapps') {
         selectAuthPageTab('myapps');
       } else if (path.includes('password') || hash === '#password') {
         selectAuthPageTab('login');
       } else {
-        // If already logged in, default to myapps, else Aadhaar OTP login
-        if (currentUserProfile && currentUserToken) {
-          selectAuthPageTab('myapps');
-        } else {
-          selectAuthPageTab('aadhaar');
-        }
+        selectAuthPageTab('aadhaar');
       }
     });
 
     function selectAuthPageTab(tabName) {
       hidePageAuthError();
+
+      // If user is already authenticated, always remain in dashboard mode (no login/signup)
+      if (currentUserProfile && currentUserToken && tabName !== 'myapps') {
+        tabName = 'myapps';
+      }
+      updateAuthViewMode();
 
       const tabAadhaar = document.getElementById('page-tab-aadhaar');
       const tabLogin = document.getElementById('page-tab-login');
@@ -604,6 +651,7 @@
           localStorage.setItem('scheme_sathi_user', JSON.stringify(data.user));
 
           renderAuthNav();
+          updateAuthViewMode();
           showPageNotification('Aadhaar authentication successful! Redirecting to My Applications...');
           setTimeout(() => {
             selectAuthPageTab('myapps');
@@ -696,6 +744,7 @@
           localStorage.setItem('scheme_sathi_user', JSON.stringify(data.user));
 
           renderAuthNav();
+          updateAuthViewMode();
           showPageNotification('Login successful! Redirecting to My Applications...');
           setTimeout(() => {
             selectAuthPageTab('myapps');
@@ -753,6 +802,7 @@
           localStorage.setItem('scheme_sathi_user', JSON.stringify(data.user));
 
           renderAuthNav();
+          updateAuthViewMode();
           showPageNotification('Beneficiary account created successfully!');
           setTimeout(() => {
             selectAuthPageTab('myapps');
@@ -788,7 +838,53 @@
         return;
       }
 
-      container.innerHTML = `<p style="color: var(--text-muted); font-size: 0.86rem; text-align: center; padding: 24px;">Fetching your official registered applications from MoSJE database...</p>`;
+      const rawName = currentUserProfile.full_name || 'Beneficiary';
+      const nameParts = rawName.trim().split(/\s+/);
+      const initials = nameParts.length >= 2 
+        ? (nameParts[0][0] + nameParts[1][0]).toUpperCase() 
+        : rawName.substring(0, 2).toUpperCase();
+      const caste = currentUserProfile.caste_category || 'SC';
+      const phone = currentUserProfile.phone_number ? '+91 ' + currentUserProfile.phone_number : 'Registered';
+      const stateDist = (currentUserProfile.state || 'Delhi') + (currentUserProfile.district ? ', ' + currentUserProfile.district : '');
+      const income = currentUserProfile.annual_income ? '₹' + Number(currentUserProfile.annual_income).toLocaleString('en-IN') : 'Below Ceiling';
+
+      const profileCardHtml = `
+        <div class="user-dashboard-profile-card">
+          <div style="display: flex; align-items: center; gap: 14px;">
+            <div class="user-dashboard-avatar">
+              ${initials}
+            </div>
+            <div>
+              <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
+                <span class="user-dashboard-name">${rawName}</span>
+                <span style="font-size: 0.72rem; background: var(--green-subtle); color: var(--green-primary); border: 1px solid var(--green-border); padding: 2px 8px; border-radius: 4px; font-weight: 700;">
+                  ${caste} Beneficiary
+                </span>
+                <span style="font-size: 0.72rem; background: rgba(56, 189, 248, 0.15); color: #38bdf8; border: 1px solid rgba(56, 189, 248, 0.3); padding: 2px 8px; border-radius: 4px; font-weight: 700;">
+                  Aadhaar Verified
+                </span>
+              </div>
+              <div class="user-dashboard-meta">
+                <span><strong>Mobile:</strong> ${phone}</span>
+                <span>•</span>
+                <span><strong>Location:</strong> ${stateDist}</span>
+                <span>•</span>
+                <span><strong>Annual Income:</strong> ${income}</span>
+              </div>
+            </div>
+          </div>
+          <div class="user-dashboard-actions">
+            <a href="/recommender" class="btn-primary" style="font-size: 0.78rem; padding: 7px 14px; text-decoration: none;">
+              + Apply for Scheme
+            </a>
+            <button type="button" class="btn-secondary" onclick="handleDashboardLogout()" style="font-size: 0.78rem; padding: 7px 14px; color: #f87171; border-color: rgba(239, 68, 68, 0.4);">
+              Sign Out
+            </button>
+          </div>
+        </div>
+      `;
+
+      container.innerHTML = profileCardHtml + `<p style="color: var(--text-muted); font-size: 0.86rem; text-align: center; padding: 24px;">Fetching your official registered applications from MoSJE database...</p>`;
 
       try {
         const res = await fetch('/api/auth/my-applications', {
@@ -798,7 +894,7 @@
         const apps = data.applications || [];
 
         if (apps.length === 0) {
-          container.innerHTML = `
+          container.innerHTML = profileCardHtml + `
             <div style="text-align: center; padding: 36px 20px; background: var(--bg-card-subtle); border-radius: 6px; border: 1px dashed var(--border-dark);">
               <div style="display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; border-radius: 50%; background: var(--green-subtle); color: var(--green-primary); margin-bottom: 12px;">
                 <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
@@ -815,7 +911,7 @@
           return;
         }
 
-        container.innerHTML = `
+        container.innerHTML = profileCardHtml + `
           <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px; border-bottom: 1px solid var(--border-dark); padding-bottom: 8px;">
             <span style="font-size: 0.82rem; font-weight: 700; color: var(--text-pure);">
               Total Registered Applications: <span style="color: var(--green-primary);">${apps.length}</span>
@@ -861,7 +957,7 @@
           </div>
         `;
       } catch (err) {
-        container.innerHTML = `<p style="color: #dc2626; font-size: 0.86rem; text-align: center; padding: 20px;">Failed to load applications: ${err.message}</p>`;
+        container.innerHTML = profileCardHtml + `<p style="color: #dc2626; font-size: 0.86rem; text-align: center; padding: 20px;">Failed to load applications: ${err.message}</p>`;
       }
     }
   </script>

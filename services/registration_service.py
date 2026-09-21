@@ -60,10 +60,13 @@ class SchemeRegistrationService:
             with open(self.partners_path, "r", encoding="utf-8") as f:
                 self.partners = json.load(f)
 
-        # Initialize registry file if not present
-        if not os.path.exists(self.registry_path):
-            with open(self.registry_path, "w", encoding="utf-8") as f:
-                json.dump([], f, indent=2)
+        # Initialize registry file if not present (guarded for serverless read-only filesystems)
+        try:
+            if not os.path.exists(self.registry_path):
+                with open(self.registry_path, "w", encoding="utf-8") as f:
+                    json.dump([], f, indent=2)
+        except Exception:
+            pass
 
     def _load_registry(self) -> List[Dict[str, Any]]:
         from services.db import mongo_to_dict
@@ -185,9 +188,27 @@ class SchemeRegistrationService:
             })
 
         # 7. Record structure
+        applicant_uid = data.get("applicant_user_id")
+        if not applicant_uid and self.db_service.check_connection() and self.db_service.users is not None:
+            try:
+                phone = str(data.get("phone_number", "")).strip()
+                clean_phone = "".join(filter(str.isdigit, phone))[-10:]
+                matched_user = self.db_service.users.find_one({
+                    "$or": [
+                        {"phone_number": phone},
+                        {"phone_number": clean_phone},
+                        {"phone_number": f"+91 {clean_phone}"},
+                        {"email": data.get("email", "").strip()}
+                    ]
+                }, {"user_id": 1})
+                if matched_user:
+                    applicant_uid = matched_user.get("user_id")
+            except Exception:
+                pass
+
         registration_record = {
             "registration_id": ref_id,
-            "applicant_user_id": data.get("applicant_user_id"),
+            "applicant_user_id": applicant_uid,
             "submission_timestamp": submission_timestamp,
             "status": "PROVISIONALLY_APPROVED_ROUTED_TO_CHANNEL_PARTNER",
             "status_label_en": "Provisionally Approved • Routed to Channel Partner",

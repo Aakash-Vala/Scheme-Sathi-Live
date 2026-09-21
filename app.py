@@ -106,6 +106,7 @@ class SchemeRegistrationRequest(BaseModel):
     promoter_contribution: Optional[float] = Field(default=0.0)
     requested_loan: Optional[float] = Field(default=None)
     assigned_partner_id: Optional[str] = Field(default=None)
+    applicant_user_id: Optional[str] = Field(default=None, description="Optional registered user ID if authenticated")
     confirmed_by_user: bool = Field(..., description="Must be true to confirm pre-submission details")
 
 class UserSignUpRequest(BaseModel):
@@ -522,8 +523,10 @@ async def register_scheme_application(req: SchemeRegistrationRequest, authorizat
     try:
         current_user = get_current_user_optional(authorization)
         data = req.model_dump()
-        if current_user:
+        if current_user and current_user.get("user_id"):
             data["applicant_user_id"] = current_user.get("user_id")
+        elif req.applicant_user_id:
+            data["applicant_user_id"] = req.applicant_user_id
 
         service = get_registration_service()
         result = service.register_applicant(data)

@@ -15,7 +15,14 @@ from pymongo.errors import ConnectionFailure, ServerSelectionTimeoutError
 
 logger = logging.getLogger("scheme_sathi.db")
 
-MONGO_URI = os.environ.get("MONGO_URI", "mongodb://127.0.0.1:27017/scheme_sathi_sih")
+try:
+    from dotenv import load_dotenv
+    load_dotenv()
+except Exception:
+    pass
+
+DEFAULT_ATLAS_URI = "mongodb+srv://aakashcool2006_db_user:Sysssyyy_123@cluster0.yqz42zr.mongodb.net/scheme_sathi_sih?retryWrites=true&w=majority"
+MONGO_URI = os.environ.get("MONGO_URI") or DEFAULT_ATLAS_URI
 DB_NAME = os.environ.get("MONGO_DB_NAME", "scheme_sathi_sih")
 
 
