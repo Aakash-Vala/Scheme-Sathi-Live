@@ -54,6 +54,37 @@ class AuthService:
         except Exception:
             return []
 
+    def _save_single_user(self, user: Dict[str, Any]):
+        from services.db import db_service, mongo_to_dict
+        sanitized = mongo_to_dict(user)
+        if db_service.check_connection() and db_service.users is not None:
+            try:
+                query = {}
+                if sanitized.get("email"):
+                    query["email"] = sanitized["email"]
+                elif sanitized.get("phone_number"):
+                    query["phone_number"] = sanitized["phone_number"]
+                elif sanitized.get("user_id"):
+                    query["user_id"] = sanitized["user_id"]
+                if query:
+                    db_service.users.update_one(query, {"$set": sanitized}, upsert=True)
+            except Exception as e:
+                pass
+        try:
+            users = self._load_users()
+            found = False
+            for idx, u in enumerate(users):
+                if (sanitized.get("email") and u.get("email") == sanitized["email"]) or (sanitized.get("user_id") and u.get("user_id") == sanitized["user_id"]):
+                    users[idx] = sanitized
+                    found = True
+                    break
+            if not found:
+                users.append(sanitized)
+            with open(self.users_file, "w", encoding="utf-8") as f:
+                json.dump([mongo_to_dict(u) for u in users], f, indent=2, ensure_ascii=False)
+        except Exception:
+            pass
+
     def _save_users(self, users: List[Dict[str, Any]]):
         from services.db import db_service, mongo_to_dict
         if db_service.check_connection() and db_service.users is not None:
@@ -291,8 +322,7 @@ class AuthService:
             "last_login": now_iso
         }
 
-        users.append(user_record)
-        self._save_users(users)
+        self._save_single_user(user_record)
 
         token = self._generate_token(user_id, phone_number)
         safe_user = self._sanitize_user(user_record)

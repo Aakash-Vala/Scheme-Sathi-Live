@@ -66,11 +66,12 @@ class SchemeRegistrationService:
                 json.dump([], f, indent=2)
 
     def _load_registry(self) -> List[Dict[str, Any]]:
+        from services.db import mongo_to_dict
         if self.db_service.check_connection() and self.db_service.applications is not None:
             try:
                 apps = list(self.db_service.applications.find({}, {"_id": 0}))
                 if apps:
-                    return apps
+                    return [mongo_to_dict(a) for a in apps]
             except Exception:
                 pass
         if not os.path.exists(self.registry_path):
@@ -81,17 +82,30 @@ class SchemeRegistrationService:
         except Exception:
             return []
 
-    def _save_registry(self, registry: List[Dict[str, Any]]):
+    def _save_single_registration(self, reg_record: Dict[str, Any]):
+        from services.db import mongo_to_dict
+        sanitized = mongo_to_dict(reg_record)
         if self.db_service.check_connection() and self.db_service.applications is not None:
             try:
-                for a in registry:
-                    ref_id = a.get("registration_id")
-                    if ref_id:
-                        self.db_service.applications.update_one({"registration_id": ref_id}, {"$set": a}, upsert=True)
+                ref_id = sanitized.get("registration_id")
+                if ref_id:
+                    self.db_service.applications.update_one(
+                        {"registration_id": ref_id},
+                        {"$set": sanitized},
+                        upsert=True
+                    )
             except Exception:
                 pass
-        with open(self.registry_path, "w", encoding="utf-8") as f:
-            json.dump(registry, f, indent=2, ensure_ascii=False)
+        try:
+            current = []
+            if os.path.exists(self.registry_path):
+                with open(self.registry_path, "r", encoding="utf-8") as f:
+                    current = json.load(f)
+            current.insert(0, sanitized)
+            with open(self.registry_path, "w", encoding="utf-8") as f:
+                json.dump(current[:50], f, indent=2, ensure_ascii=False)
+        except Exception:
+            pass
 
     def register_applicant(self, data: Dict[str, Any]) -> Dict[str, Any]:
         """
@@ -225,10 +239,8 @@ class SchemeRegistrationService:
             "next_steps_hi": f"15 कार्य दिवसों के भीतर अपनी संदर्भ पर्ची और मूल दस्तावेजों के साथ भौतिक सत्यापन हेतु {assigned_partner['name']} में संपर्क करें।"
         }
 
-        # 8. Commit to persistent registry
-        registry = self._load_registry()
-        registry.insert(0, registration_record)
-        self._save_registry(registry)
+        # 8. Commit to persistent registry (instant single-document operation)
+        self._save_single_registration(registration_record)
 
         return {
             "status": "success",
@@ -237,6 +249,14 @@ class SchemeRegistrationService:
         }
 
     def get_registration_by_id(self, reg_id: str) -> Optional[Dict[str, Any]]:
+        from services.db import mongo_to_dict
+        if self.db_service.check_connection() and self.db_service.applications is not None:
+            try:
+                doc = self.db_service.applications.find_one({"registration_id": reg_id}, {"_id": 0})
+                if doc:
+                    return mongo_to_dict(doc)
+            except Exception:
+                pass
         registry = self._load_registry()
         for r in registry:
             if r.get("registration_id") == reg_id:
