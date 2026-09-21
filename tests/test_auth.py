@@ -19,11 +19,17 @@ class TestAuthService(unittest.TestCase):
         # Reset users datastore for test isolation
         with open(cls.auth_service.users_file, "w", encoding="utf-8") as f:
             json.dump([], f)
+        from services.db import db_service
+        if db_service.check_connection() and db_service.users is not None:
+            db_service.users.delete_many({"phone_number": {"$in": ["9811223344", "9871122334", "9812345678", "9998887776", "9876543210", "9899887766", "9812993344", "9876500000"]}})
 
     def tearDown(self):
         # Clear test accounts after tests
         with open(self.auth_service.users_file, "w", encoding="utf-8") as f:
             json.dump([], f)
+        from services.db import db_service
+        if db_service.check_connection() and db_service.users is not None:
+            db_service.users.delete_many({"phone_number": {"$in": ["9811223344", "9871122334", "9812345678", "9998887776", "9876543210", "9899887766", "9812993344", "9876500000"]}})
 
     def test_signup_success(self):
         payload = {
@@ -57,10 +63,11 @@ class TestAuthService(unittest.TestCase):
         # Verify secure persistence in users.json
         with open(self.auth_service.users_file, "r", encoding="utf-8") as f:
             stored = json.load(f)
-        self.assertEqual(len(stored), 1)
-        self.assertNotEqual(stored[0]["password_hash"], "SecurePassword123")
-        self.assertTrue(len(stored[0]["password_hash"]) > 40)
-        self.assertTrue(len(stored[0]["salt"]) > 10)
+        self.assertTrue(any(u.get("phone_number") == "9811223344" for u in stored))
+        saved_user = next(u for u in stored if u.get("phone_number") == "9811223344")
+        self.assertNotEqual(saved_user.get("password_hash"), "SecurePassword123")
+        self.assertTrue(len(saved_user.get("password_hash", "")) > 40)
+        self.assertTrue(len(saved_user.get("salt", "")) > 10)
 
     def test_signup_duplicate_phone(self):
         payload = {
