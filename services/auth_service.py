@@ -38,6 +38,14 @@ class AuthService:
                 json.dump([], f, indent=2)
 
     def _load_users(self) -> List[Dict[str, Any]]:
+        from services.db import db_service, mongo_to_dict
+        if db_service.check_connection() and db_service.users is not None:
+            try:
+                users = list(db_service.users.find({}, {"_id": 0}))
+                if users:
+                    return [mongo_to_dict(u) for u in users]
+            except Exception as e:
+                pass
         if not os.path.exists(self.users_file):
             return []
         try:
@@ -47,10 +55,33 @@ class AuthService:
             return []
 
     def _save_users(self, users: List[Dict[str, Any]]):
+        from services.db import db_service, mongo_to_dict
+        if db_service.check_connection() and db_service.users is not None:
+            try:
+                for u in users:
+                    query = {}
+                    if u.get("email"):
+                        query["email"] = u["email"]
+                    elif u.get("phone_number"):
+                        query["phone_number"] = u["phone_number"]
+                    elif u.get("id"):
+                        query["id"] = u["id"]
+                    if query:
+                        db_service.users.update_one(query, {"$set": mongo_to_dict(u)}, upsert=True)
+            except Exception as e:
+                pass
         with open(self.users_file, "w", encoding="utf-8") as f:
-            json.dump(users, f, indent=2, ensure_ascii=False)
+            json.dump([mongo_to_dict(u) for u in users], f, indent=2, ensure_ascii=False)
 
     def _load_aadhaar_registry(self) -> List[Dict[str, Any]]:
+        from services.db import db_service, mongo_to_dict
+        if db_service.check_connection() and db_service.aadhaar_registry is not None:
+            try:
+                recs = list(db_service.aadhaar_registry.find({}, {"_id": 0}))
+                if recs:
+                    return [mongo_to_dict(r) for r in recs]
+            except Exception as e:
+                pass
         if not os.path.exists(self.aadhaar_registry_file):
             return []
         try:
@@ -60,8 +91,17 @@ class AuthService:
             return []
 
     def _save_aadhaar_registry(self, records: List[Dict[str, Any]]):
+        from services.db import db_service, mongo_to_dict
+        if db_service.check_connection() and db_service.aadhaar_registry is not None:
+            try:
+                for rec in records:
+                    a_num = rec.get("aadhaar_number")
+                    if a_num:
+                        db_service.aadhaar_registry.update_one({"aadhaar_number": a_num}, {"$set": mongo_to_dict(rec)}, upsert=True)
+            except Exception as e:
+                pass
         with open(self.aadhaar_registry_file, "w", encoding="utf-8") as f:
-            json.dump(records, f, indent=2, ensure_ascii=False)
+            json.dump([mongo_to_dict(r) for r in records], f, indent=2, ensure_ascii=False)
 
     def _get_or_create_aadhaar_citizen(self, aadhaar_number: str) -> Dict[str, Any]:
         """

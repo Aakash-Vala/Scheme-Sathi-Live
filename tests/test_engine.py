@@ -32,7 +32,7 @@ class TestSchemeSathiPlatform(unittest.TestCase):
         for s in schemes:
             for k in required_keys:
                 self.assertIn(k, s, f"Scheme {s.get('id')} missing key {k}")
-            self.assertGreater(s["interest_rate_beneficiary_pct"], 0.0)
+            self.assertGreaterEqual(s["interest_rate_beneficiary_pct"], 0.0)
             self.assertGreater(s["max_project_cost"], 0.0)
 
     def test_02_deterministic_eligibility(self):

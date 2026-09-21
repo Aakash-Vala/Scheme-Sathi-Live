@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: scheme-sathi
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app --workers 2 --worker-class uvicorn.workers.UvicornWorker --bind 0.0.0.0:$PORT
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.9
+      - key: ENVIRONMENT
+        value: production
+      - key: MONGO_DB_NAME
+        value: scheme_sathi_sih
+      - key: MONGO_URI
+        sync: false
+    healthCheckPath: /health
+    autoDeploy: true

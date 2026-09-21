@@ -19,6 +19,7 @@ from services.locator_service import get_locator
 from services.chatbot_service import get_chatbot_service
 from services.registration_service import get_registration_service
 from services.auth_service import get_auth_service
+from services.db import db_service
 
 app = FastAPI(
     title="Scheme Sathi - AI Scheme Matching Platform",
@@ -26,10 +27,18 @@ app = FastAPI(
     version="1.0.0"
 )
 
+@app.on_event("startup")
+async def on_startup():
+    db_service.init_and_seed()
+
+
 # CORS Middleware
+cors_origins_env = os.environ.get("CORS_ORIGINS", "*")
+allowed_origins = [o.strip() for o in cors_origins_env.split(",") if o.strip()] if cors_origins_env != "*" else ["*"]
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=allowed_origins,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -180,13 +189,15 @@ async def serve_locator():
 async def serve_auth_page():
     return FileResponse(os.path.join(STATIC_DIR, "auth.html"))
 
+@app.get("/health")
 @app.get("/api/health")
 async def health_check():
     return {
         "status": "healthy",
         "service": "Scheme Sathi AI Engine",
         "version": "1.0.0",
-        "ml_model_status": "loaded"
+        "ml_model_status": "loaded",
+        "mongodb": db_service.get_stats()
     }
 
 @app.get("/api/schemes")

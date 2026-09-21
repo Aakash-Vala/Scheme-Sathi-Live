@@ -23,13 +23,25 @@
     "description_en": "Micro-finance credit assistance for small-scale income-generating activities such as petty shops, tea stalls, animal rearing, small artisans, and street vendors.",
     "description_hi": "छोटे पैमाने की आय-सृजन गतिविधियों जैसे चाय की दुकान, किराना दुकान, पशुपालन, दस्तकारी और फेरीवालों के लिए सूक्ष्म ऋण सहायता।",
     "eligible_activities": [
-      "petty shop", "kirana grocery store", "tea stall and snacks", "vegetable fruit vending",
-      "tailoring stitching unit", "shoe making leather repairs", "cycle rickshaw repair",
-      "pottery handloom", "goat rearing dairy poultry", "barber salon shop", "mobile repair kiosk"
+      "petty shop",
+      "kirana grocery store",
+      "tea stall and snacks",
+      "vegetable fruit vending",
+      "tailoring stitching unit",
+      "shoe making leather repairs",
+      "cycle rickshaw repair",
+      "pottery handloom",
+      "goat rearing dairy poultry",
+      "barber salon shop",
+      "mobile repair kiosk"
     ],
     "required_documents": [
-      "SC Caste Certificate", "Income Certificate (< ₹3 Lakhs/yr)", "Aadhaar Card",
-      "Bank Account Passbook", "Passport Size Photos", "Project Estimate/Quotation"
+      "SC Caste Certificate",
+      "Income Certificate (< ₹3 Lakhs/yr)",
+      "Aadhaar Card",
+      "Bank Account Passbook",
+      "Passport Size Photos",
+      "Project Estimate/Quotation"
     ]
   },
   {
@@ -56,13 +68,22 @@
     "description_en": "Special micro-credit empowerment scheme exclusively for SC women entrepreneurs offering highly subsidized loans with up to 95% project cost financing at just 4% p.a.",
     "description_hi": "अनुसूचित जाति की महिला उद्यमियों के लिए विशेष सूक्ष्म ऋण योजना, जिसमें 95% तक वित्तपोषण मात्र 4% वार्षिक रियायती ब्याज दर पर मिलता है।",
     "eligible_activities": [
-      "women boutique tailoring", "beauty parlor salon", "handicraft embroidery",
-      "spices masala pickle making", "bangle cosmetic shop", "dairy farming cow buffalo",
-      "small garment retail", "weaving textile crafts", "food catering tiffin service"
+      "women boutique tailoring",
+      "beauty parlor salon",
+      "handicraft embroidery",
+      "spices masala pickle making",
+      "bangle cosmetic shop",
+      "dairy farming cow buffalo",
+      "small garment retail",
+      "weaving textile crafts",
+      "food catering tiffin service"
     ],
     "required_documents": [
-      "SC Caste Certificate (Self)", "Income Certificate (< ₹3 Lakhs/yr)",
-      "Aadhaar Card", "Bank Passbook (Individual or SHG)", "Project Cost Quotation"
+      "SC Caste Certificate (Self)",
+      "Income Certificate (< ₹3 Lakhs/yr)",
+      "Aadhaar Card",
+      "Bank Passbook (Individual or SHG)",
+      "Project Cost Quotation"
     ]
   },
   {
@@ -89,13 +110,23 @@
     "description_en": "Financial assistance for establishing or expanding small businesses, cottage industries, retail outlets, and service enterprises with loans up to ₹5.00 Lakhs at 6% p.a.",
     "description_hi": "लघु व्यवसाय, कुटीर उद्योग, खुदरा आउटलेट और सेवा उद्यमों के विस्तार हेतु ₹5.00 लाख तक का ऋण मात्र 6% वार्षिक दर पर।",
     "eligible_activities": [
-      "small manufacturing unit", "bakery confectionery shop", "stationery printing xerox shop",
-      "electrical repair hardware store", "garment retail readymade store", "welding carpentry fabrication",
-      "auto spare parts repair workshop", "restaurant dhaba catering unit", "computer center training kiosk"
+      "small manufacturing unit",
+      "bakery confectionery shop",
+      "stationery printing xerox shop",
+      "electrical repair hardware store",
+      "garment retail readymade store",
+      "welding carpentry fabrication",
+      "auto spare parts repair workshop",
+      "restaurant dhaba catering unit",
+      "computer center training kiosk"
     ],
     "required_documents": [
-      "SC Caste Certificate", "Income Certificate (< ₹3 Lakhs/yr)", "Detailed Project Report (DPR)",
-      "Quotation of Machinery/Tools", "Aadhaar and PAN Card", "Rent agreement / Proof of premise"
+      "SC Caste Certificate",
+      "Income Certificate (< ₹3 Lakhs/yr)",
+      "Detailed Project Report (DPR)",
+      "Quotation of Machinery/Tools",
+      "Aadhaar and PAN Card",
+      "Rent agreement / Proof of premise"
     ]
   },
   {
@@ -122,15 +153,23 @@
     "description_en": "Large-ticket credit assistance for medium enterprises, manufacturing plants, transport operations, service industries, and agricultural processing up to ₹50.00 Lakhs.",
     "description_hi": "मध्यम उद्यम, विनिर्माण संयंत्र, परिवहन वाहन, सेवा उद्योग और कृषि प्रसंस्करण के लिए ₹50 लाख तक का रियायती सावधि ऋण।",
     "eligible_activities": [
-      "commercial passenger transport taxi bus", "goods carrier truck logistics",
-      "flour mill oil mill agro processing", "cold storage warehousing",
-      "plastic molding packaging manufacturing", "diagnostic clinic pathology lab",
-      "furniture manufacturing wood workshop", "construction materials fabrication"
+      "commercial passenger transport taxi bus",
+      "goods carrier truck logistics",
+      "flour mill oil mill agro processing",
+      "cold storage warehousing",
+      "plastic molding packaging manufacturing",
+      "diagnostic clinic pathology lab",
+      "furniture manufacturing wood workshop",
+      "construction materials fabrication"
     ],
     "required_documents": [
-      "SC Caste Certificate", "Income Certificate (< ₹3 Lakhs/yr)", "Comprehensive Project Report (DPR)",
-      "Audited Financials/ITR (if existing)", "Collateral security / Hypothecation details",
-      "Permits, licenses (Pollution, Trade, GST if applicable)", "Aadhaar and PAN"
+      "SC Caste Certificate",
+      "Income Certificate (< ₹3 Lakhs/yr)",
+      "Comprehensive Project Report (DPR)",
+      "Audited Financials/ITR (if existing)",
+      "Collateral security / Hypothecation details",
+      "Permits, licenses (Pollution, Trade, GST if applicable)",
+      "Aadhaar and PAN"
     ]
   },
   {
@@ -157,13 +196,22 @@
     "description_en": "Low-interest educational loans up to ₹30 Lakhs (in India) and ₹40 Lakhs (abroad) for full-time professional/technical degrees (Engineering, Medical, MBA, MCA, Law).",
     "description_hi": "भारत में ₹30 लाख और विदेश में ₹40 लाख तक उच्च तकनीकी/व्यावसायिक पाठ्यक्रमों (इंजीनियरिंग, मेडिकल, एमबीए, कानून) के लिए 4% पर शैक्षणिक ऋण।",
     "eligible_activities": [
-      "btech engineering degree", "mbbs medical healthcare", "mba pgdm business management",
-      "mca computer science it", "llb law legal studies", "overseas foreign university master degree",
-      "pilot training aviation", "polytechnic technical diploma"
+      "btech engineering degree",
+      "mbbs medical healthcare",
+      "mba pgdm business management",
+      "mca computer science it",
+      "llb law legal studies",
+      "overseas foreign university master degree",
+      "pilot training aviation",
+      "polytechnic technical diploma"
     ],
     "required_documents": [
-      "SC Caste Certificate", "Income Certificate (< ₹3 Lakhs/yr)", "10th, 12th & Graduation Marksheets",
-      "Admission Offer Letter & Fee Schedule from Institution", "Aadhaar Card", "Co-applicant / Guarantor KYC"
+      "SC Caste Certificate",
+      "Income Certificate (< ₹3 Lakhs/yr)",
+      "10th, 12th & Graduation Marksheets",
+      "Admission Offer Letter & Fee Schedule from Institution",
+      "Aadhaar Card",
+      "Co-applicant / Guarantor KYC"
     ]
   },
   {
@@ -190,14 +238,21 @@
     "description_en": "Concessional loans for climate-mitigating clean technologies including Battery Electric Vehicles (e-rickshaws, e-autos), solar rooftop systems, polyhouses, and waste recycling.",
     "description_hi": "पर्यावरण-अनुकूल स्वच्छ तकनीकों जैसे ई-रिक्शा, ई-कार्ट, सोलर रूफटॉप प्लांट, पॉलीहाउस और कचरा पुनर्चक्रण के लिए रियायती ब्याज दर पर ऋण।",
     "eligible_activities": [
-      "electric rickshaw e-rickshaw battery vehicle", "electric loader cargo e-auto",
-      "solar power rooftop plant installation", "solar water pump agro setup",
-      "plastic waste recycling unit", "organic compost vermicomposting",
+      "electric rickshaw e-rickshaw battery vehicle",
+      "electric loader cargo e-auto",
+      "solar power rooftop plant installation",
+      "solar water pump agro setup",
+      "plastic waste recycling unit",
+      "organic compost vermicomposting",
       "poly house greenhouse farming"
     ],
     "required_documents": [
-      "SC Caste Certificate", "Income Certificate (< ₹3 Lakhs/yr)", "EV / Solar Equipment Quotation",
-      "Driving license / Transport permit (for EV)", "Aadhaar and PAN", "Electricity bill / Land record"
+      "SC Caste Certificate",
+      "Income Certificate (< ₹3 Lakhs/yr)",
+      "EV / Solar Equipment Quotation",
+      "Driving license / Transport permit (for EV)",
+      "Aadhaar and PAN",
+      "Electricity bill / Land record"
     ]
   },
   {
@@ -224,13 +279,19 @@
     "description_en": "Financial assistance for procurement of mechanized cleaning and sanitation equipment (sewer jetting machines, suction emptiers, garbage compactor trucks, pay & use toilets).",
     "description_hi": "स्वचालित सफाई उपकरण जैसे सीवर जेटिंग मशीन, सक्शन एम्पटियर, कचरा ढोने वाले वाहन और सार्वजनिक शौचालय संचालन हेतु रियायती ऋण।",
     "eligible_activities": [
-      "mechanized sewer suction jetting machine", "septic tank cleaner vehicle",
-      "garbage collection tipper truck", "sanitation pay and use toilet complex",
-      "solid waste handling equipment", "drain cleaning mechanized equipment"
+      "mechanized sewer suction jetting machine",
+      "septic tank cleaner vehicle",
+      "garbage collection tipper truck",
+      "sanitation pay and use toilet complex",
+      "solid waste handling equipment",
+      "drain cleaning mechanized equipment"
     ],
     "required_documents": [
-      "Safai Karamchari / Dependent Certificate", "Caste Certificate",
-      "Aadhaar Card", "Machinery / Vehicle Quotation from authorized vendor", "Municipality / Panchayat NOC (if applicable)"
+      "Safai Karamchari / Dependent Certificate",
+      "Caste Certificate",
+      "Aadhaar Card",
+      "Machinery / Vehicle Quotation from authorized vendor",
+      "Municipality / Panchayat NOC (if applicable)"
     ]
   },
   {
@@ -257,15 +318,21 @@
     "description_en": "Bank loans between ₹10 Lakhs and ₹1 Crore to at least one SC or ST borrower and one woman borrower per bank branch for setting up greenfield manufacturing, service, or agri-allied units.",
     "description_hi": "प्रति बैंक शाखा कम से कम एक एससी/एसटी और एक महिला को नई विनिर्माण, सेवा या व्यापार इकाई लगाने हेतु ₹10 लाख से ₹1 करोड़ तक का बैंक ऋण।",
     "eligible_activities": [
-      "greenfield manufacturing plant", "it software services firm",
-      "food processing packaging factory", "hospitality resort hotel",
-      "healthcare nursing home clinic", "large wholesale trading enterprise",
+      "greenfield manufacturing plant",
+      "it software services firm",
+      "food processing packaging factory",
+      "hospitality resort hotel",
+      "healthcare nursing home clinic",
+      "large wholesale trading enterprise",
       "agro processing cold chain"
     ],
     "required_documents": [
-      "SC/ST Certificate", "Detailed Project Appraisal Report (TEV Study)",
-      "Pollution Control Board Consent & Udyam Registration", "PAN, GSTIN, Aadhaar",
-      "Bank Account Statements (12 months)", "Collateral security / CGSSI guarantee"
+      "SC/ST Certificate",
+      "Detailed Project Appraisal Report (TEV Study)",
+      "Pollution Control Board Consent & Udyam Registration",
+      "PAN, GSTIN, Aadhaar",
+      "Bank Account Statements (12 months)",
+      "Collateral security / CGSSI guarantee"
     ]
   },
   {
@@ -292,14 +359,262 @@
     "description_en": "Equity and concessional debt funding up to ₹5.00 Crores at 4% p.a. for innovative, scalable, technology-driven ventures with at least 51% SC equity ownership.",
     "description_hi": "कम से कम 51% अनुसूचित जाति स्वामित्व वाले अभिनव और तकनीकी स्टार्टअप के लिए ₹5 करोड़ तक का 4% वार्षिक दर पर वेंचर कैपिटल वित्तपोषण।",
     "eligible_activities": [
-      "fintech artificial intelligence deep tech", "agritech smart farming iot",
-      "biotechnology pharmaceuticals", "renewable energy ev battery technology",
-      "advanced manufacturing robotics", "edtech digital education platforms"
+      "fintech artificial intelligence deep tech",
+      "agritech smart farming iot",
+      "biotechnology pharmaceuticals",
+      "renewable energy ev battery technology",
+      "advanced manufacturing robotics",
+      "edtech digital education platforms"
     ],
     "required_documents": [
-      "SC Promoters Shareholding Certificate (>= 51%)", "Company Incorporation Certificate (MCA)",
-      "Audited Balance Sheets & P&L", "Pitch Deck & Detailed Business Plan",
-      "Patent / Intellectual Property proof (if any)", "DPIIT Startup Recognition"
+      "SC Promoters Shareholding Certificate (>= 51%)",
+      "Company Incorporation Certificate (MCA)",
+      "Audited Balance Sheets & P&L",
+      "Pitch Deck & Detailed Business Plan",
+      "Patent / Intellectual Property proof (if any)",
+      "DPIIT Startup Recognition"
+    ]
+  },
+  {
+    "id": "pmegp_sc",
+    "name": "Prime Minister Employment Generation Programme (PMEGP)",
+    "name_hi": "प्रधानमंत्री रोजगार सृजन कार्यक्रम (PMEGP)",
+    "category": "term_loan",
+    "ministry": "Ministry of Micro, Small and Medium Enterprises (MSME)",
+    "implementing_agency": "KVIC / State KVIB / District Industries Centres (DIC)",
+    "target_beneficiary": "SC, ST, Women, Rural and Urban Micro-Entrepreneurs",
+    "gender_preference": "all",
+    "income_limit_annual": 500000,
+    "min_project_cost": 50000,
+    "max_project_cost": 5000000,
+    "max_loan_amount": 4500000,
+    "financing_percentage": 95.0,
+    "min_promoter_contribution": 5.0,
+    "interest_rate_beneficiary_pct": 8.5,
+    "interest_rate_female_rebate_pct": 0.0,
+    "commercial_bank_rate_pct": 12.5,
+    "max_tenure_years": 7,
+    "moratorium_months": 6,
+    "repayment_frequency": "Monthly",
+    "description_en": "Credit-linked subsidy programme providing up to 35% capital subsidy for SC/ST entrepreneurs setting up new micro manufacturing (up to 50L) or service (up to 20L) enterprises.",
+    "description_hi": "ऋण-संबद्ध सब्सिडी योजना जो नए सूक्ष्म विनिर्माण (50 लाख तक) या सेवा उद्यम स्थापित करने वाले SC/ST उद्यमियों को 35% तक पूंजीगत अनुदान प्रदान करती है।",
+    "eligible_activities": [
+      "agro food processing unit",
+      "light engineering fabrication",
+      "textile garment manufacturing",
+      "furniture woodwork unit",
+      "plastic packaging unit",
+      "dairy cattle feed processing",
+      "service repair workshops",
+      "printing press graphic unit"
+    ],
+    "required_documents": [
+      "Aadhaar Card",
+      "Caste Certificate (SC/ST)",
+      "Detailed Project Report (DPR)",
+      "EDP Training Certificate",
+      "Educational Qualification (8th pass for >10L)",
+      "Rural Area Certificate (if applicable)"
+    ]
+  },
+  {
+    "id": "mudra_shishu_sc",
+    "name": "Pradhan Mantri MUDRA Yojana - Shishu Category",
+    "name_hi": "प्रधानमंत्री मुद्रा योजना - शिशु श्रेणी",
+    "category": "micro_finance",
+    "ministry": "Ministry of Finance / DFS",
+    "implementing_agency": "MUDRA Ltd through Commercial Banks, RRBs, SFBs & MFIs",
+    "target_beneficiary": "SC micro-enterprises, small shopkeepers, fruit vendors, service units",
+    "gender_preference": "all",
+    "income_limit_annual": 400000,
+    "min_project_cost": 5000,
+    "max_project_cost": 50000,
+    "max_loan_amount": 50000,
+    "financing_percentage": 100.0,
+    "min_promoter_contribution": 0.0,
+    "interest_rate_beneficiary_pct": 7.5,
+    "interest_rate_female_rebate_pct": 0.25,
+    "commercial_bank_rate_pct": 13.0,
+    "max_tenure_years": 3,
+    "moratorium_months": 3,
+    "repayment_frequency": "Monthly",
+    "description_en": "Zero-collateral micro credit up to ₹50,000 for early-stage micro-enterprises, vegetable sellers, roadside artisans, and small home businesses.",
+    "description_hi": "प्रारंभिक चरण के सूक्ष्म उद्यमों, सब्जी विक्रेताओं, कारीगरों और छोटे गृह व्यवसायों के लिए ₹50,000 तक बिना किसी गारंटी के सूक्ष्म ऋण।",
+    "eligible_activities": [
+      "tea snack stall",
+      "fruit vegetable cart",
+      "street food vending",
+      "pottery clay work",
+      "mobile repair and accessories",
+      "tailoring alteration shop",
+      "barber haircutting salon"
+    ],
+    "required_documents": [
+      "Aadhaar Card",
+      "Proof of Business Address",
+      "Bank Statement (last 6 months)",
+      "Passport Size Photographs",
+      "Caste / Category Proof"
+    ]
+  },
+  {
+    "id": "pm_svanidhi_sc",
+    "name": "PM Street Vendor AtmaNirbhar Nidhi (PM SVANidhi)",
+    "name_hi": "पीएम स्ट्रीट वेंडर्स आत्मनिर्भर निधि (पीएम स्वनिधि)",
+    "category": "micro_finance",
+    "ministry": "Ministry of Housing and Urban Affairs (MoHUA)",
+    "implementing_agency": "SIDBI & Scheduled Commercial Banks",
+    "target_beneficiary": "Urban and peri-urban street vendors, hawkers, petty artisans",
+    "gender_preference": "all",
+    "income_limit_annual": 250000,
+    "min_project_cost": 10000,
+    "max_project_cost": 50000,
+    "max_loan_amount": 50000,
+    "financing_percentage": 100.0,
+    "min_promoter_contribution": 0.0,
+    "interest_rate_beneficiary_pct": 7.0,
+    "interest_rate_female_rebate_pct": 0.0,
+    "commercial_bank_rate_pct": 14.0,
+    "max_tenure_years": 2,
+    "moratorium_months": 0,
+    "repayment_frequency": "Monthly",
+    "description_en": "Affordable working capital credit (₹10k in 1st tranche, ₹20k in 2nd, ₹50k in 3rd) with a 7% interest subsidy on timely repayment and digital cashback incentives.",
+    "description_hi": "समय पर पुनर्भुगतान पर 7% ब्याज सब्सिडी और डिजिटल कैशबैक प्रोत्साहन के साथ किफायती कार्यशील पूंजी ऋण (पहले चरण में 10 हजार, दूसरे में 20 हजार, तीसरे में 50 हजार)।",
+    "eligible_activities": [
+      "street food vending",
+      "vegetables fruits vending",
+      "cobbler footwear repair",
+      "artisan handicraft sales",
+      "barber kiosk",
+      "pan bidi tea stall",
+      "laundry ironing cart"
+    ],
+    "required_documents": [
+      "Aadhaar Card",
+      "Certificate of Vending (CoV) or Urban Local Body (ULB) Identity Card",
+      "Bank Account Details",
+      "Registered Mobile Number"
+    ]
+  },
+  {
+    "id": "pm_vishwakarma_sc",
+    "name": "PM Vishwakarma Scheme",
+    "name_hi": "पीएम विश्वकर्मा योजना",
+    "category": "micro_finance",
+    "ministry": "Ministry of Micro, Small and Medium Enterprises (MSME)",
+    "implementing_agency": "MoMSJE, MoSDE and Banking Partners",
+    "target_beneficiary": "Traditional artisans and craftspeople working with hands and basic tools",
+    "gender_preference": "all",
+    "income_limit_annual": 300000,
+    "min_project_cost": 50000,
+    "max_project_cost": 300000,
+    "max_loan_amount": 300000,
+    "financing_percentage": 100.0,
+    "min_promoter_contribution": 0.0,
+    "interest_rate_beneficiary_pct": 5.0,
+    "interest_rate_female_rebate_pct": 0.0,
+    "commercial_bank_rate_pct": 12.0,
+    "max_tenure_years": 5,
+    "moratorium_months": 6,
+    "repayment_frequency": "Monthly",
+    "description_en": "Holistic institutional support for 18 traditional trades offering ₹15,000 toolkit incentive, free skill training with stipend, and collateral-free enterprise loans up to ₹3 Lakhs at 5% concessional interest.",
+    "description_hi": "18 पारंपरिक शिल्पों के लिए ₹15,000 टूलकिट प्रोत्साहन, वजीफे के साथ निःशुल्क कौशल प्रशिक्षण और 5% रियायती ब्याज पर 3 लाख रुपये तक का संपार्श्विक-मुक्त उद्यम ऋण।",
+    "eligible_activities": [
+      "carpenter suthar",
+      "blacksmith lohar",
+      "potter kumhaar",
+      "sculptor moortikar",
+      "cobbler charmkar",
+      "mason raajmistri",
+      "basket mat broom maker",
+      "barber nai",
+      "tailor darzi",
+      "washerman dhobi",
+      "boat maker",
+      "armourer"
+    ],
+    "required_documents": [
+      "Aadhaar Card",
+      "Ration Card / Family ID",
+      "Bank Passbook",
+      "Self-declaration of traditional artisan trade"
+    ]
+  },
+  {
+    "id": "nos_sc",
+    "name": "National Overseas Scholarship for SC Candidates (NOS)",
+    "name_hi": "राष्ट्रीय प्रवासी छात्रवृत्ति योजना (NOS)",
+    "category": "education",
+    "ministry": "Ministry of Social Justice and Empowerment (MoSJE)",
+    "implementing_agency": "MoSJE Higher Education Cell",
+    "target_beneficiary": "Scheduled Caste postgraduate and doctoral scholars studying abroad",
+    "gender_preference": "all",
+    "income_limit_annual": 800000,
+    "min_project_cost": 500000,
+    "max_project_cost": 4000000,
+    "max_loan_amount": 4000000,
+    "financing_percentage": 100.0,
+    "min_promoter_contribution": 0.0,
+    "interest_rate_beneficiary_pct": 0.0,
+    "interest_rate_female_rebate_pct": 0.0,
+    "commercial_bank_rate_pct": 12.0,
+    "max_tenure_years": 10,
+    "moratorium_months": 24,
+    "repayment_frequency": "Quarterly",
+    "description_en": "Prestigious full scholarship grant covering 100% of international tuition fees, living allowances, airfare, and visa expenses for Master and Ph.D. degrees in premier overseas universities.",
+    "description_hi": "शीर्ष विदेशी विश्वविद्यालयों में मास्टर और पीएचडी डिग्री के लिए अंतर्राष्ट्रीय ट्यूशन फीस, रहने का भत्ता, हवाई किराया और वीजा खर्च का 100% वहन करने वाली प्रतिष्ठित छात्रवृत्ति अनुदान।",
+    "eligible_activities": [
+      "masters computer science abroad",
+      "doctoral biotechnology studies",
+      "engineering master degree",
+      "applied sciences international research",
+      "agricultural technology studies"
+    ],
+    "required_documents": [
+      "Unconditional Offer Letter from Top 500 QS Ranking University",
+      "SC Caste Certificate",
+      "Income Certificate (< 8 Lakhs/yr)",
+      "Passport and GRE/IELTS/TOEFL scores",
+      "Degree Transcripts"
+    ]
+  },
+  {
+    "id": "cegssc_sc",
+    "name": "Credit Enhancement Guarantee Scheme for SCs (CEGSSC)",
+    "name_hi": "अनुसूचित जातियों के लिए ऋण संवर्धन गारंटी योजना (CEGSSC)",
+    "category": "term_loan",
+    "ministry": "Ministry of Social Justice and Empowerment (MoSJE)",
+    "implementing_agency": "IFCI Ltd on behalf of Government of India",
+    "target_beneficiary": "SC-owned companies, registered LLPs, and medium enterprises",
+    "gender_preference": "all",
+    "income_limit_annual": 1000000,
+    "min_project_cost": 1500000,
+    "max_project_cost": 50000000,
+    "max_loan_amount": 50000000,
+    "financing_percentage": 85.0,
+    "min_promoter_contribution": 15.0,
+    "interest_rate_beneficiary_pct": 7.0,
+    "interest_rate_female_rebate_pct": 0.25,
+    "commercial_bank_rate_pct": 11.5,
+    "max_tenure_years": 7,
+    "moratorium_months": 12,
+    "repayment_frequency": "Quarterly",
+    "description_en": "Government guarantee cover providing 100% guarantee to Member Lending Institutions (MLIs) for business loans between ₹15 Lakhs and ₹5 Crores sanctioned to SC entrepreneurs.",
+    "description_hi": "अनुसूचित जाति के उद्यमियों को स्वीकृत ₹15 लाख से ₹5 करोड़ के व्यावसायिक ऋणों के लिए सदस्य ऋणदाता संस्थाओं (एमएलआई) को 100% सरकारी गारंटी कवर।",
+    "eligible_activities": [
+      "commercial manufacturing setup",
+      "industrial robotics automation",
+      "logistics transport warehousing",
+      "large healthcare clinic hospital",
+      "renewable energy infrastructure",
+      "chemical packaging plant"
+    ],
+    "required_documents": [
+      "Proof of at least 51% SC equity ownership",
+      "Bank Sanction Letter",
+      "Detailed Project Report (DPR)",
+      "Audited Financial Statements",
+      "Caste Certificate of Promoters"
     ]
   }
 ]

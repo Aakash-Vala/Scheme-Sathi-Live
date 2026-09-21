@@ -19,8 +19,8 @@ const i18n = {
     "gov_ribbon_text": "Ministry of Social Justice and Empowerment (MoSJE) • National Scheduled Castes Finance & Development Corp",
     "sih_tag": "Smart India Hackathon • Problem Statement: ",
     "portal_subtitle": "AI Channel Finance Recommender & Concessional Lending Portal",
-    "theme_dark": "🌙 Dark",
-    "theme_light": "☀️ Light",
+    "theme_dark": "Dark",
+    "theme_light": "Light",
     "hero_badge": "Smart Automation Platform • Department of Social Justice",
     "hero_h2_1": "AI-Driven Concessional Scheme Matching for ",
     "hero_h2_highlight": "Marginalized Entrepreneurs",
@@ -247,8 +247,8 @@ const i18n = {
     "gov_ribbon_text": "सामाजिक न्याय एवं अधिकारिता मंत्रालय (MoSJE) • राष्ट्रीय अनुसूचित जाति वित्त एवं विकास निगम",
     "sih_tag": "स्मार्ट इंडिया हैकाथॉन • समस्या विवरण: ",
     "portal_subtitle": "एआई चैनल फाइनेंस अनुशंसा एवं रियायती ऋण सहायता पोर्टल",
-    "theme_dark": "🌙 डार्क",
-    "theme_light": "☀️ लाइट",
+    "theme_dark": "डार्क",
+    "theme_light": "लाइट",
     "hero_badge": "स्मार्ट ऑटोमेशन प्लेटफॉर्म • सामाजिक न्याय विभाग",
     "hero_h2_1": "वंचित एवं अनुसूचित जाति उद्यमियों हेतु ",
     "hero_h2_highlight": "एआई-संचालित रियायती योजना मिलान",
@@ -475,8 +475,8 @@ const i18n = {
     "gov_ribbon_text": "सामाजिक न्याय आणि सक्षमीकरण मंत्रालय (MoSJE) • राष्ट्रीय अनुसूचित जाती वित्त व विकास महामंडळ",
     "sih_tag": "स्मार्ट इंडिया हॅकाथॉन • समस्या क्रमांक: ",
     "portal_subtitle": "एआय चॅनेल फायनान्स शिफारस व सवलतीचे कर्ज सहाय्य पोर्टल",
-    "theme_dark": "🌙 डार्क",
-    "theme_light": "☀️ लाइट",
+    "theme_dark": "डार्क",
+    "theme_light": "लाइट",
     "hero_badge": "स्मार्ट ऑटोमेशन प्लॅटफॉर्म • सामाजिक न्याय विभाग",
     "hero_h2_1": "वंचित व अनुसूचित जाती उद्योजकांसाठी ",
     "hero_h2_highlight": "एआय-चालित सवलतीची योजना जुळवणी",
@@ -703,7 +703,7 @@ const i18n = {
     "gov_ribbon_text": "சமூக நீதி மற்றும் அதிகாரமளித்தல் அமைச்சகம் (MoSJE) • தேசிய அட்டவணை சாதிகள் நிதி மற்றும் மேம்பாட்டுக் கழகம்",
     "sih_tag": "ஸ்மார்ட் இந்தியா ஹேக்கத்தான் • பிரச்சனை அறிக்கை: ",
     "portal_subtitle": "ஏஐ சேனல் நிதி பரிந்துரை மற்றும் சலுகைக் கடன் தளம்",
-    "theme_dark": "🌙 இருண்ட",
+    "theme_dark": "இருண்ட",
     "theme_light": "☀️ ஒளி",
     "hero_badge": "ஸ்மார்ட் ஆட்டோமேஷன் தளம் • சமூக நீதித் துறை",
     "hero_h2_1": "விளிம்புநிலை மற்றும் எஸ்சி தொழில்முனைவோருக்கான ",
@@ -931,8 +931,8 @@ const i18n = {
     "gov_ribbon_text": "సామాజిక న్యాయం & సాధికారత మంత్రిత్వ శాఖ (MoSJE) • జాతీయ షెడ్యూల్డ్ కులాల ఫైనాన్స్ & డెవలప్‌మెంట్ కార్పొరేషన్",
     "sih_tag": "స్మార్ట్ ఇండియా హ్యాకథాన్ • సమస్య ప్రకటన: ",
     "portal_subtitle": "AI ఛానెల్ ఫైనాన్స్ సిఫార్సు & రాయితీ రుణ పోర్టల్",
-    "theme_dark": "🌙 డార్క్",
-    "theme_light": "☀️ లైట్",
+    "theme_dark": "డార్క్",
+    "theme_light": "లైట్",
     "hero_badge": "స్మార్ట్ ఆటోమేషన్ ప్లాట్‌ఫామ్ • సామాజిక న్యాయ శాఖ",
     "hero_h2_1": "బలహీన వర్గాలు మరియు ఎస్సీ వ్యవస్థాపకులకు ",
     "hero_h2_highlight": "AI ఆధారిత రాయితీ రుణ పథకాల సరిపోలిక",
@@ -1159,8 +1159,8 @@ const i18n = {
     "gov_ribbon_text": "সামাজিক ন্যায়বিচার ও ক্ষমতায়ন মন্ত্রক (MoSJE) • জাতীয় তফসিলি জাতি অর্থ ও উন্নয়ন নিগম",
     "sih_tag": "স্মার্ট ইন্ডিয়া হ্যাকাথন • সমস্যা বিবরণ: ",
     "portal_subtitle": "এআই চ্যানেল ফিনান্স সুপারিশ ও রেয়াতি ঋণ সহায়তা পোর্টাল",
-    "theme_dark": "🌙 ডার্ক",
-    "theme_light": "☀️ লাইট",
+    "theme_dark": "ডার্ক",
+    "theme_light": "লাইট",
     "hero_badge": "স্মার্ট অটোমেশন প্ল্যাটফর্ম • সামাজিক ন্যায়বিচার বিভাগ",
     "hero_h2_1": "অনগ্রসর ও তফসিলি জাতি উদ্যোক্তাদের জন্য ",
     "hero_h2_highlight": "এআই-চালিত রেয়াতি প্রকল্প মিলকরণ",
@@ -1414,7 +1414,7 @@ function updateThemeButton(theme) {
   const btn = document.getElementById('theme-toggle-btn');
   if (btn) {
     const t = i18n[currentLang] || i18n['en'];
-    btn.innerHTML = theme === 'dark' ? (t.theme_light || '☀️ Light') : (t.theme_dark || '🌙 Dark');
+    btn.innerHTML = theme === 'dark' ? (t.theme_light || 'Light') : (t.theme_dark || 'Dark');
   }
 }
 
@@ -2624,10 +2624,16 @@ function renderAuthNav() {
     `;
   } else {
     container.innerHTML = `
-      <a href="/login" class="btn-auth-nav" onclick="if(window.location.pathname !== '/login'){ event.preventDefault(); openAuthModal('aadhaar'); }">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-        <span>${t('auth_btn_login_signup')}</span>
-      </a>
+      <div style="display: flex; gap: 8px; align-items: center;">
+        <a href="/login?tab=login" class="btn-auth-nav btn-action" onclick="if(window.location.pathname !== '/login'){ event.preventDefault(); openAuthModal('login'); }">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" y1="12" x2="3" y2="12"/></svg>
+          <span>Login</span>
+        </a>
+        <a href="/login?tab=signup" class="btn-auth-nav btn-action" onclick="if(window.location.pathname !== '/login'){ event.preventDefault(); openAuthModal('signup'); }">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="8.5" cy="7" r="4"/><line x1="20" y1="8" x2="20" y2="14"/><line x1="23" y1="11" x2="17" y2="11"/></svg>
+          <span>Register</span>
+        </a>
+      </div>
     `;
   }
 }
@@ -3788,4 +3794,53 @@ function renderRegistrationAcknowledgementSlip(reg) {
 function closeRegistrationModal() {
   const modal = document.getElementById('registration-modal');
   if (modal) modal.style.display = 'none';
-}
+}
+
+/* ==============================================================================
+   Interactive Ambient Orbs Parallax Motion
+   Enhances autonomous CSS keyframe drift with subtle mouse spring reactivity
+   ============================================================================== */
+(function initAmbientOrbsInteractivity() {
+  function setup() {
+    const backdrop = document.querySelector('.ambient-glow-backdrop');
+    if (!backdrop) return;
+
+    let targetX = 0;
+    let targetY = 0;
+    let currentX = 0;
+    let currentY = 0;
+    let isMoving = false;
+
+    window.addEventListener('mousemove', (e) => {
+      const normX = (e.clientX / window.innerWidth - 0.5) * 2;
+      const normY = (e.clientY / window.innerHeight - 0.5) * 2;
+      targetX = normX * 20;
+      targetY = normY * 20;
+
+      if (!isMoving) {
+        isMoving = true;
+        requestAnimationFrame(render);
+      }
+    }, { passive: true });
+
+    function render() {
+      currentX += (targetX - currentX) * 0.06;
+      currentY += (targetY - currentY) * 0.06;
+
+      backdrop.style.transform = `translate3d(${currentX.toFixed(2)}px, ${currentY.toFixed(2)}px, 0)`;
+
+      if (Math.abs(targetX - currentX) > 0.05 || Math.abs(targetY - currentY) > 0.05) {
+        requestAnimationFrame(render);
+      } else {
+        isMoving = false;
+      }
+    }
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', setup);
+  } else {
+    setup();
+  }
+})();
+

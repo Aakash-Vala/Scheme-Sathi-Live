@@ -18,13 +18,47 @@ class SchemeRegistrationService:
         self.schemes_path = os.path.join(self.base_dir, "data", "government_schemes.json")
         self.partners_path = os.path.join(self.base_dir, "data", "channel_partners.json")
         self.registry_path = os.path.join(self.base_dir, "data", "registered_applications.json")
+        
+        # Connect to MongoDB if available
+        from services.db import db_service
+        self.db_service = db_service
 
-        with open(self.schemes_path, "r", encoding="utf-8") as f:
-            self.schemes = json.load(f)
-        self.scheme_by_id = {s["id"]: s for s in self.schemes}
+        try:
+            if self.db_service.check_connection() and self.db_service.schemes is not None:
+                self.schemes = list(self.db_service.schemes.find({}, {"_id": 0}))
+            else:
+                self.schemes = []
+        except Exception:
+            self.schemes = []
 
-        with open(self.partners_path, "r", encoding="utf-8") as f:
-            self.partners = json.load(f)
+        if not self.schemes:
+            with open(self.schemes_path, "r", encoding="utf-8") as f:
+                self.schemes = json.load(f)
+
+        self.scheme_by_id = {}
+        for s in self.schemes:
+            s_id = s.get("id")
+            if s_id:
+                self.scheme_by_id[s_id] = s
+                short_id = s_id.replace("nsfdc_", "").replace("_sc", "")
+                self.scheme_by_id[short_id] = s
+            s_code = s.get("code")
+            if s_code:
+                self.scheme_by_id[s_code] = s
+                self.scheme_by_id[s_code.lower()] = s
+                self.scheme_by_id[s_code.lower().replace("-", "_")] = s
+
+        try:
+            if self.db_service.check_connection() and self.db_service.partners is not None:
+                self.partners = list(self.db_service.partners.find({}, {"_id": 0}))
+            else:
+                self.partners = []
+        except Exception:
+            self.partners = []
+
+        if not self.partners:
+            with open(self.partners_path, "r", encoding="utf-8") as f:
+                self.partners = json.load(f)
 
         # Initialize registry file if not present
         if not os.path.exists(self.registry_path):
@@ -32,6 +66,13 @@ class SchemeRegistrationService:
                 json.dump([], f, indent=2)
 
     def _load_registry(self) -> List[Dict[str, Any]]:
+        if self.db_service.check_connection() and self.db_service.applications is not None:
+            try:
+                apps = list(self.db_service.applications.find({}, {"_id": 0}))
+                if apps:
+                    return apps
+            except Exception:
+                pass
         if not os.path.exists(self.registry_path):
             return []
         try:
@@ -41,6 +82,14 @@ class SchemeRegistrationService:
             return []
 
     def _save_registry(self, registry: List[Dict[str, Any]]):
+        if self.db_service.check_connection() and self.db_service.applications is not None:
+            try:
+                for a in registry:
+                    ref_id = a.get("registration_id")
+                    if ref_id:
+                        self.db_service.applications.update_one({"registration_id": ref_id}, {"$set": a}, upsert=True)
+            except Exception:
+                pass
         with open(self.registry_path, "w", encoding="utf-8") as f:
             json.dump(registry, f, indent=2, ensure_ascii=False)
 
