@@ -129,7 +129,7 @@
         Empowering Scheduled Caste (SC) entrepreneurs and students with AI-matched concessional lending schemes (up to ₹50 Lakhs at 4.0% - 8.0% p.a.), reducing-balance EMI calculations with grace periods, and verified Channel Partner routing.
       </p>
 
-      <div style="display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 24px;">
+      <div style="display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 28px;">
         <a href="/recommender" class="btn-primary" data-i18n="btn_launch_ai">Launch AI Recommender →</a>
         <a href="/calculator" class="btn-secondary" data-i18n="btn_open_calc">Open Financial Calculator</a>
         <a href="/locator" class="btn-secondary" data-i18n="btn_locate_partners">Locate Channel Partners</a>
@@ -156,11 +156,11 @@
     </section>
 
     <!-- 3-Step Simple Stepper (How It Works - No Overwhelm) -->
-    <div style="margin-bottom: 28px;">
-      <h3 style="font-size: 1.15rem; font-weight: 700; color: var(--text-pure); margin-bottom: 4px;" data-i18n="how_title">
+    <div style="margin-bottom: 52px;">
+      <h3 style="font-size: 1.15rem; font-weight: 700; color: var(--text-pure); margin-bottom: 6px;" data-i18n="how_title">
         How It Works
       </h3>
-      <p style="color: var(--text-muted); font-size: 0.86rem; margin-bottom: 14px;" data-i18n="how_desc">
+      <p style="color: var(--text-muted); font-size: 0.86rem; margin-bottom: 20px;" data-i18n="how_desc">
         A 3-step structured pathway from business idea to loan disbursement.
       </p>
       
@@ -184,11 +184,11 @@
     </div>
 
     <!-- 3 Dedicated Modules Showcase -->
-    <div style="margin-bottom: 32px;">
-      <h3 style="font-size: 1.15rem; font-weight: 700; color: var(--text-pure); margin-bottom: 4px;" data-i18n="modules_title">
+    <div style="margin-bottom: 52px;">
+      <h3 style="font-size: 1.15rem; font-weight: 700; color: var(--text-pure); margin-bottom: 6px;" data-i18n="modules_title">
         Platform Modules
       </h3>
-      <p style="color: var(--text-muted); font-size: 0.86rem; margin-bottom: 16px;" data-i18n="modules_desc">
+      <p style="color: var(--text-muted); font-size: 0.86rem; margin-bottom: 20px;" data-i18n="modules_desc">
         Access each specialized tool on its dedicated interface:
       </p>
 
@@ -239,9 +239,9 @@
 
     <!-- Official Government Schemes Directory with Category Tabs -->
     <section class="gov-card">
-      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px; flex-wrap: wrap; gap: 10px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 22px; flex-wrap: wrap; gap: 10px;">
         <div>
-          <h3 style="font-size: 1.15rem; font-weight: 700; color: var(--text-pure);" data-i18n="schemes_dir_title">
+          <h3 style="font-size: 1.15rem; font-weight: 700; color: var(--text-pure); margin-bottom: 5px;" data-i18n="schemes_dir_title">
             Official MoSJE & NSFDC Concessional Credit Schemes
           </h3>
           <p style="font-size: 0.82rem; color: var(--text-dim);" data-i18n="schemes_dir_desc">
@@ -358,10 +358,13 @@
               </div>
               <p style="font-size: 0.82rem; color: var(--text-muted); margin-bottom: 16px; line-height: 1.5;">${displayDesc}</p>
             </div>
-            <div style="display: flex; gap: 8px; flex-wrap: wrap;">
-              <a href="/recommender" class="btn-secondary" style="flex:1; font-size:0.78rem; padding:8px; text-align:center;">${currentLang === 'hi' ? 'पात्रता जांचें' : 'Check Eligibility'}</a>
-              <a href="/calculator?loan=${s.max_loan_amount}&rate=${s.interest_rate_beneficiary_pct}&tenure=${s.max_tenure_years}&moratorium=${s.moratorium_months}" class="btn-secondary" style="flex:1; font-size:0.78rem; padding:8px; text-align:center;">${t('btn_calc_emi')}</a>
-              <button onclick="openRegistrationModal('${s.id}')" class="btn-primary" style="width:100%; font-size:0.80rem; padding:8px; margin-top:4px;">${currentLang === 'hi' ? 'योजना हेतु ऑनलाइन पंजीकरण करें →' : 'Register for Scheme Online →'}</button>
+            <div style="display: flex; flex-direction: column; gap: 10px;">
+              <button onclick="openRegistrationModal('${s.id}')" class="btn-primary" style="width:100%; font-size:0.82rem; padding:10px;">${currentLang === 'hi' ? 'योजना हेतु ऑनलाइन पंजीकरण करें →' : 'Register for Scheme Online →'}</button>
+              <div style="display: flex; gap: 4px; justify-content: center; border-top: 1px solid var(--border-dark); padding-top: 8px;">
+                <a href="/recommender" class="btn-link-action" style="flex:1;">${currentLang === 'hi' ? 'पात्रता जांचें' : 'Check Eligibility'}</a>
+                <span style="color: var(--border-dark); align-self: center;">|</span>
+                <a href="/calculator?loan=${s.max_loan_amount}&rate=${s.interest_rate_beneficiary_pct}&tenure=${s.max_tenure_years}&moratorium=${s.moratorium_months}" class="btn-link-action" style="flex:1;">${t('btn_calc_emi')}</a>
+              </div>
             </div>
           </div>
         `;
